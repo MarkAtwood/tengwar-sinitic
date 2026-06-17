@@ -28,7 +28,7 @@ The modes share core conventions (aspiration mapping, iconographic tone marks, r
 
 ## Files
 
-- `tengwar-mandarin-v4.md` — Full specification with rationale for all design decisions
+- `tengwar-mandarin-v4.md` — Mandarin mode specification with rationale for all design decisions
 
 ## Status
 

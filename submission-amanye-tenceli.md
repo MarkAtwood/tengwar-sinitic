@@ -38,9 +38,11 @@ The fallback rendering strategy works with unmodified Tengwar Annatar, Eldamar, 
 ## Materials
 
 The full specification with rationale is available at:
-https://github.com/MarkAtwood/tengwar-mandarin
+https://github.com/MarkAtwood/tengwar-sinitic
 
 I am preparing rendered sample texts (UDHR Article 1, classical poetry) and can provide these as supplementary materials.
+
+This Mandarin mode is the first in a planned family of Sinitic modes covering Cantonese, Hokkien, Shanghainese, and Hakka. The modes will share core conventions while adapting to each language's phonology.
 
 ## Request
 
