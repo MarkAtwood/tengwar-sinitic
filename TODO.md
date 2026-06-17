@@ -47,7 +47,10 @@ Design goal: a family of Sinitic modes sharing core conventions, adapted per lan
 - [ ] Draft spec
 
 ### Shanghainese (Wu)
-- [ ] Research phoneme inventory
+- [ ] Search archive.org / HathiTrust for Joseph Edkins' 19th-century Shanghainese grammar and dictionary
+- [ ] Review other missionary romanizations (T.P. Crawford 1885, John A. Silsby)
+- [ ] Compare with Qian Nairong's modern Shanghainese Pinyin (钱拼, 2006)
+- [ ] Research phoneme inventory from these sources
 - [ ] Handle voiced obstruents — reconsider Grade 1/2 mapping (aspiration vs voicing)
 - [ ] Handle register tone system
 - [ ] Draft spec
