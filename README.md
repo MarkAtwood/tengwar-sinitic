@@ -18,6 +18,8 @@ This is the first published Tengwar mode for any Chinese language. The Mandarin 
 
 The modes share core conventions (aspiration mapping, iconographic tone marks, retroflex/palatal handling) but adapt to each language's phonology.
 
+We also welcome proposals for Sinitic conlangs. If your constructed language has a Sinitic phonological basis, these modes should be adaptable to it.
+
 **Key features:**
 
 - Maps 21 Mandarin initials onto the four Tengwar series (alveolar, labial, velar, retroflex)
