@@ -50,7 +50,7 @@ We also welcome proposals for Sinitic conlangs. If your constructed language has
 
 ## License
 
-CC BY 4.0 — Attribution required, commercial use permitted.
+CC BY-SA 4.0 — Attribution required, share-alike required, commercial use permitted.
 
 ## Contributing
 
