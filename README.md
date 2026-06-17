@@ -20,6 +20,10 @@ The modes share core conventions (aspiration mapping, iconographic tone marks, r
 
 We also welcome proposals for Sinitic conlangs. If your constructed language has a Sinitic phonological basis, these modes should be adaptable to it.
 
+### Beyond Sinitic
+
+This project focuses on Sinitic (Chinese) languages. Other language families of the region — Tibetic, Mongolic, Tungusic (Manchu), Turkic (Uyghur), and historical languages like Tangut or Khitan — would require separate Tengwar modes with different conventions. These are out of scope here but would make natural sister projects. Some design elements (iconographic tone marks, handling of aspirated stops) might transfer.
+
 **Key features:**
 
 - Maps 21 Mandarin initials onto the four Tengwar series (alveolar, labial, velar, retroflex)
