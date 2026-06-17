@@ -1,10 +1,22 @@
-# Tengwar Mode for Mandarin Chinese
+# Tengwar Modes for Sinitic Languages
 
-A phonemic Tengwar mode for Standard Mandarin, transcribing the language as analyzed through the Pinyin romanization system.
+A family of phonemic Tengwar modes for Chinese languages, starting with Standard Mandarin.
 
 ## Overview
 
-This is the first published Tengwar mode for any Chinese language. It maps Mandarin's phonology onto the Tengwar consonant grid and provides a system for encoding the four lexical tones.
+This is the first published Tengwar mode for any Chinese language. The Mandarin mode maps the language's phonology onto the Tengwar consonant grid and provides a system for encoding lexical tones. It serves as the foundation for a planned family of modes covering major Sinitic languages.
+
+### Planned language coverage
+
+| Language | Status | Notes |
+|----------|--------|-------|
+| Mandarin | **Draft** | 4 tones, no final stops |
+| Cantonese | Planned | 6-9 tones, final stops (-p -t -k) |
+| Hokkien (Southern Min) | Planned | Nasal vowels, complex tone sandhi |
+| Shanghainese (Wu) | Planned | Voiced obstruents, register tones |
+| Hakka | Planned | Different vowel inventory, final stops |
+
+The modes share core conventions (aspiration mapping, iconographic tone marks, retroflex/palatal handling) but adapt to each language's phonology.
 
 **Key features:**
 
