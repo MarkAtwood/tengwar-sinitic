@@ -10,7 +10,15 @@
 
 - [ ] UDHR Article 1 (carrier placement, stock font)
 - [ ] UDHR Article 1 (below-tengwa placement, handwritten or custom font)
-- [ ] Classical poem (e.g., 静夜思)
+
+Classical poems — the ones every student learns:
+- [ ] 静夜思 (Quiet Night Thought) — Li Bai, 5-char quatrain
+- [ ] 春晓 (Spring Dawn) — Meng Haoran
+- [ ] 悯农 (Pitying the Farmers) — Li Shen
+- [ ] 咏鹅 (Ode to the Goose) — Luo Binwang, often the first poem children memorize
+- [ ] 登鹳雀楼 (Climbing Stork Tower) — Wang Zhihuan
+
+These are short, universally known, and cover a good range of syllable types.
 
 ## Submission
 
