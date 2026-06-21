@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="6824">
+<defs><style>
+.jyutping { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="6824" fill="white"/>
+<text x="20" y="30" class="jyutping">si1</text>
+<text x="20" y="88" class="hanzi">詩</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{thule}[i]_</text>
+<text x="20" y="282" class="jyutping">si2</text>
+<text x="20" y="340" class="hanzi">史</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{thule}[i][e/rise]</text>
+<text x="20" y="534" class="jyutping">si3</text>
+<text x="20" y="592" class="hanzi">試</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{thule}[i]_[a/.]</text>
+<text x="20" y="786" class="jyutping">si4</text>
+<text x="20" y="844" class="hanzi">時</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{thule}[i]\..</text>
+<text x="20" y="1038" class="jyutping">si5</text>
+<text x="20" y="1096" class="hanzi">市</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{thule}[i][e/rise]..</text>
+<text x="20" y="1290" class="jyutping">si6</text>
+<text x="20" y="1348" class="hanzi">事</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{thule}[i]_..</text>
+<text x="20" y="1542" class="jyutping">Tone</text>
+<text x="20" y="1600" class="hanzi">Contour</text>
+<text x="20" y="1658" class="tengwar"></text>
+<text x="20" y="1716" class="names">{ando}[o]</text>
+<text x="20" y="1794" class="jyutping">1 (high level)</text>
+<text x="20" y="1852" class="hanzi">flat bar</text>
+<text x="20" y="1910" class="tengwar"></text>
+<text x="20" y="1968" class="names">{hwesta}[i]{lambe}[e/rise]</text>
+<text x="20" y="2046" class="jyutping">2 (high rising)</text>
+<text x="20" y="2104" class="hanzi">rising</text>
+<text x="20" y="2162" class="tengwar"></text>
+<text x="20" y="2220" class="names">{hwesta}[i]{carrier_short}</text>
+<text x="20" y="2298" class="jyutping">3 (mid level)</text>
+<text x="20" y="2356" class="hanzi">flat bar</text>
+<text x="20" y="2414" class="tengwar"></text>
+<text x="20" y="2472" class="names">{malta}[i]{lambe}[e/rise]</text>
+<text x="20" y="2550" class="jyutping">4 (low falling)</text>
+<text x="20" y="2608" class="hanzi">falling</text>
+<text x="20" y="2666" class="tengwar"></text>
+<text x="20" y="2724" class="names">{lambe}[o]{formen}[a/.]</text>
+<text x="20" y="2802" class="jyutping">5 (low rising)</text>
+<text x="20" y="2860" class="hanzi">rising</text>
+<text x="20" y="2918" class="tengwar"></text>
+<text x="20" y="2976" class="names">{lambe}[o]{carrier_short}</text>
+<text x="20" y="3054" class="jyutping">6 (low level)</text>
+<text x="20" y="3112" class="hanzi">flat bar</text>
+<text x="20" y="3170" class="tengwar"></text>
+<text x="20" y="3228" class="names">{lambe}[o]{lambe}[e/rise]</text>
+<text x="20" y="3306" class="jyutping">fan1</text>
+<text x="20" y="3364" class="hanzi">分</text>
+<text x="20" y="3422" class="tengwar"></text>
+<text x="20" y="3480" class="names">{formen}[a/.]{numen}_</text>
+<text x="20" y="3558" class="jyutping">fan2</text>
+<text x="20" y="3616" class="hanzi">粉</text>
+<text x="20" y="3674" class="tengwar"></text>
+<text x="20" y="3732" class="names">{formen}[a/.]{numen}[e/rise]</text>
+<text x="20" y="3810" class="jyutping">fan3</text>
+<text x="20" y="3868" class="hanzi">訓</text>
+<text x="20" y="3926" class="tengwar"></text>
+<text x="20" y="3984" class="names">{formen}[a/.]{numen}_[a/.]</text>
+<text x="20" y="4062" class="jyutping">fan4</text>
+<text x="20" y="4120" class="hanzi">焚</text>
+<text x="20" y="4178" class="tengwar"></text>
+<text x="20" y="4236" class="names">{formen}[a/.]{numen}\..</text>
+<text x="20" y="4314" class="jyutping">fan5</text>
+<text x="20" y="4372" class="hanzi">憤</text>
+<text x="20" y="4430" class="tengwar"></text>
+<text x="20" y="4488" class="names">{formen}[a/.]{numen}[e/rise]..</text>
+<text x="20" y="4566" class="jyutping">fan6</text>
+<text x="20" y="4624" class="hanzi">份</text>
+<text x="20" y="4682" class="tengwar"></text>
+<text x="20" y="4740" class="names">{formen}[a/.]{numen}_..</text>
+<text x="20" y="4818" class="jyutping">sik1</text>
+<text x="20" y="4876" class="hanzi">色</text>
+<text x="20" y="4934" class="tengwar"></text>
+<text x="20" y="4992" class="names">{thule}[i]{calma}_</text>
+<text x="20" y="5070" class="jyutping">sik3</text>
+<text x="20" y="5128" class="hanzi">識</text>
+<text x="20" y="5186" class="tengwar"></text>
+<text x="20" y="5244" class="names">{thule}[i]{calma}_[a/.]</text>
+<text x="20" y="5322" class="jyutping">sik6</text>
+<text x="20" y="5380" class="hanzi">食</text>
+<text x="20" y="5438" class="tengwar"></text>
+<text x="20" y="5496" class="names">{thule}[i]{calma}_..</text>
+<text x="20" y="5574" class="jyutping">maai5</text>
+<text x="20" y="5632" class="hanzi">買</text>
+<text x="20" y="5690" class="tengwar"></text>
+<text x="20" y="5748" class="names">{malta}[aa][e/rise]..</text>
+<text x="20" y="5826" class="jyutping">maai6</text>
+<text x="20" y="5884" class="hanzi">賣</text>
+<text x="20" y="5942" class="tengwar"></text>
+<text x="20" y="6000" class="names">{malta}[aa]_..</text>
+<text x="20" y="6078" class="jyutping">gam1</text>
+<text x="20" y="6136" class="hanzi">金</text>
+<text x="20" y="6194" class="tengwar"></text>
+<text x="20" y="6252" class="names">{calma}[a/.]{malta}_</text>
+<text x="20" y="6330" class="jyutping">gam2</text>
+<text x="20" y="6388" class="hanzi">咁</text>
+<text x="20" y="6446" class="tengwar"></text>
+<text x="20" y="6504" class="names">{calma}[a/.]{malta}[e/rise]</text>
+<text x="20" y="6582" class="jyutping">gam3</text>
+<text x="20" y="6640" class="hanzi">禁</text>
+<text x="20" y="6698" class="tengwar"></text>
+<text x="20" y="6756" class="names">{calma}[a/.]{malta}_[a/.]</text>
+</svg>
