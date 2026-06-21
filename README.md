@@ -34,7 +34,27 @@ This project focuses on Sinitic (Chinese) languages. Other language families of 
 
 ## Files
 
-- `tengwar-mandarin-v4.md` — Mandarin mode specification with rationale for all design decisions
+- `tengwar-mandarin.md` — Mandarin mode specification with rationale for all design decisions
+- `fonts/Alcarin-Tengwar/` — Extended Tengwar font with below-mark diacritics
+- `samples/` — Reference texts (Tang poetry, phrases, idioms) in Chinese, Pinyin, and Tengwar
+
+## Font
+
+This project extends [Alcarin Tengwar](https://github.com/Tosche/Alcarin-Tengwar) (OFL-licensed) with glyphs needed for tonal modes. The fork at [github.com/MarkAtwood/Alcarin-Tengwar](https://github.com/MarkAtwood/Alcarin-Tengwar) adds 9 glyphs:
+
+| Codepoint | Name | Purpose |
+|-----------|------|---------|
+| U+E096 | caronbelow-teng | Below caron (ˇ) |
+| U+E097 | gravebelow-teng | Below grave — Tone 4 mark |
+| U+E098 | rightcurl_dotinside-teng | Modified vowel tehta |
+| U+E099 | brevebelow-teng | Below breve |
+| U+E09A | tildebelow-teng | Below tilde |
+| U+E09B | wavebelow-teng | Below wave |
+| U+E09C | ringbelow-teng | Below ring |
+| U+E09D | dottripleturnedbelow-teng | Below triple-dot-turned |
+| U+E09E | leftcurl_dotinside-teng | Modified vowel tehta |
+
+PRs [#19](https://github.com/Tosche/Alcarin-Tengwar/pull/19)–[#22](https://github.com/Tosche/Alcarin-Tengwar/pull/22) submitted upstream. Until merged, use the fork or build from `fonts/Alcarin-Tengwar/Font source/`.
 
 ## Status
 

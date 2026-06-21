@@ -1,6 +1,20 @@
-
-# Beads / Dolt files (added by bd init)
+# Beads / Dolt files
 .beads/
 .dolt/
 *.db
 .beads-credential-key
+
+# AI agent configs
+.agents/
+.claude/
+.codex/
+AGENTS.md
+CLAUDE.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build artifacts
+*.html

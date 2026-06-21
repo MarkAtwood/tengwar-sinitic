@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">chú hé rì dāng wǔ</text>
+<text x="20" y="88" class="hanzi">锄禾日当午</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{ungwe}[u]²{hwesta}[e]²{oore}[i]⁴{tinco}[a]{noldo}¹{vala}[u]³</text>
+<text x="20" y="282" class="pinyin">hàn dī hé xià tǔ</text>
+<text x="20" y="340" class="hanzi">汗滴禾下土</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{hwesta}[a]{nuumen}⁴{tinco}[i]¹{hwesta}[e]²{hwesta}{+pal}{anna}[a]⁴{ando}[u]³</text>
+<text x="20" y="534" class="pinyin">shuí zhī pán zhōng cān</text>
+<text x="20" y="592" class="hanzi">谁知盘中餐</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{harma}{vala}[i]²{quesse}[i]¹{umbar}[a]{nuumen}²{quesse}[o]{noldo}¹{ando_ext}[a]{nuumen}¹</text>
+<text x="20" y="786" class="pinyin">lì lì jiē xīn kǔ</text>
+<text x="20" y="844" class="hanzi">粒粒皆辛苦</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{lambe}[i]⁴{lambe}[i]⁴{calma}{+pal}{anna}[e]¹{hwesta}{+pal}[i]{nuumen}¹{anga}[u]³</text>
+</svg>

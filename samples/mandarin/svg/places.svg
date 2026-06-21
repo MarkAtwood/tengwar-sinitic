@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2288">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="2288" fill="white"/>
+<text x="20" y="30" class="pinyin">běi jīng</text>
+<text x="20" y="88" class="hanzi">北京</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{parma}[e]³{calma}{+pal}[i]{noldo}¹</text>
+<text x="20" y="282" class="pinyin">shàng hǎi</text>
+<text x="20" y="340" class="hanzi">上海</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{harma}[a]{noldo}⁴{hwesta}[a]³</text>
+<text x="20" y="534" class="pinyin">guǎng zhōu</text>
+<text x="20" y="592" class="hanzi">广州</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{calma}{vala}[a]{noldo}³{quesse}[o]¹</text>
+<text x="20" y="786" class="pinyin">xī ān</text>
+<text x="20" y="844" class="hanzi">西安</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{hwesta}{+pal}[i]¹{carrier_short}[a]{nuumen}¹</text>
+<text x="20" y="1038" class="pinyin">chéng dū</text>
+<text x="20" y="1096" class="hanzi">成都</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{ungwe}[e]{noldo}²{tinco}[u]¹</text>
+<text x="20" y="1290" class="pinyin">cháng jiāng</text>
+<text x="20" y="1348" class="hanzi">长江</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{ungwe}[a]{noldo}²{calma}{+pal}{anna}[a]{noldo}¹</text>
+<text x="20" y="1542" class="pinyin">huáng hé</text>
+<text x="20" y="1600" class="hanzi">黄河</text>
+<text x="20" y="1658" class="tengwar"></text>
+<text x="20" y="1716" class="names">{hwesta}{vala}[a]{noldo}²{hwesta}[e]²</text>
+<text x="20" y="1794" class="pinyin">tài shān</text>
+<text x="20" y="1852" class="hanzi">泰山</text>
+<text x="20" y="1910" class="tengwar"></text>
+<text x="20" y="1968" class="names">{ando}[a]⁴{harma}[a]{nuumen}¹</text>
+<text x="20" y="2046" class="pinyin">zhōng guó</text>
+<text x="20" y="2104" class="hanzi">中国</text>
+<text x="20" y="2162" class="tengwar"></text>
+<text x="20" y="2220" class="names">{quesse}[o]{noldo}¹{calma}{vala}[o]²</text>
+</svg>

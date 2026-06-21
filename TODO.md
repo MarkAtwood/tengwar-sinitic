@@ -6,9 +6,15 @@ Current status: draft, awaiting community review and sample renderings.
 
 ## Font work
 
-- [ ] Search `../AI` and GitHub for previous work forking Tengwar typefaces
-- [ ] Evaluate which font to extend (Annatar, Eldamar, Parmaite)
-- [ ] Add four below-tengwa tone marks to chosen font
+- [x] Search `../AI` and GitHub for previous work forking Tengwar typefaces
+- [x] Evaluate which font to extend (Annatar, Eldamar, Parmaite) → Alcarin Tengwar (OFL)
+- [x] Add below-tengwa tone marks and symmetry glyphs to chosen font
+
+**Completed:** Extended [Alcarin Tengwar](https://github.com/MarkAtwood/Alcarin-Tengwar) with 9 new glyphs:
+- 7 below-marks completing above/below symmetry (caronbelow, gravebelow, brevebelow, tildebelow, wavebelow, ringbelow, dottripleturnedbelow)
+- 2 dot-inside tehta variants (rightcurl_dotinside, leftcurl_dotinside)
+
+Upstream PRs filed: [#19](https://github.com/Tosche/Alcarin-Tengwar/pull/19), [#20](https://github.com/Tosche/Alcarin-Tengwar/pull/20), [#21](https://github.com/Tosche/Alcarin-Tengwar/pull/21), [#22](https://github.com/Tosche/Alcarin-Tengwar/pull/22)
 
 ## Sample renderings
 

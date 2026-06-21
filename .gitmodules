@@ -1,0 +1,3 @@
+[submodule "fonts/Alcarin-Tengwar"]
+	path = fonts/Alcarin-Tengwar
+	url = https://github.com/MarkAtwood/Alcarin-Tengwar.git

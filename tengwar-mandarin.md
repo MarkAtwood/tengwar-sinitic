@@ -75,6 +75,21 @@ The vowel /y/ (Pinyin ü) appears only after certain initials, and its represent
 
 This approach uses only existing tehtar and requires no font modification.
 
+### Diphthongs
+
+Mandarin has several diphthongs: ao, ou, ai, ei, ia, ie, ua, uo, üe. Write only the primary (nuclear) vowel tehta; the glide is implied.
+
+| Pinyin | Tehta | Notes |
+|--------|-------|-------|
+| ao | a-tehta | /au/ — glide to /u/ implied |
+| ou | o-tehta | /ou/ — glide to /u/ implied |
+| ai | a-tehta | /ai/ — glide to /i/ implied |
+| ei | e-tehta | /ei/ — glide to /i/ implied |
+
+For rising diphthongs (ia, ie, ua, uo, üe), the medial glide is written as a separate tengwa (see Medial glides below), and the nuclear vowel takes the tehta.
+
+This keeps each syllable visually clean with one vowel mark above and one tone mark below. Mandarin readers will pronounce correctly from context, just as Pinyin readers do.
+
 ### The apical vowels
 
 After z, c, s and zh, ch, sh, r, the Pinyin letter "i" is not the vowel /i/. It's a syllabic continuant (/z̩/ or /ʐ̩/), essentially the consonant itself sustaining through the syllable with no real vowel segment. Some phonological analyses treat these syllables as having no vowel at all.
@@ -167,7 +182,9 @@ This mode is designed to work at two levels:
 
 **Full compatibility (carrier placement):** Works immediately with any existing Tengwar font. The tone carrier adds horizontal width but requires no font modification. All tehtar and tengwar used are standard.
 
-**Native rendering (below-tengwa placement):** Requires a font extended with four below-glyph marks. The below-tengwa position is used in some existing modes (underposed dot for silent-e in English, unutixe for syllabic consonants in German), so the position itself is not unprecedented. The four tone marks are new.
+**Native rendering (below-tengwa placement):** Requires a font extended with below-glyph marks. The below-tengwa position is used in some existing modes (underposed dot for silent-e in English, unutixe for syllabic consonants in German), so the position itself is not unprecedented.
+
+An extended font is available: [Alcarin Tengwar Extended](https://github.com/MarkAtwood/Alcarin-Tengwar) adds the required below-marks (gravebelow for Tone 4, plus symmetry glyphs completing the above/below inventory). Build instructions in `fonts/Alcarin-Tengwar/Font source/BUILD_GUIDE.md`. PRs submitted upstream.
 
 For handwriting, below-tengwa placement is natural and requires no special tools.
 

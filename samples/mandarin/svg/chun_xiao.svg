@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">chūn mián bù jué xiǎo</text>
+<text x="20" y="88" class="hanzi">春眠不觉晓</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{ungwe}[u]{nuumen}¹{malta}{anna}[a]{nuumen}²{parma}[u]⁴{calma}{+pal}{vala}[e]²{hwesta}{+pal}{anna}[a]³</text>
+<text x="20" y="282" class="pinyin">chù chù wén tí niǎo</text>
+<text x="20" y="340" class="hanzi">处处闻啼鸟</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{ungwe}[u]⁴{ungwe}[u]⁴{vala}[e]{nuumen}²{ando}[i]²{nuumen}{anna}[a]³</text>
+<text x="20" y="534" class="pinyin">yè lái fēng yǔ shēng</text>
+<text x="20" y="592" class="hanzi">夜来风雨声</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{anna}[e]⁴{lambe}[a]²{formen}[e]{noldo}¹{anna}[u]³{harma}[e]{noldo}¹</text>
+<text x="20" y="786" class="pinyin">huā luò zhī duō shǎo</text>
+<text x="20" y="844" class="hanzi">花落知多少</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{hwesta}{vala}[a]¹{lambe}{vala}[o]⁴{quesse}[i]¹{tinco}{vala}[o]¹{harma}[a]³</text>
+</svg>

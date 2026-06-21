@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">é é é</text>
+<text x="20" y="88" class="hanzi">鹅鹅鹅</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{carrier_short}[e]²{carrier_short}[e]²{carrier_short}[e]²</text>
+<text x="20" y="282" class="pinyin">qū xiàng xiàng tiān gē</text>
+<text x="20" y="340" class="hanzi">曲项向天歌</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{anga}{+pal}[u]¹{hwesta}{+pal}{anna}[a]{noldo}⁴{hwesta}{+pal}{anna}[a]{noldo}⁴{ando}{anna}[a]{nuumen}¹{calma}[e]¹</text>
+<text x="20" y="534" class="pinyin">bái máo fú lǜ shuǐ</text>
+<text x="20" y="592" class="hanzi">白毛浮绿水</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{parma}[a]²{malta}[a]²{formen}[u]²{lambe}[u][i]⁴{harma}{vala}[i]³</text>
+<text x="20" y="786" class="pinyin">hóng zhǎng bō qīng bō</text>
+<text x="20" y="844" class="hanzi">红掌拨清波</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{hwesta}[o]{noldo}²{quesse}[a]{noldo}³{parma}[o]¹{anga}{+pal}[i]{noldo}¹{parma}[o]¹</text>
+</svg>

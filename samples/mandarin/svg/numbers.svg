@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2540">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="2540" fill="white"/>
+<text x="20" y="30" class="pinyin">yī</text>
+<text x="20" y="88" class="hanzi">一</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{anna}[i]¹</text>
+<text x="20" y="282" class="pinyin">èr</text>
+<text x="20" y="340" class="hanzi">二</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{carrier_short}[e]{oore}⁴</text>
+<text x="20" y="534" class="pinyin">sān</text>
+<text x="20" y="592" class="hanzi">三</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{thuule}[a]{nuumen}¹</text>
+<text x="20" y="786" class="pinyin">sì</text>
+<text x="20" y="844" class="hanzi">四</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{thuule}[i]⁴</text>
+<text x="20" y="1038" class="pinyin">wǔ</text>
+<text x="20" y="1096" class="hanzi">五</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{vala}[u]³</text>
+<text x="20" y="1290" class="pinyin">liù</text>
+<text x="20" y="1348" class="hanzi">六</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{lambe}[i]⁴</text>
+<text x="20" y="1542" class="pinyin">qī</text>
+<text x="20" y="1600" class="hanzi">七</text>
+<text x="20" y="1658" class="tengwar"></text>
+<text x="20" y="1716" class="names">{anga}{+pal}[i]¹</text>
+<text x="20" y="1794" class="pinyin">bā</text>
+<text x="20" y="1852" class="hanzi">八</text>
+<text x="20" y="1910" class="tengwar"></text>
+<text x="20" y="1968" class="names">{parma}[a]¹</text>
+<text x="20" y="2046" class="pinyin">jiǔ</text>
+<text x="20" y="2104" class="hanzi">九</text>
+<text x="20" y="2162" class="tengwar"></text>
+<text x="20" y="2220" class="names">{calma}{+pal}[i]³</text>
+<text x="20" y="2298" class="pinyin">shí</text>
+<text x="20" y="2356" class="hanzi">十</text>
+<text x="20" y="2414" class="tengwar"></text>
+<text x="20" y="2472" class="names">{harma}[i]²</text>
+</svg>
