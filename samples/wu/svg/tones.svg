@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1280">
+<defs><style>
+.wu-pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="1280" fill="white"/>
+<text x="20" y="30" class="wu-pinyin">da1</text>
+<text x="20" y="88" class="hanzi">搭</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{tinco}[a]\</text>
+<text x="20" y="282" class="wu-pinyin">dda2</text>
+<text x="20" y="340" class="hanzi">達</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{ando}[a]\..</text>
+<text x="20" y="534" class="wu-pinyin">da3</text>
+<text x="20" y="592" class="hanzi">答</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{tinco}[a]_</text>
+<text x="20" y="786" class="wu-pinyin">da4</text>
+<text x="20" y="844" class="hanzi">打</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{tinco}[a][e/rise][oe/.]</text>
+<text x="20" y="1038" class="wu-pinyin">dda5</text>
+<text x="20" y="1096" class="hanzi">大</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{ando}[a][e/rise]..</text>
+</svg>
