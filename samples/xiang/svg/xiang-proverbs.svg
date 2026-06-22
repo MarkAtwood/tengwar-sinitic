@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="3800">
+<defs><style>
+.romanization { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1000" height="3800" fill="white"/>
+<text x="20" y="30" class="romanization">qhi4 fan5 phi4 ho5 qhi4</text>
+<text x="20" y="88" class="hanzi">吃饭皮好吃</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{anga}+pal[i]/rise{formen}[a]{nuumen}\fall..low{umbar}[i]/rise{hwesta}[o]\fall..low{anga}+pal[i]/rise</text>
+<text x="20" y="282" class="romanization">thi1 li3 mo5 qhi2</text>
+<text x="20" y="340" class="hanzi">天里冇晴</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{ando}[i]/rise.mid{lambe}[i]\fall{malta}[o]\fall..low{anga}+pal[i]/rise..low</text>
+<text x="20" y="534" class="romanization">san1 nan2 mo5 phie2</text>
+<text x="20" y="592" class="hanzi">山南冇坪</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{thuule}[a]{nuumen}/rise.mid{nuumen}[a]{nuumen}/rise..low{malta}[o]\fall..low{umbar}{anna}[e]/rise..low</text>
+<text x="20" y="786" class="romanization">lo3 hu3 pu4 qhi4 qi6 ci3</text>
+<text x="20" y="844" class="hanzi">老虎不吃亲生子</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{lambe}[o]\fall{hwesta}[u]\fall{parma}[u]/rise{anga}+pal[i]/rise{calma}+pal[i]/rise_bar{tinco_ext}[i]\fall</text>
+<text x="20" y="1038" class="romanization">i6 pu4 co4 o5 pu4 xiu1</text>
+<text x="20" y="1096" class="hanzi">一不做二不休</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{telco}[i]/rise_bar{parma}[u]/rise{tinco_ext}[o]/rise{telco}[o]\fall..low{parma}[u]/rise{hwesta}+pal{anna}[u]/rise.mid</text>
+<text x="20" y="1290" class="romanization">ma1</text>
+<text x="20" y="1348" class="hanzi">妈</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{malta}[a]/rise.mid</text>
+<text x="20" y="1542" class="romanization">ma2</text>
+<text x="20" y="1600" class="hanzi">麻</text>
+<text x="20" y="1658" class="tengwar"></text>
+<text x="20" y="1716" class="names">{malta}[a]/rise..low</text>
+<text x="20" y="1794" class="romanization">ma3</text>
+<text x="20" y="1852" class="hanzi">马</text>
+<text x="20" y="1910" class="tengwar"></text>
+<text x="20" y="1968" class="names">{malta}[a]\fall</text>
+<text x="20" y="2046" class="romanization">ma4</text>
+<text x="20" y="2104" class="hanzi">骂</text>
+<text x="20" y="2162" class="tengwar"></text>
+<text x="20" y="2220" class="names">{malta}[a]/rise</text>
+<text x="20" y="2298" class="romanization">ma5</text>
+<text x="20" y="2356" class="hanzi">蚂</text>
+<text x="20" y="2414" class="tengwar"></text>
+<text x="20" y="2472" class="names">{malta}[a]\fall..low</text>
+<text x="20" y="2550" class="romanization">pa6</text>
+<text x="20" y="2608" class="hanzi">百</text>
+<text x="20" y="2666" class="tengwar"></text>
+<text x="20" y="2724" class="names">{parma}[a]/rise_bar</text>
+<text x="20" y="2802" class="romanization">se6</text>
+<text x="20" y="2860" class="hanzi">色</text>
+<text x="20" y="2918" class="tengwar"></text>
+<text x="20" y="2976" class="names">{thuule}[e]/rise_bar</text>
+<text x="20" y="3054" class="romanization">qi6</text>
+<text x="20" y="3112" class="hanzi">七</text>
+<text x="20" y="3170" class="tengwar"></text>
+<text x="20" y="3228" class="names">{calma}+pal[i]/rise_bar</text>
+<text x="20" y="3306" class="romanization">mo6</text>
+<text x="20" y="3364" class="hanzi">墨</text>
+<text x="20" y="3422" class="tengwar"></text>
+<text x="20" y="3480" class="names">{malta}[o]/rise_bar</text>
+<text x="20" y="3558" class="romanization">fu6</text>
+<text x="20" y="3616" class="hanzi">福</text>
+<text x="20" y="3674" class="tengwar"></text>
+<text x="20" y="3732" class="names">{formen}[u]/rise_bar</text>
+</svg>
