@@ -16,44 +16,55 @@ This document describes the common patterns and shared components across all Sin
 
 ### Compatibility Groups
 
-**Group A: Mandarin/Cantonese/Hakka/Min**
+**Group A: Mandarin/Cantonese/Hakka**
 - Grade 1 = voiceless unaspirated
 - Grade 2 = voiceless aspirated
-- Voiced consonants handled via Grade 3 reassignment (Min only)
+- No voiced obstruents in these languages
 
-**Group B: Wu**
-- Grade 1 = voiceless (unaspirated by default)
+**Group B: Min/Wu (Classical Voicing)**
+- Grade 1 = voiceless unaspirated
 - Grade 2 = voiced
-- Aspiration marked with diacritic
+- Aspiration marked with diacritic (U+E0B0)
 - **Incompatible with Group A** due to different grade semantics
+- Phonetically correct: matches Tolkien's original Tengwar design
 
 ---
 
 ## 2. Shared Consonant Patterns
 
-### 2.1 Aspiration Contrast (Group A)
+### 2.1 Aspiration Contrast
 
-All Group A modes use the doubled bow to mark aspiration:
+**Group A (Mandarin/Cantonese/Hakka):** Uses doubled bow for aspiration
 
 | Grade | Articulation | Example (Mandarin) |
 |-------|--------------|-------------------|
 | 1 (single bow) | voiceless unaspirated | parma /p/ = Pinyin "b" |
-| 2 (doubled bow) | voiceless aspirated | umbar /ph/ = Pinyin "p" |
+| 2 (doubled bow) | voiceless aspirated | umbar /pʰ/ = Pinyin "p" |
+
+**Group B (Min/Wu):** Uses diacritic for aspiration, doubled bow for voicing
+
+| Grade | Articulation | Example (Min) |
+|-------|--------------|---------------|
+| 1 (single bow) | voiceless unaspirated | parma /p/ = Tai-lo "p" |
+| 1 + asp mark | voiceless aspirated | parma+asp /pʰ/ = Tai-lo "ph" |
+| 2 (doubled bow) | voiced | umbar /b/ = Tai-lo "b" |
 
 ### 2.2 Extended Stems for Affricates
 
-All modes use extended-stem Column I tengwar for alveolar affricates:
+**Group A (Mandarin/Cantonese/Hakka):**
 
 | Phoneme | Tengwa | Usage |
 |---------|--------|-------|
-| /ts/ | tinco-ext (U+E009) | z (Pinyin/Jyutping), ts (Tai-lo) |
-| /tsh/ | ando-ext (U+E00A) | c (Pinyin/Jyutping), tsh (Tai-lo) |
+| /ts/ | tinco-ext (U+E009) | z (Pinyin/Jyutping) |
+| /tsʰ/ | ando-ext (U+E00A) | c (Pinyin/Jyutping) |
 
-Min adds a voiced affricate:
+**Group B (Min/Wu):** Same tengwar, different semantics
 
 | Phoneme | Tengwa | Usage |
 |---------|--------|-------|
-| /dz/ | thule-ext (U+E00B) | j (Tai-lo) |
+| /ts/ | tinco-ext (U+E009) | ts (Tai-lo), z (Wu) |
+| /tsʰ/ | tinco-ext + asp | tsh (Tai-lo), c (Wu) |
+| /dz/ | ando-ext (U+E00A) | j (Tai-lo), zz (Wu) |
 
 ### 2.3 Palatal Diacritic for Alveolo-Palatals
 

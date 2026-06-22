@@ -60,39 +60,53 @@ Taiwanese Hokkien has **18 initial consonants** plus a null initial. The most si
 
 | Contrast | Voiceless unasp. | Voiceless asp. | Voiced |
 |----------|------------------|----------------|--------|
-| Bilabial | p /p/ | ph /ph/ | b /b/ |
-| Velar | k /k/ | kh /kh/ | g /g/ |
-| Alveolar affr. | ts /ts/ | tsh /tsh/ | j /dz~z/ |
+| Bilabial | p /p/ | ph /pʰ/ | b /b/ |
+| Velar | k /k/ | kh /kʰ/ | g /g/ |
+| Alveolar affr. | ts /ts/ | tsh /tsʰ/ | j /dz~z/ |
 
 This differs from Mandarin (two-way: unaspirated/aspirated) and Cantonese (also two-way, different romanization).
 
 ### Tengwar grade assignment
 
-The Mandarin mode uses:
-- Grade 1 (single bow) = voiceless unaspirated
-- Grade 2 (doubled bow) = voiceless aspirated
+This mode uses **classical Tengwar voicing semantics**, aligning with Wu Chinese:
 
-For Min, Grade 3 is assigned to voiced consonants. This is a functional slot mapping: the three-way contrast fills three grades, regardless of the original Tengwar phonetic associations. Readers must know they are reading the Min mode.
+- **Grade 1** (single bow) = voiceless unaspirated
+- **Grade 2** (doubled bow) = voiced
+- **Aspiration** = marked with a diacritic (not a grade distinction)
+
+This returns to Tolkien's original design where Grade 2 indicates voicing. Aspiration is a secondary articulation marked separately, just as palatalization or labialization would be.
+
+**Mode incompatibility:** This mode is **incompatible** with Mandarin and Cantonese modes, which use Grade 2 for aspiration. Min is **compatible** with Wu mode (same grade semantics). A document must declare which mode applies.
+
+### The aspiration diacritic
+
+Aspiration is a secondary articulation—it does not change place or manner. It is marked with a diacritic positioned at the upper-right of the tengwa, below the vowel tehta zone.
+
+| Codepoint | Name | Description |
+|-----------|------|-------------|
+| U+E0B0 | aspiration-teng | Small rightward curl, marks /ʰ/ |
+
+This is the same mark used in Wu mode. It parallels how Tengwar marks other secondary articulations (palatalization, labialization, nasalization) with diacritics rather than consuming grade slots.
 
 ### Consonant grid
 
 | Grade | I: Alveolar | II: Labial | III: Velar |
 |-------|-------------|------------|------------|
-| 1 (unasp.) | tinco /t/ **t** | parma /p/ **p** | calma /k/ **k** |
-| 2 (asp.) | ando /th/ **th** | umbar /ph/ **ph** | anga /kh/ **kh** |
-| 3 (voiced) | -- | formen /b/ **b** | hwesta /g/ **g** |
+| 1 (vl. unasp.) | tinco /t/ **t** | parma /p/ **p** | calma /k/ **k** |
+| 1 + asp | tinco+asp /tʰ/ **th** | parma+asp /pʰ/ **ph** | calma+asp /kʰ/ **kh** |
+| 2 (voiced) | ando /d/ **–** | umbar /b/ **b** | anga /g/ **g** |
 | 5 (nasal) | numen /n/ **n** | malta /m/ **m** | noldo /ng/ **ng** |
 | 6 (approx.) | lambe /l/ **l** | -- | -- |
 
-Bold = Tai-lo letter.
+Bold = Tai-lo letter. Note: Min lacks voiced alveolar stop /d/; the ando slot is unused.
 
 Plus alveolar affricates using extended stems:
 
 | Grade | I: Alveolar (ext.) |
 |-------|-------------------|
-| 1 (unasp.) | ext. tinco /ts/ **ts** |
-| 2 (asp.) | ext. ando /tsh/ **tsh** |
-| 3 (voiced) | ext. thule /dz/ **j** |
+| 1 (vl. unasp.) | tinco-ext /ts/ **ts** |
+| 1 + asp | tinco-ext+asp /tsʰ/ **tsh** |
+| 2 (voiced) | ando-ext /dz/ **j** |
 
 Plus fricatives and glottal:
 
@@ -104,35 +118,35 @@ Plus fricatives and glottal:
 
 ### Complete initial mapping
 
-| Tai-lo | IPA | Tengwa | Codepoint | Grid |
-|--------|-----|--------|-----------|------|
-| p | /p/ | parma | U+E011 | II-1 |
-| ph | /ph/ | umbar | U+E012 | II-2 |
-| b | /b/ | formen | U+E013 | II-3 |
-| m | /m/ | malta | U+E015 | II-5 |
-| t | /t/ | tinco | U+E001 | I-1 |
-| th | /th/ | ando | U+E002 | I-2 |
-| n | /n/ | numen | U+E005 | I-5 |
-| l | /l/ | lambe | U+E026 | I-6 |
-| k | /k/ | calma | U+E021 | III-1 |
-| kh | /kh/ | anga | U+E022 | III-2 |
-| g | /g/ | hwesta | U+E023 | III-3 |
-| ng | /ng/ | noldo | U+E025 | III-5 |
-| ts | /ts/ | ext. tinco | U+E009 | I-1 ext. |
-| tsh | /tsh/ | ext. ando | U+E00A | I-2 ext. |
-| j | /dz~z/ | ext. thule | U+E00B | I-3 ext. |
-| s | /s/ | thule | U+E003 | I-3 |
-| h | /h/ | halla | U+E029 | -- |
-| (zero) | -- | telco | U+E02F | (carrier) |
+| Tai-lo | IPA | Tengwa | Diacritics | Codepoint | Grid |
+|--------|-----|--------|------------|-----------|------|
+| p | /p/ | parma | — | U+E011 | II-1 |
+| ph | /pʰ/ | parma | +asp | U+E011 U+E0B0 | II-1+asp |
+| b | /b/ | umbar | — | U+E012 | II-2 |
+| m | /m/ | malta | — | U+E015 | II-5 |
+| t | /t/ | tinco | — | U+E001 | I-1 |
+| th | /tʰ/ | tinco | +asp | U+E001 U+E0B0 | I-1+asp |
+| n | /n/ | numen | — | U+E005 | I-5 |
+| l | /l/ | lambe | — | U+E026 | I-6 |
+| k | /k/ | calma | — | U+E021 | III-1 |
+| kh | /kʰ/ | calma | +asp | U+E021 U+E0B0 | III-1+asp |
+| g | /g/ | anga | — | U+E022 | III-2 |
+| ng | /ŋ/ | noldo | — | U+E025 | III-5 |
+| ts | /ts/ | tinco-ext | — | U+E009 | I-1 ext. |
+| tsh | /tsʰ/ | tinco-ext | +asp | U+E009 U+E0B0 | I-1 ext.+asp |
+| j | /dz~z/ | ando-ext | — | U+E00A | I-2 ext. |
+| s | /s/ | thule | — | U+E003 | I-3 |
+| h | /h/ | halla | — | U+E029 | -- |
+| (zero) | — | telco | — | U+E02F | (carrier) |
 
 ### Design notes on voiced consonants
 
-The Grade 3 assignment means:
-- formen = /b/ in Min (vs. /f/ in Mandarin/Cantonese)
-- hwesta = /g/ in Min (vs. /h/ or /x/ in other modes)
-- ext. thule = /dz/ in Min
+With classical voicing semantics, Grade 2 tengwar carry their original meaning:
+- umbar = /b/ (voiced bilabial stop)
+- anga = /g/ (voiced velar stop)
+- ando-ext = /dz/ (voiced alveolar affricate)
 
-This is mode-specific. A reader knows from context or document declaration which mode applies. A future revision could introduce a universal voicing diacritic, but the functional slot approach works with existing glyphs.
+This aligns with Tolkien's Tengwar design and with Wu mode. The aspiration diacritic marks the secondary articulation of aspiration, keeping the grade system clean for the voicing contrast that is phonologically primary in Min.
 
 ### Phonological notes
 
@@ -303,11 +317,11 @@ Min has a final glottal stop /-h/ (IPA /ʔ/), written `-h` in Tai-lo. This has n
 | Tai-lo | IPA | Tengwar structure |
 |--------|-----|-------------------|
 | lam (south) | /lam/ | lambe + a-tehta + malta |
-| hun (powder) | /hun/ | hwesta + u-tehta + numen |
+| hun (powder) | /hun/ | halla + u-tehta + numen |
 | tang (east) | /tang/ | tinco + a-tehta + noldo |
 | tap (answer) | /tap/ | tinco + a-tehta + parma |
 | put (Buddha) | /put/ | parma + u-tehta + tinco |
-| hok (blessing) | /hok/ | hwesta + o-tehta + calma |
+| hok (blessing) | /hok/ | halla + o-tehta + calma |
 | oh (learn) | /oh/ | telco + o-tehta + halla |
 | tah (step on) | /tah/ | tinco + a-tehta + halla |
 
@@ -542,8 +556,8 @@ Where:
 | Tai-lo | Meaning | Structure |
 |--------|---------|-----------|
 | lang | person | lambe + a-tehta + noldo + T5 |
-| tsit | one | ext.tinco + i-tehta + tinco (T4 unmarked) |
-| gua | I/me | hwesta + a-tehta + T2 |
+| tsit | one | tinco-ext + i-tehta + tinco (T4 unmarked) |
+| gua | I/me | anga + a-tehta + T2 |
 | li | you | lambe + i-tehta + T2 |
 | tai | big | tinco + a-tehta + T7 |
 | sio | small | thule + i-tehta + anna + o-tehta + T2 |
@@ -553,10 +567,10 @@ Where:
 | Tai-lo | Meaning | Structure |
 |--------|---------|-----------|
 | sann | three | thule + a-tehta + tilde-below + T1 |
-| phinn | nose | umbar + i-tehta + tilde-below + T7 |
+| phinn | nose | parma + asp + i-tehta + tilde-below + T7 |
 | tinn | sweet | tinco + i-tehta + tilde-below + T1 |
 | kinn | to see | calma + i-tehta + tilde-below + T3 |
-| hinn | ear | hwesta + i-tehta + tilde-below + T7 |
+| hinn | ear | halla + i-tehta + tilde-below + T7 |
 
 ### Syllables with final stops
 
@@ -607,7 +621,7 @@ Where:
 | Tai-lo (citation) | Surface | Meaning | Structure |
 |-------------------|---------|---------|-----------|
 | Tai-uan | [tai33 uan44] | Taiwan | tinco + a-tehta + T7, vala + a-tehta + T1 |
-| ho-lang | [ho55 lang24] | good person | hwesta + o-tehta + T1, lambe + a-tehta + noldo + T5 |
+| ho-lang | [ho55 lang24] | good person | halla + o-tehta + T1, lambe + a-tehta + noldo + T5 |
 
 ## Comparison with other modes
 
@@ -643,23 +657,39 @@ Where:
 | Tone sandhi scope | Third tone only | Limited | Pervasive |
 | Output tones | Citation | Citation | Surface |
 
-### Shared features
+### Grade semantics comparison
 
-These design elements carry over unchanged:
+| Feature | Mandarin/Cantonese | Min/Wu (this mode) |
+|---------|--------------------|--------------------|
+| Grade 1 | voiceless unaspirated | voiceless unaspirated |
+| Grade 2 | voiceless aspirated | **voiced** |
+| Grade 3 | fricative | fricative |
+| Aspiration | grade distinction | **diacritic** |
 
-1. **Aspiration via doubled bow** (Grade 2 = aspirated)
-2. **Alveolar affricates ts/tsh** (extended tinco/ando)
-3. **Fricative s** (thule)
-4. **Labials p/ph/m** (parma, umbar, malta)
-5. **Alveolars t/th/n/l** (tinco, ando, numen, lambe)
-6. **Velars k/kh** (calma, anga)
-7. **Nasal codas -n/-ng** (numen, noldo)
-8. **Labiovelar glide w** (vala)
-9. **Palatal glide j** as medial (anna)
-10. **Null initial** (telco carrier)
-11. **Quenya-style tehtar placement** (vowel on preceding consonant)
-12. **Below-tengwa tone placement**
-13. **Final -p/-t/-k** (parma, tinco, calma)
+Min mode is **incompatible** with Mandarin/Cantonese modes but **compatible** with Wu mode.
+
+### Features shared with all modes
+
+These design elements are consistent across all Sinitic Tengwar modes:
+
+1. **Alveolar affricates ts** (extended tinco)
+2. **Fricative s** (thule)
+3. **Voiceless stops p/t/k** (parma, tinco, calma in Grade 1)
+4. **Nasals m/n/ng** (malta, numen, noldo in Grade 5)
+5. **Lateral l** (lambe in Grade 6)
+6. **Nasal codas -n/-ng** (numen, noldo)
+7. **Labiovelar glide w** (vala)
+8. **Palatal glide j** as medial (anna)
+9. **Null initial** (telco carrier)
+10. **Quenya-style tehtar placement** (vowel on preceding consonant)
+11. **Below-tengwa tone placement**
+12. **Final -p/-t/-k** (parma, tinco, calma)
+
+### Features shared with Wu mode only
+
+1. **Classical voicing semantics** (Grade 2 = voiced)
+2. **Aspiration diacritic** (U+E0B0)
+3. **Voiced stops use Grade 2** (umbar /b/, anga /g/)
 
 ## Font requirements
 
@@ -667,25 +697,38 @@ These design elements carry over unchanged:
 
 All Mandarin and Cantonese mode glyphs are used. The extended Alcarin Tengwar font includes them.
 
-### New glyph for Min
+### New glyphs for Min
 
 | Glyph | Purpose | Codepoint | Status |
 |-------|---------|-----------|--------|
 | Tilde-below | nasal vowel marker | U+E044 | New for Min |
+| Aspiration-teng | aspiration diacritic | U+E0B0 | Shared with Wu |
 
-This is the only new glyph required for Min. The mark should be:
+**Tilde-below** (nasal vowel marker):
 - Positioned in the below-tengwa zone
 - Sized to be visually balanced with register dots
 - Curved like a tilde (~), not angular
 
-### Existing glyphs with new semantics
+**Aspiration-teng** (aspiration diacritic):
+- Positioned at upper-right of the tengwa, below the vowel tehta zone
+- Small rightward-opening curl, approximately 1/3 the height of a vowel tehta
+- Same glyph used in Wu mode
+
+### Tengwar with classical semantics restored
+
+In this mode, Grade 2 tengwar carry their traditional voicing meaning:
+
+| Tengwa | Classical meaning | Min usage |
+|--------|-------------------|-----------|
+| umbar | voiced bilabial stop | /b/ voiced bilabial stop |
+| anga | voiced velar stop | /g/ voiced velar stop |
+| ando-ext | voiced alveolar affricate | /dz/ voiced affricate |
+
+The glottal stop coda is a Min-specific usage:
 
 | Tengwa | Traditional | Min usage |
 |--------|-------------|-----------|
-| formen | /f/ fricative | /b/ voiced stop |
-| hwesta | /h/ or /x/ fricative | /g/ voiced stop |
-| ext. thule | (various) | /dz/ voiced affricate |
-| halla (final) | /h/ glottal | /-h/ glottal stop coda |
+| halla (final) | /h/ glottal fricative | /-h/ glottal stop coda |
 
 ### Combination tehtar
 
@@ -698,13 +741,15 @@ These combinations require no new glyphs but may benefit from kerning adjustment
 
 The Min Tengwar mode:
 
-1. **Extends the Mandarin/Cantonese framework** with nasal vowels, three-way laryngeal contrast, and glottal stop coda
-2. **Uses 18 initials** mapped to 16 distinct tengwar (reassigning 3 for voiced consonants)
-3. **Represents nasal vowels** using a tilde-below diacritic
-4. **Marks 7 tones** using 3 contour shapes and 2 register levels
-5. **Writes final stops** including the unique glottal stop (halla)
-6. **Outputs surface tones** after applying tone sandhi
-7. **Maintains compatibility** with earlier modes where phonemes overlap
+1. **Uses classical Tengwar voicing semantics** (Grade 2 = voiced), aligning with Wu mode
+2. **Marks aspiration with a diacritic** (U+E0B0), not a grade distinction
+3. **Uses 18 initials** mapped cleanly to the Tengwar grade system
+4. **Represents nasal vowels** using a tilde-below diacritic
+5. **Marks 7 tones** using 3 contour shapes and 2 register levels
+6. **Writes final stops** including the unique glottal stop (halla)
+7. **Outputs surface tones** after applying tone sandhi
+
+**Compatibility:** This mode is incompatible with Mandarin and Cantonese modes (which use Grade 2 for aspiration). It is compatible with Wu mode (same grade semantics). A document must declare which mode applies.
 
 The mode is phonemically accurate, visually systematic, and captures the distinctive features that make Southern Min unique among Sinitic languages.
 

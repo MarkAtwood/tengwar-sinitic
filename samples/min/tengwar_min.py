@@ -5,14 +5,27 @@ Tengwar Southern Min (Hokkien) Converter
 Converts Tai-lo or POJ romanization (with tone numbers) to Tengwar Unicode.
 Uses Alcarin Tengwar codepoints (PUA U+E000-E0FF).
 
+CRITICAL: Min mode uses CLASSICAL Tengwar voicing semantics (same as Wu):
+
+    | Grade | Mandarin/Cantonese | Min (this mode)     |
+    |-------|-------------------|---------------------|
+    | 1     | voiceless unasp.  | voiceless unasp.    |
+    | 2     | voiceless ASP.    | VOICED              |
+    | 3     | fricative         | voiceless fricative |
+    | asp   | (uses Grade 2)    | DIACRITIC U+E070    |
+
 Based on the Min mode specification:
-- Grade 1 (single bow) = voiceless unaspirated
-- Grade 2 (double bow) = voiceless aspirated
-- Grade 3 (fricative row reused) = voiced
+- Grade 1 (single bow) = voiceless unaspirated (p, t, k, ts)
+- Grade 2 (double bow) = VOICED (b, g, j)
+- Grade 3 = voiceless fricatives only (s, h)
+- Aspiration = diacritic U+E070 (ph, th, kh, tsh)
 - Extended stems for alveolar affricates ts/tsh/j
 - Nasal vowels marked with tilde-below diacritic
 - 7-tone system with register modifiers
 - Glottal stop final (-h) using halla
+
+This mode is INCOMPATIBLE with Mandarin/Cantonese modes.
+A document must declare which mode applies.
 """
 
 import re
@@ -21,28 +34,29 @@ import re
 
 TENGWAR = {
     # Column I - Alveolar
-    'tinco': '\ue001',      # Grade 1: t /t/
-    'ando': '\ue002',       # Grade 2: th /tʰ/
-    'thule': '\ue003',      # Grade 3: s /s/
-    'numen': '\ue005',      # Grade 5: n /n/
-    'lambe': '\ue026',      # Grade 6: l /l/
+    # Grade 1 = voiceless unaspirated, Grade 2 = VOICED (classical semantics)
+    'tinco': '\ue001',      # Grade 1: t /t/ voiceless unaspirated
+    'ando': '\ue002',       # Grade 2: (not used for stops in Min)
+    'thule': '\ue003',      # Grade 3: s /s/ voiceless fricative
+    'numen': '\ue005',      # Grade 5: n /n/ nasal
+    'lambe': '\ue026',      # Grade 6: l /l/ lateral
 
     # Column II - Labial
-    'parma': '\ue011',      # Grade 1: p /p/
-    'umbar': '\ue012',      # Grade 2: ph /pʰ/
-    'formen': '\ue013',     # Grade 3: b /b/ (voiced - Min-specific)
-    'malta': '\ue015',      # Grade 5: m /m/
+    'parma': '\ue011',      # Grade 1: p /p/ voiceless unaspirated
+    'umbar': '\ue012',      # Grade 2: b /b/ VOICED
+    'formen': '\ue013',     # Grade 3: (not used for stops)
+    'malta': '\ue015',      # Grade 5: m /m/ nasal
 
     # Column III - Velar
-    'calma': '\ue021',      # Grade 1: k /k/
-    'anga': '\ue022',       # Grade 2: kh /kʰ/
-    'hwesta': '\ue023',     # Grade 3: g /g/ (voiced - Min-specific)
-    'noldo': '\ue025',      # Grade 5: ng /ŋ/
+    'calma': '\ue021',      # Grade 1: k /k/ voiceless unaspirated
+    'anga': '\ue022',       # Grade 2: g /g/ VOICED
+    'hwesta': '\ue023',     # Grade 3: h /h/ voiceless fricative
+    'noldo': '\ue025',      # Grade 5: ng /ŋ/ nasal
 
     # Extended stem - Alveolar affricates
-    'tinco_ext': '\ue009',  # ts /ts/
-    'ando_ext': '\ue00a',   # tsh /tsʰ/
-    'thule_ext': '\ue00b',  # j /dz~z/ (voiced - Min-specific)
+    # Grade 1 = voiceless unaspirated, Grade 2 = VOICED
+    'tinco_ext': '\ue009',  # Grade 1: ts /ts/ voiceless unaspirated
+    'ando_ext': '\ue00a',   # Grade 2: j /dz~z/ VOICED
 
     # Glottal and glides
     'halla': '\ue029',      # h /h/ initial, also /-ʔ/ final (glottal stop)
@@ -67,6 +81,10 @@ TEHTAR = {
 # Note: Using U+E051 as placeholder since U+E044 conflicts with i-tehta
 # This should be the dedicated tilde-below glyph in the font
 NASAL_MARK = '\ue051'
+
+# Aspiration diacritic (classical voicing mode)
+# Used for aspirated stops: ph, th, kh, tsh (not for voiced)
+ASPIRATION_MARK = '\ue070'
 
 # Tone contour marks (below-tengwa position)
 TONE_CONTOUR = {
@@ -121,33 +139,35 @@ def get_tone_marks(tone, is_checked=False):
 # === TAI-LO / POJ MAPPING ===
 
 # Initial consonants (Tai-lo romanization)
+# Format: 'romanization': (tengwa_name, is_aspirated)
+# Classical voicing: Grade 1 = voiceless unasp, Grade 2 = voiced, asp = diacritic
 INITIALS = {
     # Labials - three-way contrast
-    'p': 'parma',           # voiceless unaspirated
-    'ph': 'umbar',          # voiceless aspirated
-    'b': 'formen',          # voiced (Grade 3 reuse)
-    'm': 'malta',           # nasal
+    'p': ('parma', False),      # voiceless unaspirated (Grade 1)
+    'ph': ('parma', True),      # voiceless aspirated (Grade 1 + asp)
+    'b': ('umbar', False),      # voiced (Grade 2)
+    'm': ('malta', False),      # nasal
 
-    # Alveolars
-    't': 'tinco',
-    'th': 'ando',
-    'n': 'numen',
-    'l': 'lambe',
+    # Alveolars - three-way contrast
+    't': ('tinco', False),      # voiceless unaspirated (Grade 1)
+    'th': ('tinco', True),      # voiceless aspirated (Grade 1 + asp)
+    'n': ('numen', False),      # nasal
+    'l': ('lambe', False),      # lateral
 
     # Velars - three-way contrast
-    'k': 'calma',
-    'kh': 'anga',
-    'g': 'hwesta',          # voiced (Grade 3 reuse)
-    'ng': 'noldo',
+    'k': ('calma', False),      # voiceless unaspirated (Grade 1)
+    'kh': ('calma', True),      # voiceless aspirated (Grade 1 + asp)
+    'g': ('anga', False),       # voiced (Grade 2)
+    'ng': ('noldo', False),     # nasal
 
     # Alveolar affricates - three-way contrast
-    'ts': 'tinco_ext',
-    'tsh': 'ando_ext',
-    'j': 'thule_ext',       # voiced affricate (Grade 3 reuse)
-    's': 'thule',
+    'ts': ('tinco_ext', False), # voiceless unaspirated (Grade 1)
+    'tsh': ('tinco_ext', True), # voiceless aspirated (Grade 1 + asp)
+    'j': ('ando_ext', False),   # voiced (Grade 2)
+    's': ('thule', False),      # voiceless fricative (Grade 3)
 
     # Glottal
-    'h': 'halla',
+    'h': ('halla', False),      # voiceless fricative
 }
 
 # POJ to Tai-lo consonant conversions
@@ -209,6 +229,7 @@ def parse_syllable(syllable):
 
     Returns: {
         'initial': tengwa name or None,
+        'is_aspirated': True if aspirated consonant,
         'medial': 'i' or 'u' or None (for glides before main vowel),
         'vowel': vowel string,
         'nasal_vowel': True if nasalized,
@@ -220,6 +241,7 @@ def parse_syllable(syllable):
     s = normalize_to_tailo(syllable)
     result = {
         'initial': None,
+        'is_aspirated': False,
         'medial': None,
         'vowel': None,
         'nasal_vowel': False,
@@ -232,7 +254,9 @@ def parse_syllable(syllable):
 
     # Check for syllabic nasals (bare m or ng with no vowel)
     if s in ('m', 'ng'):
-        result['initial'] = INITIALS[s]
+        tengwa, is_asp = INITIALS[s]
+        result['initial'] = tengwa
+        result['is_aspirated'] = is_asp
         result['is_syllabic_nasal'] = True
         return result
 
@@ -241,7 +265,9 @@ def parse_syllable(syllable):
                  'p', 'b', 'm', 't', 'n', 'l', 'k', 'g', 's', 'h', 'j']:
         if s.startswith(init):
             if init in INITIALS:
-                result['initial'] = INITIALS[init]
+                tengwa, is_asp = INITIALS[init]
+                result['initial'] = tengwa
+                result['is_aspirated'] = is_asp
             pos = len(init)
             break
 
@@ -327,6 +353,8 @@ def convert_syllable(syllable, tone=None):
     # Handle syllabic nasals
     if parsed['is_syllabic_nasal']:
         result.append(TENGWAR[parsed['initial']])
+        if parsed['is_aspirated']:
+            result.append(ASPIRATION_MARK)
         if tone:
             result.append(get_tone_marks(tone))
         return ''.join(result)
@@ -334,6 +362,9 @@ def convert_syllable(syllable, tone=None):
     # Add initial tengwa
     if parsed['initial']:
         result.append(TENGWAR[parsed['initial']])
+        # Add aspiration diacritic if aspirated (classical voicing mode)
+        if parsed['is_aspirated']:
+            result.append(ASPIRATION_MARK)
     else:
         # Zero initial - use carrier
         result.append(TENGWAR['telco'])
@@ -403,6 +434,7 @@ _CODEPOINT_NAMES.update({
     TEHTAR['u']: '[u]',
     '\ue045': '[./mid]',     # underdot (also mid register)
     NASAL_MARK: '[~]',       # nasal mark
+    ASPIRATION_MARK: '+asp', # aspiration diacritic (classical voicing mode)
     TONE_CONTOUR['level']: '_',
     TONE_CONTOUR['falling']: '\\',
     REGISTER_MOD['low']: '..',
@@ -423,7 +455,7 @@ def tengwar_to_names(tengwar_str):
 
         name = _CODEPOINT_NAMES.get(c)
         if name:
-            if name.startswith('['):
+            if name.startswith('[') or name.startswith('+'):
                 result.append(name)
             elif name in ('_', '\\', '..'):
                 result.append(name)
@@ -463,18 +495,22 @@ NASAL_VOWEL_DEMO = {
     ],
 }
 
-VOICED_CONSONANTS = {
-    'title': 'Voiced Consonants (Three-way Contrast)',
+THREE_WAY_CONTRAST = {
+    'title': 'Three-Way Laryngeal Contrast (Classical Voicing)',
+    'note': 'Grade 1 = voiceless unasp, Grade 2 = VOICED, asp = diacritic',
     'items': [
-        ('pa1', '巴', 'pa (unaspirated)'),
-        ('pha1', '帕', 'pha (aspirated)'),
-        ('ba2', '馬', 'ba (voiced)'),
-        ('ka1', '家', 'ka (unaspirated)'),
-        ('kha1', '腳', 'kha (aspirated)'),
-        ('ga5', '牙', 'ga (voiced)'),
-        ('tsa1', '查', 'tsa (unaspirated)'),
-        ('tsha1', '叉', 'tsha (aspirated)'),
-        ('ja5', '蛇', 'ja (voiced)'),
+        # Labial triad: /p/ vs /ph/ vs /b/
+        ('pa1', '巴', '/p/ voiceless unasp (parma)'),
+        ('pha1', '帕', '/ph/ aspirated (parma+asp)'),
+        ('ba2', '馬', '/b/ voiced (umbar)'),
+        # Velar triad: /k/ vs /kh/ vs /g/
+        ('ka1', '家', '/k/ voiceless unasp (calma)'),
+        ('kha1', '腳', '/kh/ aspirated (calma+asp)'),
+        ('ga5', '牙', '/g/ voiced (anga)'),
+        # Affricate triad: /ts/ vs /tsh/ vs /dz/
+        ('tsa1', '查', '/ts/ voiceless unasp (tinco-ext)'),
+        ('tsha1', '叉', '/tsh/ aspirated (tinco-ext+asp)'),
+        ('ja5', '蛇', '/dz/ voiced (ando-ext)'),
     ],
 }
 
@@ -525,10 +561,35 @@ PLACES = {
 
 def demo():
     """Run demonstration of the converter."""
-    print("=== Tengwar Southern Min (Hokkien) Converter Demo ===\n")
+    print("=" * 70)
+    print("TENGWAR SOUTHERN MIN (HOKKIEN) CONVERTER DEMO")
+    print("=" * 70)
+    print()
+    print("CRITICAL: Min mode uses CLASSICAL Tengwar voicing semantics:")
+    print()
+    print("    | Grade | Mandarin/Cantonese | Min (this mode)     |")
+    print("    |-------|-------------------|---------------------|")
+    print("    | 1     | voiceless unasp.  | voiceless unasp.    |")
+    print("    | 2     | voiceless ASP.    | VOICED              |")
+    print("    | 3     | fricative         | voiceless fricative |")
+    print("    | asp   | (uses Grade 2)    | DIACRITIC U+E070    |")
+    print()
+
+    # Three-way laryngeal contrast (most important demo)
+    print("-" * 70)
+    print(f"1. {THREE_WAY_CONTRAST['title']}")
+    print(f"   ({THREE_WAY_CONTRAST['note']})")
+    print("-" * 70)
+    for tailo, zh, meaning in THREE_WAY_CONTRAST['items']:
+        tengwar = convert_text(tailo)
+        names = tengwar_to_names(tengwar)
+        print(f"  {tailo:8} {zh} {meaning:35} -> {tengwar}  ({names})")
+    print()
 
     # Tone demonstration
-    print(f"--- {TONE_DEMO['title']} ---")
+    print("-" * 70)
+    print(f"2. {TONE_DEMO['title']}")
+    print("-" * 70)
     for tailo, zh, meaning in TONE_DEMO['items']:
         tengwar = convert_text(tailo)
         names = tengwar_to_names(tengwar)
@@ -536,23 +597,19 @@ def demo():
     print()
 
     # Nasal vowels
-    print(f"--- {NASAL_VOWEL_DEMO['title']} ---")
+    print("-" * 70)
+    print(f"3. {NASAL_VOWEL_DEMO['title']}")
+    print("-" * 70)
     for tailo, zh, meaning in NASAL_VOWEL_DEMO['items']:
         tengwar = convert_text(tailo)
         names = tengwar_to_names(tengwar)
         print(f"  {tailo:10} {zh} {meaning:25} -> {tengwar}  ({names})")
     print()
 
-    # Voiced consonants
-    print(f"--- {VOICED_CONSONANTS['title']} ---")
-    for tailo, zh, meaning in VOICED_CONSONANTS['items']:
-        tengwar = convert_text(tailo)
-        names = tengwar_to_names(tengwar)
-        print(f"  {tailo:8} {zh} {meaning:25} -> {tengwar}  ({names})")
-    print()
-
     # Glottal stop
-    print(f"--- {GLOTTAL_STOP['title']} ---")
+    print("-" * 70)
+    print(f"4. {GLOTTAL_STOP['title']}")
+    print("-" * 70)
     for tailo, zh, meaning in GLOTTAL_STOP['items']:
         tengwar = convert_text(tailo)
         names = tengwar_to_names(tengwar)
@@ -560,7 +617,9 @@ def demo():
     print()
 
     # Stop codas
-    print(f"--- {STOP_CODAS['title']} ---")
+    print("-" * 70)
+    print(f"5. {STOP_CODAS['title']}")
+    print("-" * 70)
     for tailo, zh, meaning in STOP_CODAS['items']:
         tengwar = convert_text(tailo)
         names = tengwar_to_names(tengwar)
@@ -568,21 +627,27 @@ def demo():
     print()
 
     # Greetings
-    print(f"--- {GREETINGS['title']} ---")
+    print("-" * 70)
+    print(f"6. {GREETINGS['title']}")
+    print("-" * 70)
     for tailo, zh, meaning in GREETINGS['items']:
         tengwar = convert_text(tailo)
         print(f"  {tailo:20} {zh:10} {meaning:15} -> {tengwar}")
     print()
 
     # Places
-    print(f"--- {PLACES['title']} ---")
+    print("-" * 70)
+    print(f"7. {PLACES['title']}")
+    print("-" * 70)
     for tailo, zh, meaning in PLACES['items']:
         tengwar = convert_text(tailo)
         print(f"  {tailo:15} {zh:4} {meaning:15} -> {tengwar}")
     print()
 
     # Syllabic nasals
-    print("--- Syllabic Nasals ---")
+    print("-" * 70)
+    print("8. Syllabic Nasals")
+    print("-" * 70)
     syllabic = [
         ('m7', '唔', 'not'),
         ('ng5', '黃', 'yellow'),
@@ -591,6 +656,23 @@ def demo():
         tengwar = convert_text(tailo)
         names = tengwar_to_names(tengwar)
         print(f"  {tailo:8} {zh} {meaning:15} -> {tengwar}  ({names})")
+    print()
+
+    # Mode incompatibility notice
+    print("=" * 70)
+    print("MODE INCOMPATIBILITY NOTICE")
+    print("=" * 70)
+    print()
+    print("This mode is NOT compatible with Mandarin/Cantonese modes.")
+    print("A document must declare which mode applies.")
+    print()
+    print("Grade semantics comparison:")
+    print("  | Grade | Mandarin/Cantonese | Min (this mode) |")
+    print("  |-------|-------------------|-----------------|")
+    print("  | 1     | voiceless unasp.  | voiceless unasp.|")
+    print("  | 2     | voiceless ASP.    | VOICED          |")
+    print("  | 3     | fricative         | voiceless fric. |")
+    print("  | asp   | (uses Grade 2)    | DIACRITIC U+E070|")
     print()
 
 

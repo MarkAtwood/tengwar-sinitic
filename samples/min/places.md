@@ -10,5 +10,5 @@
 | e7 mng5 | 廈門 | Xiamen |  | `{telco}[e/rise]_[./mid]{malta}{noldo}[e/rise]` |
 | tsuan5 tsiu1 | 泉州 | Quanzhou |  | `{tinco_ext}{vala}[a]{numen}[e/rise]{tinco_ext}{anna}[u]_` |
 | tsiang1 tsiu1 | 漳州 | Zhangzhou |  | `{tinco_ext}{anna}[a]{noldo}_{tinco_ext}{anna}[u]_` |
-| sin1 ka1 pho1 | 新加坡 | Singapore |  | `{thule}[i]{numen}_{calma}[a]_{umbar}[o]_` |
+| sin1 ka1 pho1 | 新加坡 | Singapore |  | `{thule}[i]{numen}_{calma}[a]_{parma}+asp[o]_` |
 | ma2 lai5 | 馬來 | Malaysia |  | `{malta}[a]\{lambe}[a][e/rise]` |
