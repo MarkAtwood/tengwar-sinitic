@@ -1,42 +1,73 @@
 # Tengwar Modes for Sinitic Languages
 
-A family of phonemic Tengwar modes for Chinese languages, starting with Standard Mandarin.
+A family of phonemic Tengwar modes for Chinese languages, covering all major varieties.
 
 ## Overview
 
-This is the first published Tengwar mode for any Chinese language. The Mandarin mode maps the language's phonology onto the Tengwar consonant grid and provides a system for encoding lexical tones. It serves as the foundation for a planned family of modes covering major Sinitic languages.
+This is the first published Tengwar mode family for Chinese languages. Each mode maps its language's phonology onto the Tengwar consonant grid with a unified system for encoding lexical tones.
 
-### Planned language coverage
+### Language Coverage
 
-| Language | Status | Notes |
-|----------|--------|-------|
-| Mandarin | **Draft** | 4 tones, no final stops |
-| Cantonese | Planned | 6-9 tones, final stops (-p -t -k) |
-| Hokkien (Southern Min) | Planned | Nasal vowels, complex tone sandhi |
-| Shanghainese (Wu) | Planned | Voiced obstruents, register tones |
-| Hakka | Planned | Different vowel inventory, final stops |
+| Language | Spec | Romanization | Tones | Stop Codas | Group |
+|----------|------|--------------|-------|------------|-------|
+| Mandarin | `tengwar-mandarin.md` | Pinyin | 4 | none | A |
+| Cantonese | `tengwar-cantonese.md` | Jyutping | 6 | -p -t -k | A |
+| Hakka | `tengwar-hakka.md` | Taiwan MOE | 6 | -p -t -k | A |
+| Gan | `tengwar-gan.md` | Project-defined* | 7 | -t -k | A |
+| Xiang | `tengwar-xiang.md` | Beta 5.0 | 6 | none | A |
+| Min | `tengwar-min.md` | Tai-lo/POJ | 7 | -p -t -k -h | B |
+| Wu | `tengwar-wu.md` | Wugniu | 5 | -ʔ | B |
 
-The modes share core conventions (aspiration mapping, iconographic tone marks, retroflex/palatal handling) but adapt to each language's phonology.
+*Gan has no standardized romanization; the project defines its own based on Pinfa conventions and IPA.
 
-We also welcome proposals for Sinitic conlangs. If your constructed language has a Sinitic phonological basis, these modes should be adaptable to it.
+### Compatibility Groups
+
+**Group A** (Mandarin, Cantonese, Hakka, Gan, Xiang): Grade 2 = aspirated. These modes are mutually compatible.
+
+**Group B** (Min, Wu): Grade 2 = voiced, aspiration marked with diacritic. Uses classical Tengwar voicing semantics. Incompatible with Group A.
+
+See `docs/sinitic-infrastructure.md` for shared patterns and design rationale.
 
 ### Beyond Sinitic
 
-This project focuses on Sinitic (Chinese) languages. Other language families of the region — Tibetic, Mongolic, Tungusic (Manchu), Turkic (Uyghur), and historical languages like Tangut or Khitan — would require separate Tengwar modes with different conventions. These are out of scope here but would make natural sister projects. Some design elements (iconographic tone marks, handling of aspirated stops) might transfer.
+This project focuses on Sinitic (Chinese) languages. Other language families of the region — Tibetic, Mongolic, Tungusic (Manchu), Turkic (Uyghur), and historical languages like Tangut or Khitan — would require separate Tengwar modes with different conventions. These are out of scope here but would make natural sister projects.
+
+We welcome proposals for Sinitic conlangs. If your constructed language has a Sinitic phonological basis, these modes should be adaptable to it.
 
 **Key features:**
 
-- Maps 21 Mandarin initials onto the four Tengwar series (alveolar, labial, velar, retroflex)
-- Uses Grade 1/2 distinction for aspiration contrast (not voicing)
-- Encodes tones with iconographic marks that trace pitch contour
-- Two rendering strategies: below-tengwa marks (preferred) or carrier-based fallback for stock fonts
-- Handles palatals, alveolar affricates, medial glides, and syllabic consonants
+- Phonemic mapping of initials onto the Tengwar consonant grid
+- Iconographic tone marks that trace pitch contour (contour + register system)
+- Handles palatals, affricates, retroflex consonants, medial glides, and syllabic nasals
+- Nasal vowels (Min), voiced obstruents (Min/Wu), and checked syllables (most modes)
+- PDF samples with embedded vector glyphs (work without fonts installed)
 
 ## Files
 
-- `tengwar-mandarin.md` — Mandarin mode specification with rationale for all design decisions
-- `fonts/Alcarin-Tengwar/` — Extended Tengwar font with below-mark diacritics
-- `samples/` — Reference texts (Tang poetry, phrases, idioms) in Chinese, Pinyin, and Tengwar
+```
+tengwar-mandarin.md      # Mandarin mode spec
+tengwar-cantonese.md     # Cantonese mode spec
+tengwar-hakka.md         # Hakka mode spec
+tengwar-gan.md           # Gan mode spec (with romanization disclaimer)
+tengwar-xiang.md         # Xiang mode spec
+tengwar-min.md           # Min mode spec
+tengwar-wu.md            # Wu mode spec
+
+docs/
+  sinitic-infrastructure.md   # Shared patterns across all modes
+
+samples/
+  mandarin/              # Mandarin samples (poetry, phrases)
+  cantonese/             # Cantonese samples
+  hakka/                 # Hakka samples
+  gan/                   # Gan samples
+  xiang/                 # Xiang samples
+  min/                   # Min samples
+  wu/                    # Wu samples
+  pdf/                   # Vector PDFs (work without fonts)
+
+fonts/Alcarin-Tengwar/   # Extended Tengwar font
+```
 
 ## Font
 
@@ -58,19 +89,19 @@ PRs [#19](https://github.com/Tosche/Alcarin-Tengwar/pull/19)–[#22](https://git
 
 ## Status
 
-**Draft for community review.** The phonological mapping is complete. Feedback welcome on:
+**Complete.** All seven Sinitic modes are implemented with:
+- Full specifications documenting phonological mappings
+- Python converters (romanization → Tengwar)
+- Sample texts with SVG and PDF renderings
 
-- Edge cases in the syllable inventory
-- Legibility of the ü representation (u+i tehtar after l/n)
-- Carrier placement tone marks vs. below-tengwa marks
-- Sample text renderings (in progress)
+Feedback welcome on edge cases, legibility, and sample texts.
 
 ## Design principles
 
-1. **Phonemic, not logographic.** This mode writes sounds, not characters or meanings.
-2. **Respect Tengwar tradition.** Every assignment cites precedent from Appendix E or established modes.
-3. **Respect Mandarin phonology.** Complementary distribution (palatals/velars) and allophony (apical vowels) are handled correctly.
-4. **Work with existing fonts.** The fallback rendering strategy requires no font modifications.
+1. **Phonemic, not logographic.** These modes write sounds, not characters or meanings.
+2. **Respect Tengwar tradition.** Assignments cite precedent from Appendix E or established modes.
+3. **Respect each language's phonology.** Complementary distribution, allophony, and distinctive features are handled correctly per language.
+4. **Phonetic honesty.** Group B modes (Min/Wu) use classical Tengwar voicing semantics for languages with voiced obstruents, even though this creates incompatibility with Group A.
 
 ## License
 
