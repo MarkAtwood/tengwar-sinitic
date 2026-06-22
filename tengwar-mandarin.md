@@ -120,7 +120,21 @@ Erhua (the -r suffix common in Beijing Mandarin) appends órë to the syllable.
 
 ## Tones
 
-Every toned syllable carries one of four marks. The marks are iconographic, tracing pitch contour:
+Every toned syllable carries one of four marks. The marks are iconographic, tracing pitch contour.
+
+### Precedent for below-tengwa marks
+
+Tolkien used below-tengwa diacritics in his own writing:
+
+- **Consonant doubling:** A horizontal bar below the tengwa indicates gemination (Appendix E: "a bar below... indicated consonantal doubling"). This is well-attested in Elvish manuscripts.
+- **Silent final e:** In English modes, an underposed dot marks a silent final 'e' on the preceding consonant.
+- **Following y:** Underposed dots mark consonantal 'y' following another consonant.
+
+The above/below distinction carries semantic weight: the nasalization bar goes *above* (indicating a preceding nasal), while the doubling bar goes *below* (indicating length/weight). This suggests below-placement for prosodic or suprasegmental features.
+
+Tone marks extend this convention. Tones are suprasegmental—they span the syllable rather than attaching to a single segment. Vowel tehtar occupy the above-tengwa position; tones need somewhere else. The below-position is the natural choice, following the existing pattern for prosodic marking.
+
+The *shapes* of the tone marks are novel. They trace pitch contour iconographically (horizontal = level, rising stroke = rising pitch, falling stroke = falling pitch, chevron = dipping). This follows Tolkien's principle of visual analogy: the shape suggests the meaning. The same principle underlies his vowel tehtar (three dots suggest the open mouth of /a/) and the Grade 1/2 bow distinction (doubled bow = "more").
 
 | Tone | Contour | Mark |
 |---|---|---|

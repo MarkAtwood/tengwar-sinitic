@@ -180,7 +180,16 @@ This produces a systematic inventory where shape shows pitch movement and dots s
 
 ### 4.4 Below-Tengwa Placement
 
-All modes place tone marks **below the tengwa** bearing the nuclear vowel:
+All modes place tone marks **below the tengwa** bearing the nuclear vowel.
+
+**Tolkien precedent:** Below-tengwa diacritics are attested in Tolkien's own writing:
+- Horizontal bar below = consonant doubling/gemination (Appendix E)
+- Underposed dot = silent final 'e' in English modes
+- Underposed dots = following consonantal 'y'
+
+The above/below distinction carries semantic weight: nasalization bar goes *above* (preceding nasal), doubling bar goes *below* (prosodic weight). Tones are suprasegmental, so below-placement follows this pattern. The *contour shapes* (level bar, rising/falling strokes, chevron) are novel, designed iconographically to trace pitch movement—following Tolkien's visual analogy principle.
+
+See `tengwar-mandarin.md` § "Precedent for below-tengwa marks" for full discussion.
 
 ```
   [vowel tehta]
