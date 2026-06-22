@@ -13,10 +13,14 @@ This document describes the common patterns and shared components across all Sin
 | Hakka | Complete | `tengwar-hakka.md` | Taiwan MOE Hakka | 6 |
 | Min | Complete | `tengwar-min.md` | Tai-lo / POJ | 7 |
 | Wu | Complete | `tengwar-wu.md` | Qian Nairong / Wugniu | 5 |
+| Gan | Complete | `tengwar-gan.md` | Project-defined* | 7 |
+| Xiang | Complete | `tengwar-xiang.md` | Beta 5.0 | 6 |
+
+*Gan has no standardized romanization. The project defines its own based on Pinfa conventions and IPA.
 
 ### Compatibility Groups
 
-**Group A: Mandarin/Cantonese/Hakka**
+**Group A: Mandarin/Cantonese/Hakka/Gan/Xiang**
 - Grade 1 = voiceless unaspirated
 - Grade 2 = voiceless aspirated
 - No voiced obstruents in these languages
@@ -34,7 +38,7 @@ This document describes the common patterns and shared components across all Sin
 
 ### 2.1 Aspiration Contrast
 
-**Group A (Mandarin/Cantonese/Hakka):** Uses doubled bow for aspiration
+**Group A (Mandarin/Cantonese/Hakka/Gan/Xiang):** Uses doubled bow for aspiration
 
 | Grade | Articulation | Example (Mandarin) |
 |-------|--------------|-------------------|
@@ -241,6 +245,28 @@ Syllables ending in stop codas (-p, -t, -k, -h) use the same tone marks as their
 | Left-dominant sandhi | First syllable determines phrase tone |
 | Merged final stops | Historical *-p/*-t/*-k merged to glottal /-?/ |
 
+### 5.6 Gan
+
+| Feature | Description |
+|---------|-------------|
+| No standard romanization | Project-defined scheme based on Pinfa/IPA |
+| Hakka-like phonology | Two-way laryngeal contrast, similar to Hakka |
+| Partial coda preservation | Only -t, -k (historical *-p merged to -t) |
+| 7 tones | T1-T4 open, T5 yang-qu, T6-T7 checked |
+| No retroflexes | Unlike Mandarin |
+| Apical vowel | ii /ɿ/ like Hakka |
+
+### 5.7 Xiang
+
+| Feature | Description |
+|---------|-------------|
+| Beta 5.0 romanization | Community standard (not official) |
+| No stop codas | All historical -p/-t/-k lost |
+| 6 tones | T6 is "rusheng" but has no consonant coda |
+| Rusheng marker | Underbar diacritic for T6 (tonally distinct, no stop) |
+| Nasalized vowels | /õ/, /ə̃/ marked with tilde-below |
+| Mandarin-like | Closest to Mandarin of the southern varieties |
+
 ---
 
 ## 6. Incompatibility Notes
@@ -312,11 +338,13 @@ All modes work with the extended Alcarin Tengwar font. Existing glyphs include:
 
 ### Specification Files
 
-- `/Volumes/Attic/Desktop/Projects/Tengwar-Mandarin/tengwar-mandarin.md`
-- `/Volumes/Attic/Desktop/Projects/Tengwar-Mandarin/tengwar-cantonese.md`
-- `/Volumes/Attic/Desktop/Projects/Tengwar-Mandarin/tengwar-hakka.md`
-- `/Volumes/Attic/Desktop/Projects/Tengwar-Mandarin/tengwar-min.md`
-- `/Volumes/Attic/Desktop/Projects/Tengwar-Mandarin/tengwar-wu.md`
+- `tengwar-mandarin.md`
+- `tengwar-cantonese.md`
+- `tengwar-hakka.md`
+- `tengwar-min.md`
+- `tengwar-wu.md`
+- `tengwar-gan.md`
+- `tengwar-xiang.md`
 
 ### Design Documents
 

@@ -158,7 +158,7 @@ def render_sample_pdf(sample_dir, output_path):
                     col2 = parts[2]  # hanzi
 
                     # Skip header
-                    if 'Jyutping' in col1 or 'Pinyin' in col1 or 'Romanized' in col1 or 'Wu' in col1 or 'Hakka' in col1 or 'Tai-lo' in col1:
+                    if any(h in col1 for h in ['Jyutping', 'Pinyin', 'Romanized', 'Wu', 'Hakka', 'Tai-lo', 'Gan', 'Xiang', 'Beta']):
                         continue
                     if not col1 or col1.startswith('#'):
                         continue
@@ -214,6 +214,8 @@ def main():
         samples_dir / 'hakka',
         samples_dir / 'min',
         samples_dir / 'wu',
+        samples_dir / 'gan',
+        samples_dir / 'xiang',
     ]
 
     for sample_dir in sample_dirs:
