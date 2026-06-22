@@ -42,6 +42,10 @@ We welcome proposals for Sinitic conlangs. If your constructed language has a Si
 - Nasal vowels (Min), voiced obstruents (Min/Wu), and checked syllables (most modes)
 - PDF samples with embedded vector glyphs (work without fonts installed)
 
+### Example: 魔戒 in Tengwar
+
+See [`samples/mandarin/lotr-titles.md`](samples/mandarin/lotr-titles.md) for the Mandarin translations of *The Lord of the Rings* rendered in Tengwar — including all three volume titles from both mainland and Taiwan editions, plus *The Hobbit*, *The Silmarillion*, and *Middle-earth*.
+
 ## Files
 
 ```
