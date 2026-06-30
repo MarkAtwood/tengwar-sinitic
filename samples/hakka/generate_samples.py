@@ -66,7 +66,11 @@ PLACES = [
 ]
 
 def write_table(f, header, rows):
-    """Write a markdown table."""
+    """Write a markdown table.
+
+    Canonical column format:
+    | Romanization | Hanzi | English | Tengwar | Names |
+    """
     f.write(f'\n| {" | ".join(header)} |\n')
     f.write(f'|{"|".join(["---"] * len(header))}|\n')
     for row in rows:
@@ -82,7 +86,7 @@ def gen_tones():
                 teng = convert_text(hakka)
                 names = tengwar_to_names(teng)
                 rows.append([hakka, hanzi, eng, teng, f'`{names}`', desc])
-            write_table(f, ['Hakka', '客字', 'English', 'Tengwar', 'Names', 'Tone'], rows)
+            write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names', 'Tone'], rows)
 
 def gen_numbers():
     with open(OUT_DIR / 'numbers.md', 'w') as f:
@@ -92,7 +96,7 @@ def gen_numbers():
             teng = convert_text(hakka)
             names = tengwar_to_names(teng)
             rows.append([hakka, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Hakka', '客字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 def gen_greetings():
     with open(OUT_DIR / 'greetings.md', 'w') as f:
@@ -102,7 +106,7 @@ def gen_greetings():
             teng = convert_text(hakka)
             names = tengwar_to_names(teng)
             rows.append([hakka, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Hakka', '客字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 def gen_places():
     with open(OUT_DIR / 'places.md', 'w') as f:
@@ -112,7 +116,7 @@ def gen_places():
             teng = convert_text(hakka)
             names = tengwar_to_names(teng)
             rows.append([hakka, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Hakka', '客字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 if __name__ == '__main__':
     gen_tones()

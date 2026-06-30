@@ -16,7 +16,7 @@ def process_markdown_file(filepath):
     Read a markdown file, convert romanizations to tengwar, and write back.
 
     Expects tables with format:
-    | Chinese | Romanization | English | Tengwar | Names |
+    | Romanization | Hanzi | English | Tengwar | Names |
     """
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -30,9 +30,9 @@ def process_markdown_file(filepath):
             # parts[0] is empty (before first |), parts[-1] may be empty
 
             # Skip header and separator rows
-            if len(parts) >= 5 and parts[1] not in ('Chinese', '---', ''):
+            if len(parts) >= 5 and parts[1] not in ('Romanization', '---', ''):
                 # Check if this looks like a data row with romanization
-                romanization = parts[2] if len(parts) > 2 else ''
+                romanization = parts[1] if len(parts) > 1 else ''
 
                 # Only process if romanization contains letters and numbers (tone marks)
                 if romanization and re.search(r'[a-zA-Z]+[1-7]', romanization):

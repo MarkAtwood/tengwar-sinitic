@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Generate Min sample markdown files with proper tengwar."""
+"""Generate Min sample markdown files with proper tengwar.
+
+Table format: | Romanization | Hanzi | English | Tengwar | Names |
+"""
 
 import sys
 sys.path.insert(0, '.')
@@ -87,7 +90,7 @@ def gen_tones():
             teng = convert_text(tailo)
             names = tengwar_to_names(teng)
             rows.append([tailo, hanzi, eng, teng, f'`{names}`', desc])
-        write_table(f, ['Tai-lo', '閩字', 'English', 'Tengwar', 'Names', 'Tone'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names', 'Tone'], rows)
 
 def gen_numbers():
     with open(OUT_DIR / 'numbers.md', 'w') as f:
@@ -97,7 +100,7 @@ def gen_numbers():
             teng = convert_text(tailo)
             names = tengwar_to_names(teng)
             rows.append([tailo, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Tai-lo', '閩字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 def gen_greetings():
     with open(OUT_DIR / 'greetings.md', 'w') as f:
@@ -107,7 +110,7 @@ def gen_greetings():
             teng = convert_text(tailo)
             names = tengwar_to_names(teng)
             rows.append([tailo, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Tai-lo', '閩字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 def gen_places():
     with open(OUT_DIR / 'places.md', 'w') as f:
@@ -117,7 +120,7 @@ def gen_places():
             teng = convert_text(tailo)
             names = tengwar_to_names(teng)
             rows.append([tailo, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Tai-lo', '閩字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 def gen_nasal():
     with open(OUT_DIR / 'nasal_vowels.md', 'w') as f:
@@ -127,7 +130,7 @@ def gen_nasal():
             teng = convert_text(tailo)
             names = tengwar_to_names(teng)
             rows.append([tailo, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Tai-lo', '閩字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 if __name__ == '__main__':
     gen_tones()

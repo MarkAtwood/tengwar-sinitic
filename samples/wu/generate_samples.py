@@ -134,7 +134,11 @@ In Qian Nairong romanization:
 
 
 def write_table(f, header, rows):
-    """Write a markdown table."""
+    """Write a markdown table.
+
+    Canonical column order: Romanization | Hanzi | English | Tengwar | Names
+    Additional columns (e.g., Tone, Phonetics) follow Names.
+    """
     f.write(f'\n| {" | ".join(header)} |\n')
     f.write(f'|{"|".join(["---"] * len(header))}|\n')
     for row in rows:
@@ -152,7 +156,7 @@ def gen_tones():
                 teng = convert_text(wu)
                 names = tengwar_to_names(teng)
                 rows.append([wu, hanzi, eng, teng, f'`{names}`', desc])
-            write_table(f, ['Wu Pinyin', '吳字', 'English', 'Tengwar', 'Names', 'Tone'], rows)
+            write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names', 'Tone'], rows)
 
 
 def gen_numbers():
@@ -164,7 +168,7 @@ def gen_numbers():
             teng = convert_text(wu)
             names = tengwar_to_names(teng)
             rows.append([wu, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Wu Pinyin', '吳字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 
 def gen_greetings():
@@ -176,7 +180,7 @@ def gen_greetings():
             teng = convert_text(wu)
             names = tengwar_to_names(teng)
             rows.append([wu, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Wu Pinyin', '吳字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 
 def gen_places():
@@ -188,7 +192,7 @@ def gen_places():
             teng = convert_text(wu)
             names = tengwar_to_names(teng)
             rows.append([wu, hanzi, eng, teng, f'`{names}`'])
-        write_table(f, ['Wu Pinyin', '吳字', 'English', 'Tengwar', 'Names'], rows)
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 
 def gen_voicing():
@@ -202,7 +206,7 @@ def gen_voicing():
                 teng = convert_text(wu)
                 names = tengwar_to_names(teng)
                 rows.append([wu, hanzi, eng, teng, f'`{names}`', desc])
-            write_table(f, ['Wu Pinyin', '吳字', 'English', 'Tengwar', 'Names', 'Phonetics'], rows)
+            write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names', 'Phonetics'], rows)
 
 
 if __name__ == '__main__':

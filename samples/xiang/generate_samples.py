@@ -201,8 +201,8 @@ def gen_common_phrases():
         for xiang, hanzi, eng in GREETINGS:
             teng = convert_text(xiang)
             names = tengwar_to_names(teng)
-            rows.append([hanzi, xiang, eng, teng, f'`{names}`'])
-        write_table(f, ['Chinese', 'Romanization', 'English', 'Tengwar', 'Names'], rows)
+            rows.append([xiang, hanzi, eng, teng, f'`{names}`'])
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
         # Numbers section
         f.write('\n## Numbers (1-10)\n')
@@ -211,8 +211,8 @@ def gen_common_phrases():
         for xiang, hanzi, eng in NUMBERS:
             teng = convert_text(xiang)
             names = tengwar_to_names(teng)
-            rows.append([hanzi, xiang, eng, teng, f'`{names}`'])
-        write_table(f, ['Chinese', 'Romanization', 'English', 'Tengwar', 'Names'], rows)
+            rows.append([xiang, hanzi, eng, teng, f'`{names}`'])
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
         # Nasalized vowels section
         f.write('\n## Nasalized Vowels\n')
@@ -221,8 +221,8 @@ def gen_common_phrases():
         for xiang, hanzi, eng in NASAL_VOWELS:
             teng = convert_text(xiang)
             names = tengwar_to_names(teng)
-            rows.append([hanzi, xiang, eng, teng, f'`{names}`'])
-        write_table(f, ['Chinese', 'Romanization', 'English', 'Tengwar', 'Names'], rows)
+            rows.append([xiang, hanzi, eng, teng, f'`{names}`'])
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names'], rows)
 
 
 def gen_proverbs():
@@ -236,8 +236,8 @@ def gen_proverbs():
         for xiang, hanzi, eng in PROVERBS:
             teng = convert_text(xiang)
             names = tengwar_to_names(teng)
-            rows.append([hanzi, xiang, eng, teng])
-        write_table(f, ['Chinese', 'Romanization', 'English', 'Tengwar'], rows)
+            rows.append([xiang, hanzi, eng, teng])
+        write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar'], rows)
 
         # Tone demonstration
         f.write(f'\n## {TONES["title"]}\n\n{TONES["intro"]}\n')
@@ -247,8 +247,8 @@ def gen_proverbs():
             for xiang, hanzi, eng, desc in items:
                 teng = convert_text(xiang)
                 names = tengwar_to_names(teng)
-                rows.append([hanzi, xiang, eng, teng, f'`{names}`', desc])
-            write_table(f, ['Chinese', 'Romanization', 'English', 'Tengwar', 'Names', 'Tone'], rows)
+                rows.append([xiang, hanzi, eng, teng, f'`{names}`', desc])
+            write_table(f, ['Romanization', 'Hanzi', 'English', 'Tengwar', 'Names', 'Tone'], rows)
 
 
 def main():
