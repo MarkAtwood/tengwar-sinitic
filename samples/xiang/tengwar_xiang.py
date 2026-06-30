@@ -8,7 +8,7 @@ Changsha Xiang mode. Uses Alcarin Tengwar codepoints (PUA U+E000-E0FF).
 Based on the mapping in tengwar-xiang.md:
 - Grade 1 (single bow) = voiceless unaspirated
 - Grade 2 (double bow) = voiceless aspirated
-- Column I = alveolar, II = labial, III = velar
+- Column I = alveolar, II = labial, III = retroflex, IV = velar
 - Uses Group A semantics (compatible with Mandarin/Cantonese/Hakka)
 
 Key differences from Mandarin:
@@ -36,17 +36,17 @@ TENGWAR = {
     'formen': '\ue009',     # Grade 3: f /f/
     'malta': '\ue011',      # Grade 5: m /m/
 
-    # Column III - Velar
-    'calma': '\ue002',      # Grade 1: k /k/
-    'anga': '\ue006',       # Grade 2: kh /kʰ/
-    'hwesta': '\ue00b',     # Grade 3: h /x/
-    'noldo': '\ue012',      # Grade 5: ng /ŋ/
-
-    # Column IV - Retroflex (marginal in Changsha, optional support)
-    'quesse': '\ue003',     # Grade 1: zr /tʂ/
-    'ungwe': '\ue007',      # Grade 2: chr /tʂʰ/
-    'harma': '\ue00a',      # Grade 3: sr /ʂ/
+    # Column III - Retroflex (marginal in Changsha, optional support)
+    'calma': '\ue002',      # Grade 1: zr /tʂ/
+    'anga': '\ue006',       # Grade 2: chr /tʂʰ/
+    'hwesta': '\ue00b',     # Grade 3: sr /ʂ/
     'oore': '\ue014',       # Grade 6: r /ɻ/
+
+    # Column IV - Velar
+    'quesse': '\ue003',     # Grade 1: k /k/
+    'ungwe': '\ue007',      # Grade 2: kh /kʰ/
+    'harma': '\ue00a',      # Grade 3: h /x/
+    'noldo': '\ue012',      # Grade 5: ng /ŋ/
 
     # Extended stem - Alveolar affricates
     'tinco_ext': '\ue018',  # c /ts/ (unaspirated)
@@ -123,11 +123,11 @@ INITIALS = {
     'n': 'nuumen',          # /n/
     'l': 'lambe',           # /l/
 
-    # Velars
-    'k': 'calma',           # /k/ unaspirated
-    'kh': 'anga',           # /kʰ/ aspirated
+    # Velars (Column IV)
+    'k': 'quesse',          # /k/ unaspirated
+    'kh': 'ungwe',          # /kʰ/ aspirated
     'ng': 'noldo',          # /ŋ/ - unlike Mandarin, can be initial
-    'h': 'hwesta',          # /x/
+    'h': 'harma',           # /x/
 
     # Alveolar affricates
     'c': 'tinco_ext',       # /ts/ unaspirated
@@ -135,14 +135,14 @@ INITIALS = {
     's': 'thuule',          # /s/
 
     # Palatals (velar tengwar + palatal mark)
-    'q': ('calma', True),   # /tɕ/ + palatal
-    'qh': ('anga', True),   # /tɕʰ/ + palatal
-    'x': ('hwesta', True),  # /ɕ/ + palatal
+    'q': ('quesse', True),  # /tɕ/ + palatal
+    'qh': ('ungwe', True),  # /tɕʰ/ + palatal
+    'x': ('harma', True),   # /ɕ/ + palatal
 
-    # Retroflexes (marginal - for older/conservative speakers)
-    'zr': 'quesse',         # /tʂ/
-    'chr': 'ungwe',         # /tʂʰ/
-    'sr': 'harma',          # /ʂ/
+    # Retroflexes (marginal - Column III)
+    'zr': 'calma',          # /tʂ/
+    'chr': 'anga',          # /tʂʰ/
+    'sr': 'hwesta',         # /ʂ/
     'r': 'oore',            # /ɻ/
 }
 

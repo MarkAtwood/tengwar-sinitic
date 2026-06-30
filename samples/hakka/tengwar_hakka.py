@@ -31,10 +31,10 @@ TENGWAR = {
     'ampa': '\ue014',       # Grade 4: v /v/ (Hakka-specific)
     'malta': '\ue015',      # Grade 5: m /m/
 
-    # Column III - Velar
-    'calma': '\ue021',      # Grade 1: g /k/
-    'anga': '\ue022',       # Grade 2: k /kh/
-    'hwesta': '\ue023',     # Grade 3: h /h/
+    # Column IV - Velar
+    'quesse': '\ue021',     # Grade 1: g /k/
+    'ungwe': '\ue022',      # Grade 2: k /kh/
+    'harma': '\ue023',      # Grade 3: h /h/
     'noldo': '\ue025',      # Grade 5: ng /ng/
 
     # Extended stem - Alveolar affricates
@@ -122,21 +122,21 @@ INITIALS = {
     'n': 'numen',       # /n/
     'l': 'lambe',       # /l/
 
-    # Velars
-    'g': 'calma',       # /k/
-    'k': 'anga',        # /kh/
+    # Velars (Column IV)
+    'g': 'quesse',      # /k/
+    'k': 'ungwe',       # /kh/
     'ng': 'noldo',      # /ng/
-    'h': 'hwesta',      # /h/
+    'h': 'harma',       # /h/
 
     # Alveolar affricates (extended stem)
     'z': 'tinco_ext',   # /ts/
     'c': 'ando_ext',    # /tsh/
     's': 'thule',       # /s/
 
-    # Palatals (calma/anga/hwesta + palatal mark)
-    'j': ('calma', True),   # /tc/
-    'q': ('anga', True),    # /tch/
-    'x': ('hwesta', True),  # /c/ (palatal fricative)
+    # Palatals (velar tengwar + palatal mark)
+    'j': ('quesse', True),  # /tc/
+    'q': ('ungwe', True),   # /tch/
+    'x': ('harma', True),   # /c/ (palatal fricative)
 }
 
 # Final consonants (codas)
@@ -150,10 +150,10 @@ FINALS = {
     # Note: Taiwan MOE uses 'b', 'd', 'g' for final stops (written as /p/, /t/, /k/)
     'p': 'parma',
     't': 'tinco',
-    'k': 'calma',
+    'k': 'quesse',
     'b': 'parma',   # alternate spelling for -p
     'd': 'tinco',   # alternate spelling for -t
-    'g': 'calma',   # alternate spelling for -k
+    'g': 'quesse',  # alternate spelling for -k
 }
 
 

@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1028">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
 <defs><style>
 .pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="1028" fill="white"/>
+<rect width="1400" height="1028" fill="white"/>
 <text x="20" y="30" class="pinyin">bái rì yī shān jìn</text>
 <text x="20" y="88" class="hanzi">白日依山尽</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{parma}[a]²{oore}[i]⁴{anna}[i]¹{harma}[a]{nuumen}¹{calma}{+pal}[i]{nuumen}⁴</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{parma}[a]²{oore}[i]⁴{anna}[i]¹{hwesta}[a]{nuumen}¹{quesse}{+pal}[i]{nuumen}⁴</text>
 <text x="20" y="282" class="pinyin">huáng hé rù hǎi liú</text>
 <text x="20" y="340" class="hanzi">黄河入海流</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{hwesta}{vala}[a]{noldo}²{hwesta}[e]²{oore}[u]⁴{hwesta}[a]³{lambe}[i]²</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{harma}{vala}[a]{noldo}²{harma}[e]²{oore}[u]⁴{harma}[a]³{lambe}[i]²</text>
 <text x="20" y="534" class="pinyin">yù qióng qiān lǐ mù</text>
 <text x="20" y="592" class="hanzi">欲穷千里目</text>
-<text x="20" y="650" class="tengwar"></text>
-<text x="20" y="708" class="names">{anna}[u]⁴{anga}{+pal}{anna}[o]{noldo}²{anga}{+pal}{anna}[a]{nuumen}¹{lambe}[i]³{malta}[u]⁴</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{anna}[u]⁴{ungwe}{+pal}{anna}[o]{noldo}²{ungwe}{+pal}{anna}[a]{nuumen}¹{lambe}[i]³{malta}[u]⁴</text>
 <text x="20" y="786" class="pinyin">gèng shàng yī céng lóu</text>
 <text x="20" y="844" class="hanzi">更上一层楼</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{calma}[e]{noldo}⁴{harma}[a]{noldo}⁴{anna}[i]¹{ando_ext}[e]{noldo}²{lambe}[o]²</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{quesse}[e]{noldo}⁴{hwesta}[a]{noldo}⁴{anna}[i]¹{ando_ext}[e]{noldo}²{lambe}[o]²</text>
 </svg>

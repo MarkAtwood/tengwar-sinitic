@@ -8,10 +8,10 @@ The inscription on the One Ring, rendered through Mandarin Chinese.
 
 | Chinese | Pinyin | English | Tengwar | Names |
 |---------|--------|---------|---------|-------|
-| 至尊戒，驭众戒 | zhì zūn jiè, yù zhòng jiè | One Ring to rule them all |  | {quesse}[i]⁴{tinco_ext}[u]{nuumen}¹{calma}{+pal}{anna}[e]⁴{anna}[u]⁴{quesse}[o]{noldo}⁴{calma}{+pal}{anna}[e]⁴ |
-| 至尊戒，寻众戒 | zhì zūn jiè, xún zhòng jiè | One Ring to find them |  | {quesse}[i]⁴{tinco_ext}[u]{nuumen}¹{calma}{+pal}{anna}[e]⁴{hwesta}{+pal}[u]{nuumen}²{quesse}[o]{noldo}⁴{calma}{+pal}{anna}[e]⁴ |
-| 魔戒至尊引众戒 | mó jiè zhì zūn yǐn zhòng jiè | One Ring to bring them all |  | {malta}[o]²{calma}{+pal}{anna}[e]⁴{quesse}[i]⁴{tinco_ext}[u]{nuumen}¹{anna}[i]{nuumen}³{quesse}[o]{noldo}⁴{calma}{+pal}{anna}[e]⁴ |
-| 禁锢众戒黑暗中 | jìn gù zhòng jiè hēi àn zhōng | And in the darkness bind them |  | {calma}{+pal}[i]{nuumen}⁴{calma}[u]⁴{quesse}[o]{noldo}⁴{calma}{+pal}{anna}[e]⁴{hwesta}[e]¹{carrier_short}[a]{nuumen}⁴{quesse}[o]{noldo}¹ |
+| 至尊戒，驭众戒 | zhì zūn jiè, yù zhòng jiè | One Ring to rule them all || {calma}[i]⁴{tinco_ext}[u]{nuumen}¹{quesse}{+pal}{anna}[e]{anna}[u]⁴{calma}[o]{noldo}⁴{quesse}{+pal}{anna}[e]⁴ |
+| 至尊戒，寻众戒 | zhì zūn jiè, xún zhòng jiè | One Ring to find them || {calma}[i]⁴{tinco_ext}[u]{nuumen}¹{quesse}{+pal}{anna}[e]{harma}{+pal}[u]{nuumen}²{calma}[o]{noldo}⁴{quesse}{+pal}{anna}[e]⁴ |
+| 魔戒至尊引众戒 | mó jiè zhì zūn yǐn zhòng jiè | One Ring to bring them all || {malta}[o]²{quesse}{+pal}{anna}[e]⁴{calma}[i]⁴{tinco_ext}[u]{nuumen}¹{anna}[i]{nuumen}³{calma}[o]{noldo}⁴{quesse}{+pal}{anna}[e]⁴ |
+| 禁锢众戒黑暗中 | jìn gù zhòng jiè hēi àn zhōng | And in the darkness bind them || {quesse}{+pal}[i]{nuumen}⁴{quesse}[u]⁴{calma}[o]{noldo}⁴{quesse}{+pal}{anna}[e]⁴{harma}[e]¹{carrier_short}[a]{nuumen}⁴{calma}[o]{noldo}¹ |
 
 ## Full Ring-Verse
 

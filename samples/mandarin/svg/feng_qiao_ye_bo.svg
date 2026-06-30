@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1028">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
 <defs><style>
 .pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="1028" fill="white"/>
+<rect width="1400" height="1028" fill="white"/>
 <text x="20" y="30" class="pinyin">yuè luò wū tí shuāng mǎn tiān</text>
 <text x="20" y="88" class="hanzi">月落乌啼霜满天</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{anna}{vala}[e]⁴{lambe}{vala}[o]⁴{vala}[u]¹{ando}[i]²{harma}{vala}[a]{noldo}¹{malta}[a]{nuumen}³{ando}{anna}[a]{nuumen}¹</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{anna}{vala}[e]⁴{lambe}{vala}[o]⁴{vala}[u]¹{ando}[i]²{hwesta}{vala}[a]{noldo}¹{malta}[a]{nuumen}³{ando}{anna}[a]{nuumen}¹</text>
 <text x="20" y="282" class="pinyin">jiāng fēng yú huǒ duì chóu mián</text>
 <text x="20" y="340" class="hanzi">江枫渔火对愁眠</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{calma}{+pal}{anna}[a]{noldo}¹{formen}[e]{noldo}¹{anna}[u]²{hwesta}{vala}[o]³{tinco}{vala}[i]⁴{ungwe}[o]²{malta}{anna}[a]{nuumen}²</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{quesse}{+pal}{anna}[a]{noldo}¹{formen}[e]{noldo}¹{anna}[u]²{harma}{vala}[o]³{tinco}{vala}[i]⁴{anga}[o]²{malta}{anna}[a]{nuumen}²</text>
 <text x="20" y="534" class="pinyin">gū sū chéng wài hán shān sì</text>
 <text x="20" y="592" class="hanzi">姑苏城外寒山寺</text>
-<text x="20" y="650" class="tengwar"></text>
-<text x="20" y="708" class="names">{calma}[u]¹{thuule}[u]¹{ungwe}[e]{noldo}²{vala}[a]⁴{hwesta}[a]{nuumen}²{harma}[a]{nuumen}¹{thuule}[i]⁴</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{quesse}[u]¹{thuule}[u]¹{anga}[e]{noldo}²{vala}[a]⁴{harma}[a]{nuumen}²{hwesta}[a]{nuumen}¹{thuule}[i]⁴</text>
 <text x="20" y="786" class="pinyin">yè bàn zhōng shēng dào kè chuán</text>
 <text x="20" y="844" class="hanzi">夜半钟声到客船</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{anna}[e]⁴{parma}[a]{nuumen}⁴{quesse}[o]{noldo}¹{harma}[e]{noldo}¹{tinco}[a]⁴{anga}[e]⁴{ungwe}{vala}[a]{nuumen}²</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{anna}[e]⁴{parma}[a]{nuumen}⁴{calma}[o]{noldo}¹{hwesta}[e]{noldo}¹{tinco}[a]⁴{ungwe}[e]⁴{anga}{vala}[a]{nuumen}²</text>
 </svg>

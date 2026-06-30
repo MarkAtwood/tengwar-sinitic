@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1028">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
 <defs><style>
 .pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="1028" fill="white"/>
+<rect width="1400" height="1028" fill="white"/>
 <text x="20" y="30" class="pinyin">hóng dòu shēng nán guó</text>
 <text x="20" y="88" class="hanzi">红豆生南国</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{hwesta}[o]{noldo}²{tinco}[o]⁴{harma}[e]{noldo}¹{nuumen}[a]{nuumen}²{calma}{vala}[o]²</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{harma}[o]{noldo}²{tinco}[o]⁴{hwesta}[e]{noldo}¹{nuumen}[a]{nuumen}²{quesse}{vala}[o]²</text>
 <text x="20" y="282" class="pinyin">chūn lái fā jǐ zhī</text>
 <text x="20" y="340" class="hanzi">春来发几枝</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{ungwe}[u]{nuumen}¹{lambe}[a]²{formen}[a]¹{calma}{+pal}[i]³{quesse}[i]¹</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{anga}[u]{nuumen}¹{lambe}[a]²{formen}[a]¹{quesse}{+pal}[i]³{calma}[i]¹</text>
 <text x="20" y="534" class="pinyin">yuàn jūn duō cǎi xié</text>
 <text x="20" y="592" class="hanzi">愿君多采撷</text>
-<text x="20" y="650" class="tengwar"></text>
-<text x="20" y="708" class="names">{anna}{vala}[a]{nuumen}⁴{calma}{+pal}[u]{nuumen}¹{tinco}{vala}[o]¹{ando_ext}[a]³{hwesta}{+pal}{anna}[e]²</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{anna}{vala}[a]{nuumen}⁴{quesse}{+pal}[u]{nuumen}¹{tinco}{vala}[o]¹{ando_ext}[a]³{harma}{+pal}{anna}[e]²</text>
 <text x="20" y="786" class="pinyin">cǐ wù zuì xiāng sī</text>
 <text x="20" y="844" class="hanzi">此物最相思</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{ando_ext}[i]³{vala}[u]⁴{tinco_ext}{vala}[i]⁴{hwesta}{+pal}{anna}[a]{noldo}¹{thuule}[i]¹</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{ando_ext}[i]³{vala}[u]⁴{tinco_ext}{vala}[i]⁴{harma}{+pal}{anna}[a]{noldo}¹{thuule}[i]¹</text>
 </svg>

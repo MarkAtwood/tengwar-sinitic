@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="6068">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="6068">
 <defs><style>
 .romanization { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="6068" fill="white"/>
+<rect width="1400" height="6068" fill="white"/>
 <text x="20" y="30" class="romanization">ni3 ho3</text>
 <text x="20" y="88" class="hanzi">你好</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{nuumen}[i]\fall{hwesta}[o]\fall</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{nuumen}[i]\fall{harma}[o]\fall</text>
 <text x="20" y="282" class="romanization">nga1</text>
 <text x="20" y="340" class="hanzi">我</text>
 <text x="20" y="398" class="tengwar"></text>
@@ -20,32 +20,32 @@
 <text x="20" y="708" class="names">{ando}[a]/rise.mid</text>
 <text x="20" y="786" class="romanization">xie4 xie4</text>
 <text x="20" y="844" class="hanzi">谢谢</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{hwesta}+pal{anna}[e]/rise{hwesta}+pal{anna}[e]/rise</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{harma}+pal{anna}[e]/rise{harma}+pal{anna}[e]/rise</text>
 <text x="20" y="1038" class="romanization">mo5 khie4 khi4</text>
 <text x="20" y="1096" class="hanzi">冇客气</text>
-<text x="20" y="1154" class="tengwar"></text>
-<text x="20" y="1212" class="names">{malta}[o]\fall..low{anga}{anna}[e]/rise{anga}[i]/rise</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{malta}[o]\fall..low{ungwe}{anna}[e]/rise{ungwe}[i]/rise</text>
 <text x="20" y="1290" class="romanization">cai4 qian4</text>
 <text x="20" y="1348" class="hanzi">再见</text>
-<text x="20" y="1406" class="tengwar"></text>
-<text x="20" y="1464" class="names">{tinco_ext}[a]/rise{calma}+pal{anna}[a]{nuumen}/rise</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{tinco_ext}[a]/rise{quesse}+pal{anna}[a]{nuumen}/rise</text>
 <text x="20" y="1542" class="romanization">co3 san1 ho3</text>
 <text x="20" y="1600" class="hanzi">早上好</text>
-<text x="20" y="1658" class="tengwar"></text>
-<text x="20" y="1716" class="names">{tinco_ext}[o]\fall{thuule}[a]{nuumen}/rise.mid{hwesta}[o]\fall</text>
+<text x="20" y="1658" class="tengwar"></text>
+<text x="20" y="1716" class="names">{tinco_ext}[o]\fall{thuule}[a]{nuumen}/rise.mid{harma}[o]\fall</text>
 <text x="20" y="1794" class="romanization">man3 san4 ho3</text>
 <text x="20" y="1852" class="hanzi">晚上好</text>
-<text x="20" y="1910" class="tengwar"></text>
-<text x="20" y="1968" class="names">{malta}[a]{nuumen}\fall{thuule}[a]{nuumen}/rise{hwesta}[o]\fall</text>
+<text x="20" y="1910" class="tengwar"></text>
+<text x="20" y="1968" class="names">{malta}[a]{nuumen}\fall{thuule}[a]{nuumen}/rise{harma}[o]\fall</text>
 <text x="20" y="2046" class="romanization">ni3 qhi4 fan5 la3 mo5</text>
 <text x="20" y="2104" class="hanzi">你吃饭了冇</text>
-<text x="20" y="2162" class="tengwar"></text>
-<text x="20" y="2220" class="names">{nuumen}[i]\fall{anga}+pal[i]/rise{formen}[a]{nuumen}\fall..low{lambe}[a]\fall{malta}[o]\fall..low</text>
+<text x="20" y="2162" class="tengwar"></text>
+<text x="20" y="2220" class="names">{nuumen}[i]\fall{ungwe}+pal[i]/rise{formen}[a]{nuumen}\fall..low{lambe}[a]\fall{malta}[o]\fall..low</text>
 <text x="20" y="2298" class="romanization">ho3 qhi4</text>
 <text x="20" y="2356" class="hanzi">好吃</text>
-<text x="20" y="2414" class="tengwar"></text>
-<text x="20" y="2472" class="names">{hwesta}[o]\fall{anga}+pal[i]/rise</text>
+<text x="20" y="2414" class="tengwar"></text>
+<text x="20" y="2472" class="names">{harma}[o]\fall{ungwe}+pal[i]/rise</text>
 <text x="20" y="2550" class="romanization">i6</text>
 <text x="20" y="2608" class="hanzi">一</text>
 <text x="20" y="2666" class="tengwar"></text>
@@ -72,32 +72,32 @@
 <text x="20" y="3984" class="names">{lambe}{anna}[u]/rise_bar</text>
 <text x="20" y="4062" class="romanization">qi6</text>
 <text x="20" y="4120" class="hanzi">七</text>
-<text x="20" y="4178" class="tengwar"></text>
-<text x="20" y="4236" class="names">{calma}+pal[i]/rise_bar</text>
+<text x="20" y="4178" class="tengwar"></text>
+<text x="20" y="4236" class="names">{quesse}+pal[i]/rise_bar</text>
 <text x="20" y="4314" class="romanization">pa6</text>
 <text x="20" y="4372" class="hanzi">八</text>
 <text x="20" y="4430" class="tengwar"></text>
 <text x="20" y="4488" class="names">{parma}[a]/rise_bar</text>
 <text x="20" y="4566" class="romanization">qiu3</text>
 <text x="20" y="4624" class="hanzi">九</text>
-<text x="20" y="4682" class="tengwar"></text>
-<text x="20" y="4740" class="names">{calma}+pal{anna}[u]\fall</text>
+<text x="20" y="4682" class="tengwar"></text>
+<text x="20" y="4740" class="names">{quesse}+pal{anna}[u]\fall</text>
 <text x="20" y="4818" class="romanization">se6</text>
 <text x="20" y="4876" class="hanzi">十</text>
 <text x="20" y="4934" class="tengwar"></text>
 <text x="20" y="4992" class="names">{thuule}[e]/rise_bar</text>
 <text x="20" y="5070" class="romanization">kon3</text>
 <text x="20" y="5128" class="hanzi">狗</text>
-<text x="20" y="5186" class="tengwar"></text>
-<text x="20" y="5244" class="names">{calma}[o]~\fall</text>
+<text x="20" y="5186" class="tengwar"></text>
+<text x="20" y="5244" class="names">{quesse}[o]~\fall</text>
 <text x="20" y="5322" class="romanization">sen1</text>
 <text x="20" y="5380" class="hanzi">生</text>
 <text x="20" y="5438" class="tengwar"></text>
 <text x="20" y="5496" class="names">{thuule}[e]~/rise.mid</text>
 <text x="20" y="5574" class="romanization">hon2</text>
 <text x="20" y="5632" class="hanzi">红</text>
-<text x="20" y="5690" class="tengwar"></text>
-<text x="20" y="5748" class="names">{hwesta}[o]~/rise..low</text>
+<text x="20" y="5690" class="tengwar"></text>
+<text x="20" y="5748" class="names">{harma}[o]~/rise..low</text>
 <text x="20" y="5826" class="romanization">men4</text>
 <text x="20" y="5884" class="hanzi">门</text>
 <text x="20" y="5942" class="tengwar"></text>

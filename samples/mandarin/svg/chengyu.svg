@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1532">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1532">
 <defs><style>
 .pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="1532" fill="white"/>
+<rect width="1400" height="1532" fill="white"/>
 <text x="20" y="30" class="pinyin">yī xīn yī yì</text>
 <text x="20" y="88" class="hanzi">一心一意</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{anna}[i]¹{hwesta}{+pal}[i]{nuumen}¹{anna}[i]¹{anna}[i]⁴</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{anna}[i]¹{harma}{+pal}[i]{nuumen}¹{anna}[i]¹{anna}[i]⁴</text>
 <text x="20" y="282" class="pinyin">wàn shì rú yì</text>
 <text x="20" y="340" class="hanzi">万事如意</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{vala}[a]{nuumen}⁴{harma}[i]⁴{oore}[u]²{anna}[i]⁴</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{vala}[a]{nuumen}⁴{hwesta}[i]⁴{oore}[u]²{anna}[i]⁴</text>
 <text x="20" y="534" class="pinyin">xué wú zhǐ jìng</text>
 <text x="20" y="592" class="hanzi">学无止境</text>
-<text x="20" y="650" class="tengwar"></text>
-<text x="20" y="708" class="names">{hwesta}{+pal}{vala}[e]²{vala}[u]²{quesse}[i]³{calma}{+pal}[i]{noldo}⁴</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{harma}{+pal}{vala}[e]²{vala}[u]²{calma}[i]³{quesse}{+pal}[i]{noldo}⁴</text>
 <text x="20" y="786" class="pinyin">rén shān rén hǎi</text>
 <text x="20" y="844" class="hanzi">人山人海</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{oore}[e]{nuumen}²{harma}[a]{nuumen}¹{oore}[e]{nuumen}²{hwesta}[a]³</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{oore}[e]{nuumen}²{hwesta}[a]{nuumen}¹{oore}[e]{nuumen}²{harma}[a]³</text>
 <text x="20" y="1038" class="pinyin">fēng hé rì lì</text>
 <text x="20" y="1096" class="hanzi">风和日丽</text>
-<text x="20" y="1154" class="tengwar"></text>
-<text x="20" y="1212" class="names">{formen}[e]{noldo}¹{hwesta}[e]²{oore}[i]⁴{lambe}[i]⁴</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{formen}[e]{noldo}¹{harma}[e]²{oore}[i]⁴{lambe}[i]⁴</text>
 <text x="20" y="1290" class="pinyin">lóng fēi fèng wǔ</text>
 <text x="20" y="1348" class="hanzi">龙飞凤舞</text>
 <text x="20" y="1406" class="tengwar"></text>

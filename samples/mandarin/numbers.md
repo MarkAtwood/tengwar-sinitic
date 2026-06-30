@@ -8,10 +8,10 @@
 | sì | 四 | four |  | `{thuule}[i]⁴` |
 | wǔ | 五 | five |  | `{vala}[u]³` |
 | liù | 六 | six |  | `{lambe}[i]⁴` |
-| qī | 七 | seven |  | `{anga}{+pal}[i]¹` |
+| qī | 七 | seven |  | `{ungwe}{+pal}[i]¹` |
 | bā | 八 | eight |  | `{parma}[a]¹` |
-| jiǔ | 九 | nine |  | `{calma}{+pal}[i]³` |
-| shí | 十 | ten |  | `{harma}[i]²` |
+| jiǔ | 九 | nine |  | `{quesse}{+pal}[i]³` |
+| shí | 十 | ten |  | `{hwesta}[i]²` |
 
 ## Rendered
 

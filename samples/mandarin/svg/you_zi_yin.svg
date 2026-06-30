@@ -1,33 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1532">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1532">
 <defs><style>
 .pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="1532" fill="white"/>
+<rect width="1400" height="1532" fill="white"/>
 <text x="20" y="30" class="pinyin">cí mǔ shǒu zhōng xiàn</text>
 <text x="20" y="88" class="hanzi">慈母手中线</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{ando_ext}[i]²{malta}[u]³{harma}[o]³{quesse}[o]{noldo}¹{hwesta}{+pal}{anna}[a]{nuumen}⁴</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{ando_ext}[i]²{malta}[u]³{hwesta}[o]³{calma}[o]{noldo}¹{harma}{+pal}{anna}[a]{nuumen}⁴</text>
 <text x="20" y="282" class="pinyin">yóu zǐ shēn shàng yī</text>
 <text x="20" y="340" class="hanzi">游子身上衣</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{anna}[o]²{tinco_ext}[i]³{harma}[e]{nuumen}¹{harma}[a]{noldo}⁴{anna}[i]¹</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{anna}[o]²{tinco_ext}[i]³{hwesta}[e]{nuumen}¹{hwesta}[a]{noldo}⁴{anna}[i]¹</text>
 <text x="20" y="534" class="pinyin">lín xíng mì mì féng</text>
 <text x="20" y="592" class="hanzi">临行密密缝</text>
-<text x="20" y="650" class="tengwar"></text>
-<text x="20" y="708" class="names">{lambe}[i]{nuumen}²{hwesta}{+pal}[i]{noldo}²{malta}[i]⁴{malta}[i]⁴{formen}[e]{noldo}²</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{lambe}[i]{nuumen}²{harma}{+pal}[i]{noldo}²{malta}[i]⁴{malta}[i]⁴{formen}[e]{noldo}²</text>
 <text x="20" y="786" class="pinyin">yì kǒng chí chí guī</text>
 <text x="20" y="844" class="hanzi">意恐迟迟归</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{anna}[i]⁴{anga}[o]{noldo}³{ungwe}[i]²{ungwe}[i]²{calma}{vala}[i]¹</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{anna}[i]⁴{ungwe}[o]{noldo}³{anga}[i]²{anga}[i]²{quesse}{vala}[i]¹</text>
 <text x="20" y="1038" class="pinyin">shuí yán cùn cǎo xīn</text>
 <text x="20" y="1096" class="hanzi">谁言寸草心</text>
-<text x="20" y="1154" class="tengwar"></text>
-<text x="20" y="1212" class="names">{harma}{vala}[i]²{anna}[a]{nuumen}²{ando_ext}[u]{nuumen}⁴{ando_ext}[a]³{hwesta}{+pal}[i]{nuumen}¹</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{hwesta}{vala}[i]²{anna}[a]{nuumen}²{ando_ext}[u]{nuumen}⁴{ando_ext}[a]³{harma}{+pal}[i]{nuumen}¹</text>
 <text x="20" y="1290" class="pinyin">bào dé sān chūn huī</text>
 <text x="20" y="1348" class="hanzi">报得三春晖</text>
-<text x="20" y="1406" class="tengwar"></text>
-<text x="20" y="1464" class="names">{parma}[a]⁴{tinco}[e]²{thuule}[a]{nuumen}¹{ungwe}[u]{nuumen}¹{hwesta}{vala}[i]¹</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{parma}[a]⁴{tinco}[e]²{thuule}[a]{nuumen}¹{anga}[u]{nuumen}¹{harma}{vala}[i]¹</text>
 </svg>

@@ -82,7 +82,7 @@ def render_text_to_svg(lines_data, output_path, font_size=48):
     row_height = font_size + 10
     block_height = row_height * 4 + 20
     height = block_height * len(lines_data) + 20
-    width = 1000
+    width = 1400
 
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',

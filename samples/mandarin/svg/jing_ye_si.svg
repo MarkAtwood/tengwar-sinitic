@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1028">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
 <defs><style>
 .pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="1028" fill="white"/>
+<rect width="1400" height="1028" fill="white"/>
 <text x="20" y="30" class="pinyin">chuáng qián míng yuè guāng</text>
 <text x="20" y="88" class="hanzi">床前明月光</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{ungwe}{vala}[a]{noldo}²{anga}{+pal}{anna}[a]{nuumen}²{malta}[i]{noldo}²{anna}{vala}[e]⁴{calma}{vala}[a]{noldo}¹</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{anga}{vala}[a]{noldo}²{ungwe}{+pal}{anna}[a]{nuumen}²{malta}[i]{noldo}²{anna}{vala}[e]⁴{quesse}{vala}[a]{noldo}¹</text>
 <text x="20" y="282" class="pinyin">yí shì dì shàng shuāng</text>
 <text x="20" y="340" class="hanzi">疑是地上霜</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{anna}[i]²{harma}[i]⁴{tinco}[i]⁴{harma}[a]{noldo}⁴{harma}{vala}[a]{noldo}¹</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{anna}[i]²{hwesta}[i]⁴{tinco}[i]⁴{hwesta}[a]{noldo}⁴{hwesta}{vala}[a]{noldo}¹</text>
 <text x="20" y="534" class="pinyin">jǔ tóu wàng míng yuè</text>
 <text x="20" y="592" class="hanzi">举头望明月</text>
-<text x="20" y="650" class="tengwar"></text>
-<text x="20" y="708" class="names">{calma}{+pal}[u]³{ando}[o]²{vala}[a]{noldo}⁴{malta}[i]{noldo}²{anna}{vala}[e]⁴</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{quesse}{+pal}[u]³{ando}[o]²{vala}[a]{noldo}⁴{malta}[i]{noldo}²{anna}{vala}[e]⁴</text>
 <text x="20" y="786" class="pinyin">dī tóu sī gù xiāng</text>
 <text x="20" y="844" class="hanzi">低头思故乡</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{tinco}[i]¹{ando}[o]²{thuule}[i]¹{calma}[u]⁴{hwesta}{+pal}{anna}[a]{noldo}¹</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{tinco}[i]¹{ando}[o]²{thuule}[i]¹{quesse}[u]⁴{harma}{+pal}{anna}[a]{noldo}¹</text>
 </svg>

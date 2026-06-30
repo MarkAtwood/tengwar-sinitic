@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="3044">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="3044">
 <defs><style>
 .wu-pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="3044" fill="white"/>
+<rect width="1400" height="3044" fill="white"/>
 <text x="20" y="30" class="wu-pinyin">iq5</text>
 <text x="20" y="88" class="hanzi">一</text>
 <text x="20" y="146" class="tengwar"></text>

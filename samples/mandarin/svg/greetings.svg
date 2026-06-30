@@ -1,41 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2036">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="2036">
 <defs><style>
 .pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1000" height="2036" fill="white"/>
+<rect width="1400" height="2036" fill="white"/>
 <text x="20" y="30" class="pinyin">nǐ hǎo</text>
 <text x="20" y="88" class="hanzi">你好</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{nuumen}[i]³{hwesta}[a]³</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{nuumen}[i]³{harma}[a]³</text>
 <text x="20" y="282" class="pinyin">zǎo shàng hǎo</text>
 <text x="20" y="340" class="hanzi">早上好</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{tinco_ext}[a]³{harma}[a]{noldo}⁴{hwesta}[a]³</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{tinco_ext}[a]³{hwesta}[a]{noldo}⁴{harma}[a]³</text>
 <text x="20" y="534" class="pinyin">wǎn ān</text>
 <text x="20" y="592" class="hanzi">晚安</text>
 <text x="20" y="650" class="tengwar"></text>
 <text x="20" y="708" class="names">{vala}[a]{nuumen}³{carrier_short}[a]{nuumen}¹</text>
 <text x="20" y="786" class="pinyin">xiè xiè</text>
 <text x="20" y="844" class="hanzi">谢谢</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{hwesta}{+pal}{anna}[e]⁴{hwesta}{+pal}{anna}[e]⁴</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{harma}{+pal}{anna}[e]⁴{harma}{+pal}{anna}[e]⁴</text>
 <text x="20" y="1038" class="pinyin">bú kè qì</text>
 <text x="20" y="1096" class="hanzi">不客气</text>
-<text x="20" y="1154" class="tengwar"></text>
-<text x="20" y="1212" class="names">{parma}[u]²{anga}[e]⁴{anga}{+pal}[i]⁴</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{parma}[u]²{ungwe}[e]⁴{ungwe}{+pal}[i]⁴</text>
 <text x="20" y="1290" class="pinyin">duì bù qǐ</text>
 <text x="20" y="1348" class="hanzi">对不起</text>
-<text x="20" y="1406" class="tengwar"></text>
-<text x="20" y="1464" class="names">{tinco}{vala}[i]⁴{parma}[u]⁴{anga}{+pal}[i]³</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{tinco}{vala}[i]⁴{parma}[u]⁴{ungwe}{+pal}[i]³</text>
 <text x="20" y="1542" class="pinyin">méi guān xì</text>
 <text x="20" y="1600" class="hanzi">没关系</text>
-<text x="20" y="1658" class="tengwar"></text>
-<text x="20" y="1716" class="names">{malta}[e]²{calma}{vala}[a]{nuumen}¹{hwesta}{+pal}[i]⁴</text>
+<text x="20" y="1658" class="tengwar"></text>
+<text x="20" y="1716" class="names">{malta}[e]²{quesse}{vala}[a]{nuumen}¹{harma}{+pal}[i]⁴</text>
 <text x="20" y="1794" class="pinyin">zài jiàn</text>
 <text x="20" y="1852" class="hanzi">再见</text>
-<text x="20" y="1910" class="tengwar"></text>
-<text x="20" y="1968" class="names">{tinco_ext}[a]⁴{calma}{+pal}{anna}[a]{nuumen}⁴</text>
+<text x="20" y="1910" class="tengwar"></text>
+<text x="20" y="1968" class="names">{tinco_ext}[a]⁴{quesse}{+pal}{anna}[a]{nuumen}⁴</text>
 </svg>
