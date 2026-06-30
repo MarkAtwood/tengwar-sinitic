@@ -115,6 +115,10 @@ CC BY-SA 4.0 — Attribution required, share-alike required, commercial use perm
 
 Issues and pull requests welcome. For substantial changes, please open an issue first to discuss.
 
+## Acknowledgments
+
+Thanks to Måns Berg (boktypografen.se) for feedback on the Mandarin mode's grade assignments, leading to the swap of Column III (now retroflex) and Column IV (now velar) to align with cross-mode conventions.
+
 ## References
 
 - Tolkien, J.R.R. "Appendix E: Writing and Spelling." *The Lord of the Rings.*

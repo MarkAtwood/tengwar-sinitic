@@ -36,10 +36,10 @@ Sixian has 18 initials. Fifteen inherit directly from Cantonese; three require H
 | t | /th/ | ando | I-2 |
 | n | /n/ | numen | I-5 |
 | l | /l/ | lambe | I-6 |
-| g | /k/ | calma | III-1 |
-| k | /kh/ | anga | III-2 |
-| ng | /ng/ | noldo | III-5 |
-| h | /h/ | hwesta | III-3 |
+| g | /k/ | quessë | IV-1 |
+| k | /kh/ | ungwë | IV-2 |
+| ng | /ng/ | ñoldo | IV-5 |
+| h | /h/ | harma | IV-3 |
 | z | /ts/ | ext. tinco | I-1 ext |
 | c | /tsh/ | ext. ando | I-2 ext |
 | s | /s/ | thule | I-3 |
@@ -49,9 +49,9 @@ Sixian has 18 initials. Fifteen inherit directly from Cantonese; three require H
 | Hakka | IPA | Tengwa | Rationale |
 |-------|-----|--------|-----------|
 | v | /v/ | ampa | Grade 4 (voiced fricative) in labial series; mirrors formen:ampa as /f/:/v/ |
-| j | /tc/ | calma + palatal mark | Reuses Mandarin palatal convention |
-| q | /tch/ | anga + palatal mark | Reuses Mandarin palatal convention |
-| x | /c/ | hwesta + palatal mark | Reuses Mandarin palatal convention |
+| j | /tc/ | quessë + palatal mark | Reuses Mandarin palatal convention |
+| q | /tch/ | ungwë + palatal mark | Reuses Mandarin palatal convention |
+| x | /c/ | harma + palatal mark | Reuses Mandarin palatal convention |
 
 **The /v/ initial:** Hakka preserves /v/ from Middle Chinese *m- before certain rimes where Cantonese has /m/ or /w/. Examples: vu (martial), vuk (house), vun (writing).
 
@@ -68,10 +68,10 @@ Hailu preserves postalveolar consonants that Sixian merges as alveolars:
 
 | Hailu | IPA | Tengwa | Notes |
 |-------|-----|--------|-------|
-| zh | /ts`/ | quesse | Reuses Mandarin retroflex position |
-| ch | /ts`h/ | ungwe | Reuses Mandarin retroflex position |
-| sh | /s`/ | harma | Reuses Mandarin retroflex position |
-| rh | /z`/ | ore | Voiced counterpart |
+| zh | /ts`/ | calma | Reuses Mandarin retroflex position |
+| ch | /ts`h/ | anga | Reuses Mandarin retroflex position |
+| sh | /s`/ | hwesta | Reuses Mandarin retroflex position |
+| rh | /z`/ | órë | Voiced counterpart |
 
 ## Vowels
 

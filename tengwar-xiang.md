@@ -53,17 +53,17 @@ No voiced obstruents. This means Grade 1 = voiceless unaspirated, Grade 2 = voic
 
 ### Tengwar grade assignment
 
-| Grade | I: Alveolar | II: Labial | III: Velar | IV: (unused) |
-|-------|-------------|------------|------------|--------------|
-| 1 (vl. unasp.) | tinco /t/ **t** | parma /p/ **p** | calma /k/ **k** | -- |
-| 2 (vl. asp.) | ando /th/ **th** | umbar /ph/ **ph** | anga /kh/ **kh** | -- |
-| 3 (fric.) | thule /s/ **s** | formen /f/ **f** | hwesta /x/ **h** | -- |
-| 5 (nasal) | numen /n/ **n** | malta /m/ **m** | noldo /ng/ **ng** | -- |
+| Grade | I: Alveolar | II: Labial | III: (unused) | IV: Velar |
+|-------|-------------|------------|---------------|-----------|
+| 1 (vl. unasp.) | tinco /t/ **t** | parma /p/ **p** | -- | quessë /k/ **k** |
+| 2 (vl. asp.) | ando /th/ **th** | umbar /ph/ **ph** | -- | ungwë /kh/ **kh** |
+| 3 (fric.) | thule /s/ **s** | formen /f/ **f** | -- | harma /x/ **h** |
+| 5 (nasal) | numen /n/ **n** | malta /m/ **m** | -- | ñoldo /ng/ **ng** |
 | 6 (approx.) | lambe /l/ **l** | -- | -- | -- |
 
 Bold = Beta 5.0 letter.
 
-Column IV (retroflex) is largely unused in Changsha. The retroflex fricative /s/, where it occurs, can be written with harma, but most speakers merge it with /s/.
+Column III (retroflex) is largely unused in Changsha. The retroflex fricative /s/, where it occurs, can be written with hwesta, but most speakers merge it with /s/.
 
 ### Alveolar affricates: c, ch
 
@@ -76,13 +76,13 @@ Following the Mandarin convention, alveolar affricates use extended-stem Column 
 
 ### Palatals: q, qh, x
 
-The palatal series /tc, tch, c/ (Beta 5.0: q, qh, x) follows the Mandarin convention: Column III tengwar with the below-tengwa palatal diacritic.
+The palatal series /tc, tch, c/ (Beta 5.0: q, qh, x) follows the Mandarin convention: Column IV tengwar with the below-tengwa palatal diacritic.
 
 | Beta 5.0 | IPA | Tengwa | Grid |
 |----------|-----|--------|------|
-| q | /tc/ | calma + palatal mark | III-1 + pal. |
-| qh | /tch/ | anga + palatal mark | III-2 + pal. |
-| x | /c/ | hwesta + palatal mark | III-3 + pal. |
+| q | /tc/ | quessë + palatal mark | IV-1 + pal. |
+| qh | /tch/ | ungwë + palatal mark | IV-2 + pal. |
+| x | /c/ | harma + palatal mark | IV-3 + pal. |
 
 ### Velar nasal initial
 
@@ -106,16 +106,16 @@ Example: nga "I" (colloquial first person pronoun)
 | th | /th/ | ando | -- | I-2 |
 | n | /n/ | numen | -- | I-5 |
 | l | /l/ | lambe | -- | I-6 |
-| k | /k/ | calma | -- | III-1 |
-| kh | /kh/ | anga | -- | III-2 |
-| ng | /ng/ | noldo | -- | III-5 |
-| h | /x/ | hwesta | -- | III-3 |
+| k | /k/ | quessë | -- | IV-1 |
+| kh | /kh/ | ungwë | -- | IV-2 |
+| ng | /ng/ | ñoldo | -- | IV-5 |
+| h | /x/ | harma | -- | IV-3 |
 | c | /ts/ | tinco-ext | -- | I-1 ext. |
 | ch | /tsh/ | ando-ext | -- | I-2 ext. |
 | s | /s/ | thule | -- | I-3 |
-| q | /tc/ | calma | + palatal | III-1 + pal. |
-| qh | /tch/ | anga | + palatal | III-2 + pal. |
-| x | /c/ | hwesta | + palatal | III-3 + pal. |
+| q | /tc/ | quessë | + palatal | IV-1 + pal. |
+| qh | /tch/ | ungwë | + palatal | IV-2 + pal. |
+| x | /c/ | harma | + palatal | IV-3 + pal. |
 | (zero) | -- | telco | -- | (carrier) |
 
 ### Retroflex notes
@@ -124,10 +124,10 @@ Some speakers and older documentation include retroflex consonants (zh, ch, sh, 
 
 | Beta 5.0 | IPA | Tengwa | Grid |
 |----------|-----|--------|------|
-| zr | /ts/ | quesse | IV-1 |
-| chr | /tsh/ | ungwe | IV-2 |
-| sr | /s/ | harma | IV-3 |
-| r | /r/ | ore | IV-6 |
+| zr | /ts/ | calma | III-1 |
+| chr | /tsh/ | anga | III-2 |
+| sr | /s/ | hwesta | III-3 |
+| r | /r/ | órë | III-6 |
 
 Most modern Changsha speakers merge these with the alveolar or palatal series. This mode supports both analyses.
 

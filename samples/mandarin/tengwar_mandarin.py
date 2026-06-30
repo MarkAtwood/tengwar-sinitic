@@ -8,7 +8,7 @@ Uses Alcarin Tengwar codepoints (PUA U+E000-E0FF).
 Based on the mapping in tengwar-mandarin.md:
 - Grade 1 (single bow) = unaspirated
 - Grade 2 (double bow) = aspirated
-- Column I = alveolar, II = labial, III = velar, IV = retroflex
+- Column I = alveolar, II = labial, III = retroflex, IV = velar
 """
 
 # === TENGWAR CODEPOINTS (Alcarin Tengwar) ===
@@ -28,17 +28,17 @@ TENGWAR = {
     'formen': '\ue009',     # Grade 3: Pinyin f /f/
     'malta': '\ue011',      # Grade 5: Pinyin m /m/
 
-    # Column III - Velar
-    'calma': '\ue002',      # Grade 1: Pinyin g /k/
-    'anga': '\ue006',       # Grade 2: Pinyin k /kʰ/
-    'hwesta': '\ue00b',     # Grade 3: Pinyin h /x/
-    'noldo': '\ue012',      # Grade 5: coda -ng /ŋ/
-
-    # Column IV - Retroflex
-    'quesse': '\ue003',     # Grade 1: Pinyin zh /tʂ/
-    'ungwe': '\ue007',      # Grade 2: Pinyin ch /tʂʰ/
-    'harma': '\ue00a',      # Grade 3: Pinyin sh /ʂ/
+    # Column III - Retroflex
+    'calma': '\ue002',      # Grade 1: Pinyin zh /tʂ/
+    'anga': '\ue006',       # Grade 2: Pinyin ch /tʂʰ/
+    'hwesta': '\ue00b',     # Grade 3: Pinyin sh /ʂ/
     'oore': '\ue021',       # Grade 6: Pinyin r /ɻ/
+
+    # Column IV - Velar
+    'quesse': '\ue003',     # Grade 1: Pinyin g /k/
+    'ungwe': '\ue007',      # Grade 2: Pinyin k /kʰ/
+    'harma': '\ue00a',      # Grade 3: Pinyin h /x/
+    'noldo': '\ue012',      # Grade 5: coda -ng /ŋ/
 
     # Extended stem - Alveolar affricates
     'tinco_ext': '\ue030',  # Pinyin z /ts/
@@ -122,21 +122,21 @@ INITIALS = {
     'n': 'nuumen',
     'l': 'lambe',
 
-    # Velars
-    'g': 'calma',
-    'k': 'anga',
-    'h': 'hwesta',
+    # Retroflexes (Column III)
+    'zh': 'calma',
+    'ch': 'anga',
+    'sh': 'hwesta',
+    'r': 'oore',
+
+    # Velars (Column IV)
+    'g': 'quesse',
+    'k': 'ungwe',
+    'h': 'harma',
 
     # Palatals (velar + palatal mark)
-    'j': ('calma', True),   # + palatal
-    'q': ('anga', True),    # + palatal
-    'x': ('hwesta', True),  # + palatal
-
-    # Retroflexes
-    'zh': 'quesse',
-    'ch': 'ungwe',
-    'sh': 'harma',
-    'r': 'oore',
+    'j': ('quesse', True),   # + palatal
+    'q': ('ungwe', True),    # + palatal
+    'x': ('harma', True),    # + palatal
 
     # Alveolar affricates (extended stem)
     'z': 'tinco_ext',

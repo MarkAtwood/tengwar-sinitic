@@ -72,13 +72,13 @@ This document describes the common patterns and shared components across all Sin
 
 ### 2.3 Palatal Diacritic for Alveolo-Palatals
 
-Mandarin and Hakka have alveolo-palatal consonants /tc, tch, c/ that use Column III tengwar with a below-tengwa palatal diacritic:
+Mandarin and Hakka have alveolo-palatal consonants /tc, tch, c/ that use Column IV tengwar with a below-tengwa palatal diacritic:
 
 | Phoneme | Tengwa | Romanization |
 |---------|--------|--------------|
-| /tc/ | calma + palatal mark | j (Pinyin/Hakka) |
-| /tch/ | anga + palatal mark | q (Pinyin/Hakka) |
-| /c/ | hwesta + palatal mark | x (Pinyin/Hakka) |
+| /tc/ | quessë + palatal mark | j (Pinyin/Hakka) |
+| /tch/ | ungwë + palatal mark | q (Pinyin/Hakka) |
+| /c/ | harma + palatal mark | x (Pinyin/Hakka) |
 
 Cantonese and Min lack these phonemes. Wu uses the same convention.
 
@@ -210,7 +210,7 @@ Syllables ending in stop codas (-p, -t, -k, -h) use the same tone marks as their
 
 | Feature | Description |
 |---------|-------------|
-| Retroflex initials | Column IV: zh /ts`/, ch /ts`h/, sh /s`/, r /r`/ |
+| Retroflex initials | Column III: zh /ts`/, ch /ts`h/, sh /s`/, r /r`/ |
 | 4 tones | T1 flat, T2 rising, T3 dipping (chevron), T4 falling |
 | Apical vowels | Bare consonant with tone (after z/c/s/zh/ch/sh/r) |
 | No final stops | Only -n, -ng codas |

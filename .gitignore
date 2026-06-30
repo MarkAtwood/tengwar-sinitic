@@ -18,3 +18,6 @@ __pycache__/
 
 # Build artifacts
 *.html
+
+# Beads / Dolt files (added by bd init)
+.beads/proxieddb/

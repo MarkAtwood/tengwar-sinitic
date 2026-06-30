@@ -10,21 +10,21 @@ This is a phonemic tehtar mode. It transcribes the sounds of Standard Mandarin a
 
 ## Consonants
 
-Mandarin's consonants fall into four places of articulation that map onto the four Tengwar series: alveolar, labial, velar, and retroflex.
+Mandarin's consonants fall into four places of articulation that map onto the four Tengwar series: alveolar, labial, retroflex, and velar.
 
-The retroflex assignment needs justification. Column IV is the labiovelar (quessetéma) series in Quenya. Mandarin has no labiovelars. It does have a complete retroflex series (four members: unaspirated affricate, aspirated affricate, fricative, approximant) that fills the column naturally. Tolkien was explicit in Appendix E that series assignments shift between modes to fit the target language. The General Use mode already reassigns Column III from velar to /tʃ/. Retroflex is the most retracted articulation in Mandarin, which parallels how Column IV sits at the "back" of the grid.
+Column III holds the retroflex series; Column IV holds the velars. This follows the convention of most non-Quenya Tengwar modes, where Column IV typically takes velars and Column III takes a "palatalized" or affricate series. Quenya itself is the outlier: it assigns velars to Column III and labiovelars to Column IV. Since Mandarin has no labiovelars, Column IV is available for velars, matching the cross-mode convention that Tengwar readers will expect.
 
 The rows handle manner of articulation. Here's where Mandarin forces the first real design choice.
 
 Mandarin has no voiced obstruents. Its stops and affricates contrast by aspiration: /p/ vs. /pʰ/, /t/ vs. /tʰ/, etc. In Elvish modes, Grade 1 (single bow) is voiceless and Grade 2 (doubled bow) is voiced. I map Grade 1 to unaspirated and Grade 2 to aspirated. The doubled bow means "more energy at the same place," which is what aspiration is. Tolkien's note in Appendix E that extended stems "usually represented aspirated consonants (e.g. t+h, p+h, k+h), but might represent other consonantal variations required" gave me the precedent, but I use the doubled bow rather than extended stems because I need extended stems for the alveolar affricates (below), and because the doubled bow fills the grid cleanly.
 
-| Grade | I: Alveolar | II: Labial | III: Velar | IV: Retroflex |
+| Grade | I: Alveolar | II: Labial | III: Retroflex | IV: Velar |
 |---|---|---|---|---|
-| 1 (unasp.) | tinco /t/ **d** | parma /p/ **b** | calma /k/ **g** | quessë /tʂ/ **zh** |
-| 2 (asp.) | ando /tʰ/ **t** | umbar /pʰ/ **p** | anga /kʰ/ **k** | ungwë /tʂʰ/ **ch** |
-| 3 (fric.) | thúlë /s/ **s** | formen /f/ **f** | hwesta /x/ **h** | harma /ʂ/ **sh** |
-| 5 (nasal) | númen /n/ **n** | malta /m/ **m** | ñoldo /ŋ/ **(ng)** | — |
-| 6 (approx.) | lambe /l/ **l** | — | — | órë /ɻ/ **r** |
+| 1 (unasp.) | tinco /t/ **d** | parma /p/ **b** | calma /tʂ/ **zh** | quessë /k/ **g** |
+| 2 (asp.) | ando /tʰ/ **t** | umbar /pʰ/ **p** | anga /tʂʰ/ **ch** | ungwë /kʰ/ **k** |
+| 3 (fric.) | thúlë /s/ **s** | formen /f/ **f** | hwesta /ʂ/ **sh** | harma /x/ **h** |
+| 5 (nasal) | númen /n/ **n** | malta /m/ **m** | — | ñoldo /ŋ/ **(ng)** |
+| 6 (approx.) | lambe /l/ **l** | — | órë /ɻ/ **r** | — |
 
 Bold = Pinyin letter. Parenthesized (ng) is coda-only.
 
@@ -38,11 +38,11 @@ I write them with extended-stem Column I tengwar: extended tinco for /ts/, exten
 
 ### Palatals: j, q, x
 
-The palatal series /tɕ, tɕʰ, ɕ/ (Pinyin j, q, x) are in complementary distribution with the velars. They appear only before /i/ and /y/. Following Tolkien's tyelpetéma convention, I write them as Column III (velar) tengwar with a double-dot palatal diacritic below:
+The palatal series /tɕ, tɕʰ, ɕ/ (Pinyin j, q, x) are in complementary distribution with the velars. They appear only before /i/ and /y/. Following Tolkien's tyelpetéma convention, I write them as Column IV (velar) tengwar with a double-dot palatal diacritic below:
 
-- /tɕ/ (j): calma + palatal mark
-- /tɕʰ/ (q): anga + palatal mark
-- /ɕ/ (x): hwesta + palatal mark
+- /tɕ/ (j): quessë + palatal mark
+- /tɕʰ/ (q): ungwë + palatal mark
+- /ɕ/ (x): harma + palatal mark
 
 This is phonologically honest. The palatals derive historically from velars before front vowels, and the notation makes the relationship visible.
 
@@ -235,16 +235,16 @@ Rénrén shēng ér zìyóu, zài zūnyán hé quánlì shàng yīlǜ píngděng
 | t | /tʰ/ | ando | I-2 |
 | n | /n/ | númen | I-5 |
 | l | /l/ | lambe | I-6 |
-| g | /k/ | calma | III-1 |
-| k | /kʰ/ | anga | III-2 |
-| h | /x/ | hwesta | III-3 |
-| j | /tɕ/ | calma + pal. | III-1+pal. |
-| q | /tɕʰ/ | anga + pal. | III-2+pal. |
-| x | /ɕ/ | hwesta + pal. | III-3+pal. |
-| zh | /tʂ/ | quessë | IV-1 |
-| ch | /tʂʰ/ | ungwë | IV-2 |
-| sh | /ʂ/ | harma | IV-3 |
-| r | /ɻ/ | órë | IV-6 |
+| zh | /tʂ/ | calma | III-1 |
+| ch | /tʂʰ/ | anga | III-2 |
+| sh | /ʂ/ | hwesta | III-3 |
+| r | /ɻ/ | órë | III-6 |
+| g | /k/ | quessë | IV-1 |
+| k | /kʰ/ | ungwë | IV-2 |
+| h | /x/ | harma | IV-3 |
+| j | /tɕ/ | quessë + pal. | IV-1+pal. |
+| q | /tɕʰ/ | ungwë + pal. | IV-2+pal. |
+| x | /ɕ/ | harma + pal. | IV-3+pal. |
 | z | /ts/ | ext. tinco | I-1 ext. |
 | c | /tsʰ/ | ext. ando | I-2 ext. |
 | s | /s/ | thúlë | I-3 |
