@@ -1,6 +1,6 @@
 # Numbers 1-10
 
-| Pinyin | 汉字 | English | Tengwar | Romanized |
+| Romanization | Hanzi | English | Tengwar | Names |
 |--------|------|---------|---------|-----------|
 | yī | 一 | one |  | `{anna}[i]¹` |
 | èr | 二 | two |  | `{carrier_short}[e]{oore}⁴` |

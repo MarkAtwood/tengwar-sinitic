@@ -2,7 +2,7 @@
 
 **Author:** 柳宗元 (Liu Zongyuan, 773-819)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | qiān shān niǎo fēi jué | 千山鸟飞绝 |  | `{ungwe}{+pal}{anna}[a]{nuumen}¹{hwesta}[a]{nuumen}¹{nuumen}{anna}[a]³{formen}[e]¹{quesse}{+pal}{vala}[e]²` |
 | wàn jìng rén zōng miè | 万径人踪灭 |  | `{vala}[a]{nuumen}⁴{quesse}{+pal}[i]{noldo}⁴{oore}[e]{nuumen}²{tinco_ext}[o]{noldo}¹{malta}{anna}[e]⁴` |

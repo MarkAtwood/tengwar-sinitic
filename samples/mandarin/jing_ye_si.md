@@ -2,7 +2,7 @@
 
 **Author:** 李白 (Li Bai, 701-762)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | chuáng qián míng yuè guāng | 床前明月光 |  | `{anga}{vala}[a]{noldo}²{ungwe}{+pal}{anna}[a]{nuumen}²{malta}[i]{noldo}²{anna}{vala}[e]⁴{quesse}{vala}[a]{noldo}¹` |
 | yí shì dì shàng shuāng | 疑是地上霜 |  | `{anna}[i]²{hwesta}[i]⁴{tinco}[i]⁴{hwesta}[a]{noldo}⁴{hwesta}{vala}[a]{noldo}¹` |

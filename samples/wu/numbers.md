@@ -2,7 +2,7 @@
 
 Shanghainese numbers 1-10 and extended numerals.
 
-| Wu Pinyin | 吳字 | English | Tengwar | Names |
+| Romanization | Hanzi | English | Tengwar | Names |
 |---|---|---|---|---|
 | iq5 | 一 | one |  | `{telco}[i]{halla}[e/rise]..` |
 | liang3 | 兩 | two |  | `{lambe}{anna}[a]{noldo}_` |

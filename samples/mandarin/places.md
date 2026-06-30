@@ -1,6 +1,6 @@
 # Place Names
 
-| Pinyin | 汉字 | English | Tengwar | Romanized |
+| Romanization | Hanzi | English | Tengwar | Names |
 |--------|------|---------|---------|-----------|
 | běi jīng | 北京 | Beijing |  | `{parma}[e]³{quesse}{+pal}[i]{noldo}¹` |
 | shàng hǎi | 上海 | Shanghai |  | `{hwesta}[a]{noldo}⁴{harma}[a]³` |

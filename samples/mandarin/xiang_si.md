@@ -2,7 +2,7 @@
 
 **Author:** 王维 (Wang Wei, 699-759)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | hóng dòu shēng nán guó | 红豆生南国 |  | `{harma}[o]{noldo}²{tinco}[o]⁴{hwesta}[e]{noldo}¹{nuumen}[a]{nuumen}²{quesse}{vala}[o]²` |
 | chūn lái fā jǐ zhī | 春来发几枝 |  | `{anga}[u]{nuumen}¹{lambe}[a]²{formen}[a]¹{quesse}{+pal}[i]³{calma}[i]¹` |

@@ -2,7 +2,7 @@
 
 Shanghai districts and nearby Wu-speaking cities.
 
-| Wu Pinyin | 吳字 | English | Tengwar | Names |
+| Romanization | Hanzi | English | Tengwar | Names |
 |---|---|---|---|---|
 | zaang3 he3 | 上海 | Shanghai |  | `{tinco_ext}[a]{noldo}_{hwesta}[e/rise]_` |
 | bu3 dong1 | 浦東 | Pudong |  | `{parma}[u]_{tinco}[o]{noldo}\` |

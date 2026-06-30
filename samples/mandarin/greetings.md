@@ -1,6 +1,6 @@
 # Common Greetings
 
-| Pinyin | 汉字 | English | Tengwar | Romanized |
+| Romanization | Hanzi | English | Tengwar | Names |
 |--------|------|---------|---------|-----------|
 | nǐ hǎo | 你好 | Hello |  | `{nuumen}[i]³{harma}[a]³` |
 | zǎo shàng hǎo | 早上好 | Good morning |  | `{tinco_ext}[a]³{hwesta}[a]{noldo}⁴{harma}[a]³` |

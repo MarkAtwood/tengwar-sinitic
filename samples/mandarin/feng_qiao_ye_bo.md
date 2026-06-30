@@ -2,7 +2,7 @@
 
 **Author:** 张继 (Zhang Ji, 715-779)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | yuè luò wū tí shuāng mǎn tiān | 月落乌啼霜满天 |  | `{anna}{vala}[e]⁴{lambe}{vala}[o]⁴{vala}[u]¹{ando}[i]²{hwesta}{vala}[a]{noldo}¹{malta}[a]{nuumen}³{ando}{anna}[a]{nuumen}¹` |
 | jiāng fēng yú huǒ duì chóu mián | 江枫渔火对愁眠 |  | `{quesse}{+pal}{anna}[a]{noldo}¹{formen}[e]{noldo}¹{anna}[u]²{harma}{vala}[o]³{tinco}{vala}[i]⁴{anga}[o]²{malta}{anna}[a]{nuumen}²` |

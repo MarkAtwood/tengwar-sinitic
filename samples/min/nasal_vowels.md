@@ -2,7 +2,7 @@
 
 Hokkien has distinctive nasal vowels marked with -nn in Tai-lo.
 
-| Tai-lo | 閩字 | English | Tengwar | Names |
+| Romanization | Hanzi | English | Tengwar | Names |
 |---|---|---|---|---|
 | sann1 | 三 | three |  | `{thule}[a][~]_` |
 | tinn1 | 甜 | sweet |  | `{tinco}[i][~]_` |
@@ -13,4 +13,4 @@ Hokkien has distinctive nasal vowels marked with -nn in Tai-lo.
 | suann1 | 山 | mountain |  | `{thule}{vala}[a][~]_` |
 | kuann1 | 關 | close |  | `{calma}{vala}[a][~]_` |
 | mng5 | 門 | door |  | `{malta}{noldo}[e/rise]` |
-| ang5 | 紅 | red |  | `{telco}[a]{noldo}[e/rise]` |
+| ang5 | 紅 | red |  | `{telco}[a]{noldo}[e/rise]` |

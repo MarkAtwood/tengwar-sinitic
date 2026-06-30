@@ -1,6 +1,6 @@
 # Numbers
 
-| Tai-lo | 閩字 | English | Tengwar | Names |
+| Romanization | Hanzi | English | Tengwar | Names |
 |---|---|---|---|---|
 | tsit8 | 一 | one |  | `{tinco_ext}[i]{tinco}_` |
 | nng7 | 兩 | two |  | `{numen}{noldo}_[./mid]` |

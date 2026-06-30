@@ -2,7 +2,7 @@
 
 **Author:** 杜甫 (Du Fu, 712-770)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | liǎng gè huáng lí míng cuì liǔ | 两个黄鹂鸣翠柳 |  | `{lambe}{anna}[a]{noldo}³{quesse}[e]⁴{harma}{vala}[a]{noldo}²{lambe}[i]²{malta}[i]{noldo}²{ando_ext}{vala}[i]⁴{lambe}[i]³` |
 | yī háng bái lù shàng qīng tiān | 一行白鹭上青天 |  | `{anna}[i]¹{harma}[a]{noldo}²{parma}[a]²{lambe}[u]⁴{hwesta}[a]{noldo}⁴{ungwe}{+pal}[i]{noldo}¹{ando}{anna}[a]{nuumen}¹` |

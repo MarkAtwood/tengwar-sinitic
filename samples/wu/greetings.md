@@ -2,7 +2,7 @@
 
 Common Shanghainese greetings and expressions.
 
-| Wu Pinyin | 吳字 | English | Tengwar | Names |
+| Romanization | Hanzi | English | Tengwar | Names |
 |---|---|---|---|---|
 | nong2 ho3 | 儂好 | hello (informal) |  | `{numen}[o]{noldo}\..{hwesta}[o]_` |
 | ze4 we4 | 再會 | goodbye |  | `{tinco_ext}[e/rise][e/rise][oe/.]{vala}[e/rise][e/rise][oe/.]` |

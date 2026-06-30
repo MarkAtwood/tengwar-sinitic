@@ -2,7 +2,7 @@
 
 **Author:** 王之涣 (Wang Zhihuan, 688-742)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | bái rì yī shān jìn | 白日依山尽 |  | `{parma}[a]²{oore}[i]⁴{anna}[i]¹{hwesta}[a]{nuumen}¹{quesse}{+pal}[i]{nuumen}⁴` |
 | huáng hé rù hǎi liú | 黄河入海流 |  | `{harma}{vala}[a]{noldo}²{harma}[e]²{oore}[u]⁴{harma}[a]³{lambe}[i]²` |

@@ -2,7 +2,7 @@
 
 **Author:** 贺知章 (He Zhizhang, 659-744)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | shào xiǎo lí jiā lǎo dà huí | 少小离家老大回 |  | `{hwesta}[a]⁴{harma}{+pal}{anna}[a]³{lambe}[i]²{quesse}{+pal}{anna}[a]¹{lambe}[a]³{tinco}[a]⁴{harma}{vala}[i]²` |
 | xiāng yīn wú gǎi bìn máo shuāi | 乡音无改鬓毛衰 |  | `{harma}{+pal}{anna}[a]{noldo}¹{anna}[i]{nuumen}¹{vala}[u]²{quesse}[a]³{parma}[i]{nuumen}⁴{malta}[a]²{hwesta}{vala}[a]¹` |

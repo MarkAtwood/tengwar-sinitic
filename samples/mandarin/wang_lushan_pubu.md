@@ -2,7 +2,7 @@
 
 **Author:** 李白 (Li Bai, 701-762)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | rì zhào xiāng lú shēng zǐ yān | 日照香炉生紫烟 |  | `{oore}[i]⁴{calma}[a]⁴{harma}{+pal}{anna}[a]{noldo}¹{lambe}[u]²{hwesta}[e]{noldo}¹{tinco_ext}[i]³{anna}[a]{nuumen}¹` |
 | yáo kàn pù bù guà qián chuān | 遥看瀑布挂前川 |  | `{anna}[a]²{ungwe}[a]{nuumen}⁴{umbar}[u]⁴{parma}[u]⁴{quesse}{vala}[a]⁴{ungwe}{+pal}{anna}[a]{nuumen}²{anga}{vala}[a]{nuumen}¹` |

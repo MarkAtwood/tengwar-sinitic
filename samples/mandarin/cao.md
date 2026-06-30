@@ -2,7 +2,7 @@
 
 **Author:** 白居易 (Bai Juyi, 772-846)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | lí lí yuán shàng cǎo | 离离原上草 |  | `{lambe}[i]²{lambe}[i]²{anna}{vala}[a]{nuumen}²{hwesta}[a]{noldo}⁴{ando_ext}[a]³` |
 | yī suì yī kū róng | 一岁一枯荣 |  | `{anna}[i]¹{thuule}{vala}[i]⁴{anna}[i]¹{ungwe}[u]¹{oore}[o]{noldo}²` |

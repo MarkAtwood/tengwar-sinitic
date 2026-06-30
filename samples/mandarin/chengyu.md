@@ -1,6 +1,6 @@
 # Four-Character Idioms (Chengyu)
 
-| Pinyin | 汉字 | English | Tengwar | Romanized |
+| Romanization | Hanzi | English | Tengwar | Names |
 |--------|------|---------|---------|-----------|
 | yī xīn yī yì | 一心一意 | wholeheartedly |  | `{anna}[i]¹{harma}{+pal}[i]{nuumen}¹{anna}[i]¹{anna}[i]⁴` |
 | wàn shì rú yì | 万事如意 | may all go as you wish |  | `{vala}[a]{nuumen}⁴{hwesta}[i]⁴{oore}[u]²{anna}[i]⁴` |

@@ -2,7 +2,7 @@
 
 **Author:** 李白 (Li Bai, 701-762)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | zhāo cí bái dì cǎi yún jiān | 朝辞白帝彩云间 |  | `{calma}[a]¹{ando_ext}[i]²{parma}[a]²{tinco}[i]⁴{ando_ext}[a]³{anna}[u]{nuumen}²{quesse}{+pal}{anna}[a]{nuumen}¹` |
 | qiān lǐ jiāng líng yī rì huán | 千里江陵一日还 |  | `{ungwe}{+pal}{anna}[a]{nuumen}¹{lambe}[i]³{quesse}{+pal}{anna}[a]{noldo}¹{lambe}[i]{noldo}²{anna}[i]¹{oore}[i]⁴{harma}{vala}[a]{nuumen}²` |

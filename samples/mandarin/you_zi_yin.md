@@ -2,7 +2,7 @@
 
 **Author:** 孟郊 (Meng Jiao, 751-814)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | cí mǔ shǒu zhōng xiàn | 慈母手中线 |  | `{ando_ext}[i]²{malta}[u]³{hwesta}[o]³{calma}[o]{noldo}¹{harma}{+pal}{anna}[a]{nuumen}⁴` |
 | yóu zǐ shēn shàng yī | 游子身上衣 |  | `{anna}[o]²{tinco_ext}[i]³{hwesta}[e]{nuumen}¹{hwesta}[a]{noldo}⁴{anna}[i]¹` |

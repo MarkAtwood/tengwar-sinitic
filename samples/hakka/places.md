@@ -1,6 +1,6 @@
 # Places
 
-| Hakka | 客字 | English | Tengwar | Names |
+| Romanization | Hanzi | English | Tengwar | Names |
 |---|---|---|---|---|
 | moi2 zu1 | 梅州 | Meizhou |  | `{malta}[o]_..{tinco_ext}[u][e/rise]` |
 | hoi3 liug5 | 海陸 | Hailu |  | `{hwesta}[o]\[ii/.]{lambe}{anna}[u]{calma}_..` |

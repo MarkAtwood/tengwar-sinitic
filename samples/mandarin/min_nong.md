@@ -2,7 +2,7 @@
 
 **Author:** 李绅 (Li Shen, 772-846)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | chú hé rì dāng wǔ | 锄禾日当午 |  | `{anga}[u]²{harma}[e]²{oore}[i]⁴{tinco}[a]{noldo}¹{vala}[u]³` |
 | hàn dī hé xià tǔ | 汗滴禾下土 |  | `{harma}[a]{nuumen}⁴{tinco}[i]¹{harma}[e]²{harma}{+pal}{anna}[a]⁴{ando}[u]³` |

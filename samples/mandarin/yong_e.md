@@ -2,7 +2,7 @@
 
 **Author:** 骆宾王 (Luo Binwang, 619-687)
 
-| Pinyin | 汉字 | Tengwar | Romanized |
+| Romanization | Hanzi | Tengwar | Names |
 |--------|------|---------|-----------|
 | é é é | 鹅鹅鹅 |  | `{carrier_short}[e]²{carrier_short}[e]²{carrier_short}[e]²` |
 | qū xiàng xiàng tiān gē | 曲项向天歌 |  | `{ungwe}{+pal}[u]¹{harma}{+pal}{anna}[a]{noldo}⁴{harma}{+pal}{anna}[a]{noldo}⁴{ando}{anna}[a]{nuumen}¹{quesse}[e]¹` |
