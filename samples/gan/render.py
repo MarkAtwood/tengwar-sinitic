@@ -87,8 +87,8 @@ def render_sample(name):
             # parts[0] is empty (before first |), parts[-1] may be empty
             # Expected: ['', 'Chinese', 'Romanization', 'English', 'Tengwar', 'Names', '']
             if len(parts) >= 4:
-                hanzi = parts[1]
-                romanization = parts[2]
+                romanization = parts[1]
+                hanzi = parts[2]
                 # Skip header rows and separator rows
                 if romanization and hanzi and 'Romanization' not in romanization and '---' not in hanzi:
                     # Check for CJK characters to ensure it's a data row

@@ -86,8 +86,8 @@ def render_sample(name):
             parts = [p.strip() for p in line.split('|')]
             # Xiang format: | Chinese | Romanization | English | Tengwar | Names (optional) |
             if len(parts) >= 4:
-                hanzi = parts[1]
-                romanization = parts[2]
+                romanization = parts[1]
+                hanzi = parts[2]
                 # Skip header rows and non-sample rows (hanzi must contain Chinese characters)
                 has_cjk = any('\u4e00' <= c <= '\u9fff' for c in hanzi)
                 if romanization and hanzi and has_cjk and 'Romanization' not in romanization:
