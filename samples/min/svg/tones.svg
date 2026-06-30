@@ -1,37 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1784">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="2036">
 <defs><style>
 .tailo { font-family: sans-serif; font-size: 24px; fill: #666; }
 .hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
 .tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
 .names { font-family: monospace; font-size: 16px; fill: #999; }
 </style></defs>
-<rect width="1400" height="1784" fill="white"/>
-<text x="20" y="30" class="tailo">su1</text>
-<text x="20" y="88" class="hanzi">書</text>
-<text x="20" y="146" class="tengwar"></text>
-<text x="20" y="204" class="names">{thule}[u]_</text>
-<text x="20" y="282" class="tailo">su2</text>
-<text x="20" y="340" class="hanzi">輸</text>
-<text x="20" y="398" class="tengwar"></text>
-<text x="20" y="456" class="names">{thule}[u]\</text>
-<text x="20" y="534" class="tailo">su3</text>
-<text x="20" y="592" class="hanzi">四</text>
-<text x="20" y="650" class="tengwar"></text>
-<text x="20" y="708" class="names">{thule}[u]\..</text>
-<text x="20" y="786" class="tailo">su5</text>
-<text x="20" y="844" class="hanzi">樹</text>
-<text x="20" y="902" class="tengwar"></text>
-<text x="20" y="960" class="names">{thule}[u][e/rise]</text>
-<text x="20" y="1038" class="tailo">su7</text>
-<text x="20" y="1096" class="hanzi">數</text>
-<text x="20" y="1154" class="tengwar"></text>
-<text x="20" y="1212" class="names">{thule}[u]_[./mid]</text>
-<text x="20" y="1290" class="tailo">sut4</text>
-<text x="20" y="1348" class="hanzi">術</text>
-<text x="20" y="1406" class="tengwar"></text>
-<text x="20" y="1464" class="names">{thule}[u]{tinco}</text>
-<text x="20" y="1542" class="tailo">sut8</text>
-<text x="20" y="1600" class="hanzi">實</text>
-<text x="20" y="1658" class="tengwar"></text>
-<text x="20" y="1716" class="names">{thule}[u]{tinco}_</text>
+<rect width="1400" height="2036" fill="white"/>
+<text x="20" y="30" class="tailo">Romanization</text>
+<text x="20" y="88" class="hanzi">Hanzi</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{telco}</text>
+<text x="20" y="282" class="tailo">su1</text>
+<text x="20" y="340" class="hanzi">書</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{thule}[u]_</text>
+<text x="20" y="534" class="tailo">su2</text>
+<text x="20" y="592" class="hanzi">輸</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{thule}[u]\</text>
+<text x="20" y="786" class="tailo">su3</text>
+<text x="20" y="844" class="hanzi">四</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{thule}[u]\..</text>
+<text x="20" y="1038" class="tailo">su5</text>
+<text x="20" y="1096" class="hanzi">樹</text>
+<text x="20" y="1154" class="tengwar"></text>
+<text x="20" y="1212" class="names">{thule}[u][e/rise]</text>
+<text x="20" y="1290" class="tailo">su7</text>
+<text x="20" y="1348" class="hanzi">數</text>
+<text x="20" y="1406" class="tengwar"></text>
+<text x="20" y="1464" class="names">{thule}[u]_[./mid]</text>
+<text x="20" y="1542" class="tailo">sut4</text>
+<text x="20" y="1600" class="hanzi">術</text>
+<text x="20" y="1658" class="tengwar"></text>
+<text x="20" y="1716" class="names">{thule}[u]{tinco}</text>
+<text x="20" y="1794" class="tailo">sut8</text>
+<text x="20" y="1852" class="hanzi">實</text>
+<text x="20" y="1910" class="tengwar"></text>
+<text x="20" y="1968" class="names">{thule}[u]{tinco}_</text>
 </svg>
