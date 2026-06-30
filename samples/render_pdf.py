@@ -18,25 +18,98 @@ from reportlab.pdfbase.ttfonts import TTFont as RLTTFont
 import uharfbuzz as hb
 
 
+# Tone number to accent conversion (supports tones 1-8)
+TONE_ACCENTS = {
+    'a': ['ā', 'á', 'ǎ', 'à', 'a', 'a', 'a', 'a'],
+    'e': ['ē', 'é', 'ě', 'è', 'e', 'e', 'e', 'e'],
+    'i': ['ī', 'í', 'ǐ', 'ì', 'i', 'i', 'i', 'i'],
+    'o': ['ō', 'ó', 'ǒ', 'ò', 'o', 'o', 'o', 'o'],
+    'u': ['ū', 'ú', 'ǔ', 'ù', 'u', 'u', 'u', 'u'],
+    'ü': ['ǖ', 'ǘ', 'ǚ', 'ǜ', 'ü', 'ü', 'ü', 'ü'],
+    # For syllabic nasals (m, ng), use macron/acute on following placeholder or drop tone
+    'm': ['m̄', 'ḿ', 'm̌', 'm̀', 'm', 'm', 'm', 'm'],
+    'n': ['n̄', 'ń', 'ň', 'ǹ', 'n', 'n', 'n', 'n'],
+}
+
+def numbered_to_accented(text):
+    """Convert numbered romanization (ni3 hao3) to accented (nǐ hǎo)."""
+    def convert_syllable(match):
+        syllable = match.group(1)
+        tone = int(match.group(2))
+        if tone < 1 or tone > 8:
+            return syllable + str(tone)
+        tone_idx = tone - 1
+
+        vowels = 'aeiouü'
+        syllable_lower = syllable.lower()
+
+        # Find vowel to mark (pinyin rules: a/e take it, in ou o takes it, else last vowel)
+        mark_pos = -1
+        if 'a' in syllable_lower:
+            mark_pos = syllable_lower.index('a')
+        elif 'e' in syllable_lower:
+            mark_pos = syllable_lower.index('e')
+        elif 'ou' in syllable_lower:
+            mark_pos = syllable_lower.index('o')
+        else:
+            for i in range(len(syllable_lower) - 1, -1, -1):
+                if syllable_lower[i] in vowels:
+                    mark_pos = i
+                    break
+
+        # Handle syllabic nasals (m, ng) - no vowel
+        if mark_pos == -1:
+            if syllable_lower in ('m', 'ng', 'n'):
+                char = syllable_lower[0]
+                if char in TONE_ACCENTS and tone_idx < len(TONE_ACCENTS[char]):
+                    return TONE_ACCENTS[char][tone_idx] + syllable[1:]
+            return syllable  # drop tone number for display
+
+        # Apply accent to vowel
+        result = list(syllable)
+        vowel = syllable_lower[mark_pos]
+        if vowel in TONE_ACCENTS and tone_idx < len(TONE_ACCENTS[vowel]):
+            accented = TONE_ACCENTS[vowel][tone_idx]
+            if syllable[mark_pos].isupper():
+                accented = accented.upper()
+            result[mark_pos] = accented
+
+        return ''.join(result)
+
+    # Match syllable + tone number 1-8 (including already-accented vowels)
+    result = re.sub(r'([a-zA-ZüÜāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]+)([1-8])', convert_syllable, text)
+    # Strip any remaining tone numbers that weren't converted (edge cases)
+    result = re.sub(r'([āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])([1-8])', r'\1', result)
+    return result
+
+
 # Font paths
 FONT_DIR = Path(__file__).parent.parent / 'fonts' / 'Alcarin-Tengwar' / 'Font source' / 'build'
 TENGWAR_FONT = FONT_DIR / 'AlcarinTengwar-Regular.otf'
 
-# System fonts for CJK
+# System fonts
 CJK_FONT = Path('/System/Library/Fonts/STHeiti Light.ttc')
 CJK_FONT_ALT = Path('/System/Library/Fonts/Hiragino Sans GB.ttc')
+LATIN_FONT = Path('/System/Library/Fonts/Helvetica.ttc')
 
-# Register CJK font
-_cjk_registered = False
-def register_cjk_font():
-    global _cjk_registered
-    if _cjk_registered:
+# Register fonts
+_fonts_registered = False
+def register_fonts():
+    global _fonts_registered
+    if _fonts_registered:
         return True
+    # Latin font with extended characters (pinyin diacritics)
+    if LATIN_FONT.exists():
+        try:
+            pdfmetrics.registerFont(RLTTFont('Latin', str(LATIN_FONT), subfontIndex=0))
+        except:
+            pass
+    # CJK font
     for font_path in [CJK_FONT, CJK_FONT_ALT]:
         if font_path.exists():
             try:
                 pdfmetrics.registerFont(RLTTFont('CJK', str(font_path), subfontIndex=0))
-                _cjk_registered = True
+                _fonts_registered = True
                 return True
             except:
                 continue
@@ -139,7 +212,7 @@ def render_sample_pdf(sample_dir, output_path):
         return None
 
     tengwar_renderer = GlyphOutlineRenderer(str(TENGWAR_FONT), font_size=36)
-    has_cjk = register_cjk_font()
+    has_cjk = register_fonts()
 
     c = canvas.Canvas(str(output_path), pagesize=letter)
     width, height = letter
@@ -173,7 +246,7 @@ def render_sample_pdf(sample_dir, output_path):
                     col2 = parts[2]  # hanzi
 
                     # Skip header
-                    if any(h in col1 for h in ['Jyutping', 'Pinyin', 'Romanized', 'Wu', 'Hakka', 'Tai-lo', 'Gan', 'Xiang', 'Beta']):
+                    if any(h in col1 for h in ['Jyutping', 'Pinyin', 'Romanization', 'Wu', 'Hakka', 'Tai-lo', 'Gan', 'Xiang', 'Beta']):
                         continue
                     if not col1 or col1.startswith('#'):
                         continue
@@ -197,15 +270,15 @@ def render_sample_pdf(sample_dir, output_path):
                         y -= 25
 
                     # Draw row: romanization, hanzi, tengwar
-                    c.setFont('Helvetica', 12)
+                    c.setFont('Latin', 12)
                     c.setFillColorRGB(0.4, 0.4, 0.4)
-                    c.drawString(margin, y, col1)
+                    c.drawString(margin, y, numbered_to_accented(col1))
 
                     c.setFillColorRGB(0, 0, 0)
                     if has_cjk:
                         c.setFont('CJK', 12)
                     c.drawString(margin + 120, y, col2)
-                    c.setFont('Helvetica', 12)
+                    c.setFont('Latin', 12)
 
                     # Draw tengwar as vector paths
                     tengwar_renderer.draw_text(c, tengwar, margin + 200, y - 8)
