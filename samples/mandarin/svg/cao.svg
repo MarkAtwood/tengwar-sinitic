@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1400" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">lí lí yuán shàng cǎo</text>
+<text x="20" y="88" class="hanzi">离离原上草</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{lambe}[i]²{lambe}[i]²{anna}{vala}[a]{nuumen}²{hwesta}[a]{noldo}⁴{ando_ext}[a]³</text>
+<text x="20" y="282" class="pinyin">yī suì yī kū róng</text>
+<text x="20" y="340" class="hanzi">一岁一枯荣</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{anna}[i]¹{thuule}{vala}[i]⁴{anna}[i]¹{ungwe}[u]¹{oore}[o]{noldo}²</text>
+<text x="20" y="534" class="pinyin">yě huǒ shāo bù jìn</text>
+<text x="20" y="592" class="hanzi">野火烧不尽</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{anna}[e]³{harma}{vala}[o]³{hwesta}[a]¹{parma}[u]⁴{quesse}{+pal}[i]{nuumen}⁴</text>
+<text x="20" y="786" class="pinyin">chūn fēng chuī yòu shēng</text>
+<text x="20" y="844" class="hanzi">春风吹又生</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{anga}[u]{nuumen}¹{formen}[e]{noldo}¹{anga}{vala}[i]¹{anna}[o]⁴{hwesta}[e]{noldo}¹</text>
+</svg>

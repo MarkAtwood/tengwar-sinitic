@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1400" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">liǎng gè huáng lí míng cuì liǔ</text>
+<text x="20" y="88" class="hanzi">两个黄鹂鸣翠柳</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{lambe}{anna}[a]{noldo}³{quesse}[e]⁴{harma}{vala}[a]{noldo}²{lambe}[i]²{malta}[i]{noldo}²{ando_ext}{vala}[i]⁴{lambe}[i]³</text>
+<text x="20" y="282" class="pinyin">yī háng bái lù shàng qīng tiān</text>
+<text x="20" y="340" class="hanzi">一行白鹭上青天</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{anna}[i]¹{harma}[a]{noldo}²{parma}[a]²{lambe}[u]⁴{hwesta}[a]{noldo}⁴{ungwe}{+pal}[i]{noldo}¹{ando}{anna}[a]{nuumen}¹</text>
+<text x="20" y="534" class="pinyin">chuāng hán xī lǐng qiān qiū xuě</text>
+<text x="20" y="592" class="hanzi">窗含西岭千秋雪</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{anga}{vala}[a]{noldo}¹{harma}[a]{nuumen}²{harma}{+pal}[i]¹{lambe}[i]{noldo}³{ungwe}{+pal}{anna}[a]{nuumen}¹{ungwe}{+pal}[i]¹{harma}{+pal}{vala}[e]³</text>
+<text x="20" y="786" class="pinyin">mén bó dōng wú wàn lǐ chuán</text>
+<text x="20" y="844" class="hanzi">门泊东吴万里船</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{malta}[e]{nuumen}²{parma}[o]²{tinco}[o]{noldo}¹{vala}[u]²{vala}[a]{nuumen}⁴{lambe}[i]³{anga}{vala}[a]{nuumen}²</text>
+</svg>

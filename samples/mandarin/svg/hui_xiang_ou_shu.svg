@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1400" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">shào xiǎo lí jiā lǎo dà huí</text>
+<text x="20" y="88" class="hanzi">少小离家老大回</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{hwesta}[a]⁴{harma}{+pal}{anna}[a]³{lambe}[i]²{quesse}{+pal}{anna}[a]¹{lambe}[a]³{tinco}[a]⁴{harma}{vala}[i]²</text>
+<text x="20" y="282" class="pinyin">xiāng yīn wú gǎi bìn máo shuāi</text>
+<text x="20" y="340" class="hanzi">乡音无改鬓毛衰</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{harma}{+pal}{anna}[a]{noldo}¹{anna}[i]{nuumen}¹{vala}[u]²{quesse}[a]³{parma}[i]{nuumen}⁴{malta}[a]²{hwesta}{vala}[a]¹</text>
+<text x="20" y="534" class="pinyin">ér tóng xiāng jiàn bù xiāng shí</text>
+<text x="20" y="592" class="hanzi">儿童相见不相识</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{carrier_short}[e]{oore}²{ando}[o]{noldo}²{harma}{+pal}{anna}[a]{noldo}¹{quesse}{+pal}{anna}[a]{nuumen}⁴{parma}[u]⁴{harma}{+pal}{anna}[a]{noldo}¹{hwesta}[i]²</text>
+<text x="20" y="786" class="pinyin">xiào wèn kè cóng hé chù lái</text>
+<text x="20" y="844" class="hanzi">笑问客从何处来</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{harma}{+pal}{anna}[a]⁴{vala}[e]{nuumen}⁴{ungwe}[e]⁴{ando_ext}[o]{noldo}²{harma}[e]²{anga}[u]⁴{lambe}[a]²</text>
+</svg>

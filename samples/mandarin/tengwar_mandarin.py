@@ -477,6 +477,150 @@ SAMPLES = {
             'Can repay the radiance of three springs?',
         ],
     },
+
+    'cao': {
+        'title_zh': '草',
+        'title_en': 'Grass',
+        'author': '白居易 (Bai Juyi, 772-846)',
+        'pinyin': [
+            'li2 li2 yuan2 shang4 cao3',
+            'yi1 sui4 yi1 ku1 rong2',
+            'ye3 huo3 shao1 bu4 jin4',
+            'chun1 feng1 chui1 you4 sheng1',
+        ],
+        'chinese': [
+            '离离原上草',
+            '一岁一枯荣',
+            '野火烧不尽',
+            '春风吹又生',
+        ],
+        'translation': [
+            'Lush, lush grass on the plain',
+            'Each year it withers and flourishes',
+            'Wildfire cannot burn it all',
+            'Spring wind blows and it grows again',
+        ],
+    },
+
+    'jiang_xue': {
+        'title_zh': '江雪',
+        'title_en': 'River Snow',
+        'author': '柳宗元 (Liu Zongyuan, 773-819)',
+        'pinyin': [
+            'qian1 shan1 niao3 fei1 jue2',
+            'wan4 jing4 ren2 zong1 mie4',
+            'gu1 zhou1 suo1 li4 weng1',
+            'du2 diao4 han2 jiang1 xue3',
+        ],
+        'chinese': [
+            '千山鸟飞绝',
+            '万径人踪灭',
+            '孤舟蓑笠翁',
+            '独钓寒江雪',
+        ],
+        'translation': [
+            'A thousand mountains, no birds flying',
+            'Ten thousand paths, no trace of man',
+            'A lone boat, an old man in straw cape and hat',
+            'Fishing alone in the cold river snow',
+        ],
+    },
+
+    'wang_lushan_pubu': {
+        'title_zh': '望庐山瀑布',
+        'title_en': 'Viewing the Waterfall at Mount Lu',
+        'author': '李白 (Li Bai, 701-762)',
+        'pinyin': [
+            'ri4 zhao4 xiang1 lu2 sheng1 zi3 yan1',
+            'yao2 kan4 pu4 bu4 gua4 qian2 chuan1',
+            'fei1 liu2 zhi2 xia4 san1 qian1 chi3',
+            'yi2 shi4 yin2 he2 luo4 jiu3 tian1',
+        ],
+        'chinese': [
+            '日照香炉生紫烟',
+            '遥看瀑布挂前川',
+            '飞流直下三千尺',
+            '疑是银河落九天',
+        ],
+        'translation': [
+            'Sunlight on Incense Burner Peak creates purple mist',
+            'From afar I see the waterfall hang over the stream',
+            'Flying waters plunge straight down three thousand feet',
+            'I suspect the Milky Way has fallen from the heavens',
+        ],
+    },
+
+    'jue_ju': {
+        'title_zh': '绝句',
+        'title_en': 'Quatrain',
+        'author': '杜甫 (Du Fu, 712-770)',
+        'pinyin': [
+            'liang3 ge4 huang2 li2 ming2 cui4 liu3',
+            'yi1 hang2 bai2 lu4 shang4 qing1 tian1',
+            'chuang1 han2 xi1 ling3 qian1 qiu1 xue3',
+            'men2 bo2 dong1 wu2 wan4 li3 chuan2',
+        ],
+        'chinese': [
+            '两个黄鹂鸣翠柳',
+            '一行白鹭上青天',
+            '窗含西岭千秋雪',
+            '门泊东吴万里船',
+        ],
+        'translation': [
+            'Two golden orioles sing in the emerald willows',
+            'A line of white egrets rises to the blue sky',
+            'My window frames the western peaks\' eternal snow',
+            'At my door, boats bound for distant Wu are moored',
+        ],
+    },
+
+    'zao_fa_baidi_cheng': {
+        'title_zh': '早发白帝城',
+        'title_en': 'Leaving White Emperor City at Dawn',
+        'author': '李白 (Li Bai, 701-762)',
+        'pinyin': [
+            'zhao1 ci2 bai2 di4 cai3 yun2 jian1',
+            'qian1 li3 jiang1 ling2 yi1 ri4 huan2',
+            'liang3 an4 yuan2 sheng1 ti2 bu4 zhu4',
+            'qing1 zhou1 yi3 guo4 wan4 chong2 shan1',
+        ],
+        'chinese': [
+            '朝辞白帝彩云间',
+            '千里江陵一日还',
+            '两岸猿声啼不住',
+            '轻舟已过万重山',
+        ],
+        'translation': [
+            'At dawn I leave White Emperor City amid colorful clouds',
+            'A thousand miles to Jiangling, I return in a single day',
+            'On both banks, gibbons cry without cease',
+            'My light boat has already passed ten thousand mountains',
+        ],
+    },
+
+    'hui_xiang_ou_shu': {
+        'title_zh': '回乡偶书',
+        'title_en': 'Returning Home',
+        'author': '贺知章 (He Zhizhang, 659-744)',
+        'pinyin': [
+            'shao4 xiao3 li2 jia1 lao3 da4 hui2',
+            'xiang1 yin1 wu2 gai3 bin4 mao2 shuai1',
+            'er2 tong2 xiang1 jian4 bu4 xiang1 shi2',
+            'xiao4 wen4 ke4 cong2 he2 chu4 lai2',
+        ],
+        'chinese': [
+            '少小离家老大回',
+            '乡音无改鬓毛衰',
+            '儿童相见不相识',
+            '笑问客从何处来',
+        ],
+        'translation': [
+            'I left home young and return old',
+            'My accent unchanged, but my temples gray',
+            'Children see me but do not know me',
+            'Smiling, they ask: where does this stranger come from?',
+        ],
+    },
 }
 
 # Additional practical texts

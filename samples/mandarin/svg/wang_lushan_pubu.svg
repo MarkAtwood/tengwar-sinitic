@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1400" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">rì zhào xiāng lú shēng zǐ yān</text>
+<text x="20" y="88" class="hanzi">日照香炉生紫烟</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{oore}[i]⁴{calma}[a]⁴{harma}{+pal}{anna}[a]{noldo}¹{lambe}[u]²{hwesta}[e]{noldo}¹{tinco_ext}[i]³{anna}[a]{nuumen}¹</text>
+<text x="20" y="282" class="pinyin">yáo kàn pù bù guà qián chuān</text>
+<text x="20" y="340" class="hanzi">遥看瀑布挂前川</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{anna}[a]²{ungwe}[a]{nuumen}⁴{umbar}[u]⁴{parma}[u]⁴{quesse}{vala}[a]⁴{ungwe}{+pal}{anna}[a]{nuumen}²{anga}{vala}[a]{nuumen}¹</text>
+<text x="20" y="534" class="pinyin">fēi liú zhí xià sān qiān chǐ</text>
+<text x="20" y="592" class="hanzi">飞流直下三千尺</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{formen}[e]¹{lambe}[i]²{calma}[i]²{harma}{+pal}{anna}[a]⁴{thuule}[a]{nuumen}¹{ungwe}{+pal}{anna}[a]{nuumen}¹{anga}[i]³</text>
+<text x="20" y="786" class="pinyin">yí shì yín hé luò jiǔ tiān</text>
+<text x="20" y="844" class="hanzi">疑是银河落九天</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{anna}[i]²{hwesta}[i]⁴{anna}[i]{nuumen}²{harma}[e]²{lambe}{vala}[o]⁴{quesse}{+pal}[i]³{ando}{anna}[a]{nuumen}¹</text>
+</svg>

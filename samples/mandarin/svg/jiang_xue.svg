@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1400" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">qiān shān niǎo fēi jué</text>
+<text x="20" y="88" class="hanzi">千山鸟飞绝</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{ungwe}{+pal}{anna}[a]{nuumen}¹{hwesta}[a]{nuumen}¹{nuumen}{anna}[a]³{formen}[e]¹{quesse}{+pal}{vala}[e]²</text>
+<text x="20" y="282" class="pinyin">wàn jìng rén zōng miè</text>
+<text x="20" y="340" class="hanzi">万径人踪灭</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{vala}[a]{nuumen}⁴{quesse}{+pal}[i]{noldo}⁴{oore}[e]{nuumen}²{tinco_ext}[o]{noldo}¹{malta}{anna}[e]⁴</text>
+<text x="20" y="534" class="pinyin">gū zhōu suō lì wēng</text>
+<text x="20" y="592" class="hanzi">孤舟蓑笠翁</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{quesse}[u]¹{calma}[o]¹{thuule}{vala}[o]¹{lambe}[i]⁴{vala}[e]{noldo}¹</text>
+<text x="20" y="786" class="pinyin">dú diào hán jiāng xuě</text>
+<text x="20" y="844" class="hanzi">独钓寒江雪</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{tinco}[u]²{tinco}{anna}[a]⁴{harma}[a]{nuumen}²{quesse}{+pal}{anna}[a]{noldo}¹{harma}{+pal}{vala}[e]³</text>
+</svg>

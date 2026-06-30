@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1028">
+<defs><style>
+.pinyin { font-family: sans-serif; font-size: 24px; fill: #666; }
+.hanzi { font-family: "Songti SC", "Noto Serif CJK SC", serif; font-size: 33px; }
+.tengwar { font-family: "Alcarin Tengwar"; font-size: 48px; }
+.names { font-family: monospace; font-size: 16px; fill: #999; }
+</style></defs>
+<rect width="1400" height="1028" fill="white"/>
+<text x="20" y="30" class="pinyin">zhāo cí bái dì cǎi yún jiān</text>
+<text x="20" y="88" class="hanzi">朝辞白帝彩云间</text>
+<text x="20" y="146" class="tengwar"></text>
+<text x="20" y="204" class="names">{calma}[a]¹{ando_ext}[i]²{parma}[a]²{tinco}[i]⁴{ando_ext}[a]³{anna}[u]{nuumen}²{quesse}{+pal}{anna}[a]{nuumen}¹</text>
+<text x="20" y="282" class="pinyin">qiān lǐ jiāng líng yī rì huán</text>
+<text x="20" y="340" class="hanzi">千里江陵一日还</text>
+<text x="20" y="398" class="tengwar"></text>
+<text x="20" y="456" class="names">{ungwe}{+pal}{anna}[a]{nuumen}¹{lambe}[i]³{quesse}{+pal}{anna}[a]{noldo}¹{lambe}[i]{noldo}²{anna}[i]¹{oore}[i]⁴{harma}{vala}[a]{nuumen}²</text>
+<text x="20" y="534" class="pinyin">liǎng àn yuán shēng tí bù zhù</text>
+<text x="20" y="592" class="hanzi">两岸猿声啼不住</text>
+<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="708" class="names">{lambe}{anna}[a]{noldo}³{carrier_short}[a]{nuumen}⁴{anna}{vala}[a]{nuumen}²{hwesta}[e]{noldo}¹{ando}[i]²{parma}[u]⁴{calma}[u]⁴</text>
+<text x="20" y="786" class="pinyin">qīng zhōu yǐ guò wàn chóng shān</text>
+<text x="20" y="844" class="hanzi">轻舟已过万重山</text>
+<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="960" class="names">{ungwe}{+pal}[i]{noldo}¹{calma}[o]¹{anna}[i]³{quesse}{vala}[o]⁴{vala}[a]{nuumen}⁴{anga}[o]{noldo}²{hwesta}[a]{nuumen}¹</text>
+</svg>
