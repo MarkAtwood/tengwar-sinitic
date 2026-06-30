@@ -46,7 +46,7 @@ TENGWAR = {
     'vala': '\ue02d',       # Glide /w/ (medial u-)
 
     # Carriers
-    'telco': '\ue02f',      # Zero initial carrier
+    'telco': '\ue02e',      # Zero initial carrier
 }
 
 # Palatal diacritic (below tengwa)

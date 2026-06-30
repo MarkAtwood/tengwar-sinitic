@@ -46,7 +46,7 @@ TENGWAR = {
     'vala': '\ue02d',       # Glide /w/ (w-)
 
     # Carriers
-    'carrier_short': '\ue02f',  # telco - zero initial
+    'carrier_short': '\ue02e',  # telco - zero initial
 }
 
 # Tehtar (vowel marks) - using codepoints from the spec

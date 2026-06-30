@@ -16,11 +16,11 @@
 <text x="20" y="456" class="names">{tinco_ext}[o][e/rise]{thule}[a/.]{numen}\..</text>
 <text x="20" y="534" class="jyutping">ng5 on1</text>
 <text x="20" y="592" class="hanzi">午安</text>
-<text x="20" y="650" class="tengwar"></text>
+<text x="20" y="650" class="tengwar"></text>
 <text x="20" y="708" class="names">{noldo}[e/rise]..{carrier_short}[o]{numen}_</text>
 <text x="20" y="786" class="jyutping">maan5 on1</text>
 <text x="20" y="844" class="hanzi">晚安</text>
-<text x="20" y="902" class="tengwar"></text>
+<text x="20" y="902" class="tengwar"></text>
 <text x="20" y="960" class="names">{malta}[aa]{numen}[e/rise]..{carrier_short}[o]{numen}_</text>
 <text x="20" y="1038" class="jyutping">baai1 baai3</text>
 <text x="20" y="1096" class="hanzi">拜拜</text>
@@ -48,7 +48,7 @@
 <text x="20" y="2472" class="names">{malta}[o][e/rise]..{malta}[a/.]{numen}_..{ando}[a/.]\..</text>
 <text x="20" y="2550" class="jyutping">gei2 hou2 aa3</text>
 <text x="20" y="2608" class="hanzi">幾好呀</text>
-<text x="20" y="2666" class="tengwar"></text>
+<text x="20" y="2666" class="tengwar"></text>
 <text x="20" y="2724" class="names">{calma}[e/rise][e/rise]{hwesta}[o][e/rise]{carrier_short}[aa]_[a/.]</text>
 <text x="20" y="2802" class="jyutping">hou2 noi6 mou5 gin3</text>
 <text x="20" y="2860" class="hanzi">好耐冇見</text>
@@ -56,6 +56,6 @@
 <text x="20" y="2976" class="names">{hwesta}[o][e/rise]{numen}[o]_..{malta}[o][e/rise]..{calma}[i]{numen}_[a/.]</text>
 <text x="20" y="3054" class="jyutping">sik6 zo2 faan6 mei6 aa3</text>
 <text x="20" y="3112" class="hanzi">食咗飯未呀</text>
-<text x="20" y="3170" class="tengwar"></text>
+<text x="20" y="3170" class="tengwar"></text>
 <text x="20" y="3228" class="names">{thule}[i]{calma}_..{tinco_ext}[o][e/rise]{formen}[aa]{numen}_..{malta}[e/rise]_..{carrier_short}[aa]_[a/.]</text>
 </svg>
