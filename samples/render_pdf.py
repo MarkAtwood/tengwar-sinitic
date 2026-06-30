@@ -13,6 +13,8 @@ from fontTools.pens.recordingPen import RecordingPen
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont as RLTTFont
 import uharfbuzz as hb
 
 
@@ -20,11 +22,25 @@ import uharfbuzz as hb
 FONT_DIR = Path(__file__).parent.parent / 'fonts' / 'Alcarin-Tengwar' / 'Font source' / 'build'
 TENGWAR_FONT = FONT_DIR / 'AlcarinTengwar-Regular.otf'
 
-# System fonts for CJK and Latin
-SYSTEM_FONTS = {
-    'cjk': Path('/System/Library/Fonts/PingFang.ttc'),
-    'latin': Path('/System/Library/Fonts/Helvetica.ttc'),
-}
+# System fonts for CJK
+CJK_FONT = Path('/System/Library/Fonts/STHeiti Light.ttc')
+CJK_FONT_ALT = Path('/System/Library/Fonts/Hiragino Sans GB.ttc')
+
+# Register CJK font
+_cjk_registered = False
+def register_cjk_font():
+    global _cjk_registered
+    if _cjk_registered:
+        return True
+    for font_path in [CJK_FONT, CJK_FONT_ALT]:
+        if font_path.exists():
+            try:
+                pdfmetrics.registerFont(RLTTFont('CJK', str(font_path), subfontIndex=0))
+                _cjk_registered = True
+                return True
+            except:
+                continue
+    return False
 
 
 class GlyphOutlineRenderer:
@@ -98,13 +114,11 @@ class GlyphOutlineRenderer:
                     pts = [(gx + p[0] * self.scale, gy + p[1] * self.scale) for p in args]
                     path.curveTo(*pts[0], *pts[1], *pts[2])
                 elif op == 'qCurveTo':
-                    # Convert quadratic to cubic
-                    for i, pt in enumerate(args):
-                        px, py = gx + pt[0] * self.scale, gy + pt[1] * self.scale
-                        if i == len(args) - 1:
-                            path.lineTo(px, py)  # ponytail: simplified qcurve handling
-                        else:
-                            path.lineTo(px, py)
+                    # Convert quadratic bezier to cubic approximation
+                    # For each quadratic segment, use the end point
+                    if args:
+                        px, py = args[-1]
+                        path.lineTo(gx + px * self.scale, gy + py * self.scale)
                 elif op == 'closePath':
                     path.close()
             c.drawPath(path, fill=1, stroke=0)
@@ -125,6 +139,7 @@ def render_sample_pdf(sample_dir, output_path):
         return None
 
     tengwar_renderer = GlyphOutlineRenderer(str(TENGWAR_FONT), font_size=36)
+    has_cjk = register_cjk_font()
 
     c = canvas.Canvas(str(output_path), pagesize=letter)
     width, height = letter
@@ -187,7 +202,10 @@ def render_sample_pdf(sample_dir, output_path):
                     c.drawString(margin, y, col1)
 
                     c.setFillColorRGB(0, 0, 0)
+                    if has_cjk:
+                        c.setFont('CJK', 12)
                     c.drawString(margin + 120, y, col2)
+                    c.setFont('Helvetica', 12)
 
                     # Draw tengwar as vector paths
                     tengwar_renderer.draw_text(c, tengwar, margin + 200, y - 8)
