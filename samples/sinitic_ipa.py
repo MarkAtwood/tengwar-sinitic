@@ -6,17 +6,21 @@ Converts IPA transcriptions of any Sinitic language to Tengwar Unicode.
 Languages without standardized romanization can use this directly.
 
 See docs/sinitic-ipa.md for the phoneme inventory and design rationale.
+
+Codepoints follow Wu/Gan convention (systematic column layout).
+Note: Mandarin converter uses different codepoints - a known inconsistency.
 """
 
 import re
 
 # === TENGWAR CODEPOINTS (Alcarin Tengwar) ===
-# Merged from Mandarin (Group A) and Wu (Group B) converters
+# Following Wu/Gan systematic layout:
+# Column I (Alveolar): U+E00x, Column II (Labial): U+E01x, Column III (Velar): U+E02x
 
 TENGWAR = {
     # Column I - Alveolar
     'tinco': '',      # Grade 1: /t/
-    'ando': '',       # Grade 2: /tʰ/ (A) or /d/ (B)
+    'ando': '',       # Grade 2: /d/ (B) or /tʰ/ (A)
     'thule': '',      # Grade 3: /s/
     'anto': '',       # Grade 4: /z/ voiced (Group B)
     'numen': '',      # Grade 5: /n/
@@ -24,31 +28,31 @@ TENGWAR = {
 
     # Column II - Labial
     'parma': '',      # Grade 1: /p/
-    'umbar': '',      # Grade 2: /pʰ/ (A) or /b/ (B)
+    'umbar': '',      # Grade 2: /b/ (B) or /pʰ/ (A)
     'formen': '',     # Grade 3: /f/
     'ampa': '',       # Grade 4: /v/ voiced (Group B)
     'malta': '',      # Grade 5: /m/
+    'vala': '',       # Glide /w/
 
-    # Column III - Velar/Retroflex
+    # Column III - Velar
     'calma': '',      # Grade 1: /k/ or /tʂ/
-    'anga': '',       # Grade 2: /kʰ/ (A) or /g/ (B)
+    'anga': '',       # Grade 2: /g/ (B) or /kʰ/ (A)
     'hwesta': '',     # Grade 3: /x/ or /ʂ/
     'unque': '',      # Grade 4: /ɣ/ voiced (Group B)
     'noldo': '',      # Grade 5: /ŋ/
-    'ore': '',        # /ɻ/ retroflex approximant (alias)
 
-    # Column IV - Velar (alternate positions in some modes)
-    'quesse': '',     # alias for velar in some modes
-    'ungwe': '',      # /kʰ/
-    'harma': '',      # /x/ or /h/
+    # Aliases for modes using different column assignments
+    'quesse': '',     # alias calma
+    'ungwe': '',      # alias anga
+    'harma': '',      # alias hwesta
+    'ore': '',        # /ɻ/ retroflex approximant
 
     # Extended stem - Affricates
-    'tinco_ext': '',  # /ts/ (Wu codepoint)
-    'ando_ext': '',   # /tsʰ/ (A) or /dz/ (B)
+    'tinco_ext': '',  # /ts/
+    'ando_ext': '',   # /dz/ (B) or /tsʰ/ (A)
 
     # Approximants/glides
     'anna': '',       # /j/
-    'vala': '',       # /w/
 
     # Carriers and special
     'telco': '',      # zero initial / short carrier
@@ -59,13 +63,13 @@ TEHTAR = {
     'a': '',      # three dots
     'e': '',      # acute stroke
     'i': '',      # single dot
-    'o': '',      # left curl
-    'u': '',      # right curl
+    'o': '',      # left curl
+    'u': '',      # right curl
     'syllabic': '',   # unutixe / underdot (apical vowel)
     'underdot': '',   # alias
 }
 
-PALATAL_MARK = ''     # double dot below
+PALATAL_MARK = ''     # double dot below
 W_CURL = ''           # w-curl below (labialization)
 
 TONE_MARKS = {
@@ -186,19 +190,14 @@ VOWELS = {
 
 def parse_tone(tone_str):
     """
-    Parse Chao tone letters or numeric tone to contour + register.
+    Parse numeric tone to contour + register.
 
     Examples:
-        '51' or '51' -> ('falling', 'high')
-        '35' or '35' -> ('rising', 'mid')
+        '51' -> ('falling', 'high')
+        '35' -> ('rising', 'mid')
         '214' -> ('dipping', 'low')
         '55' or '5' -> ('level', 'high')
     """
-    # Convert numeric to Chao letters
-    num_to_chao = {'5': '5', '4': '4', '3': '3', '2': '2', '1': '1'}
-    if tone_str and tone_str[0].isdigit():
-        tone_str = ''.join(num_to_chao.get(c, c) for c in tone_str)
-
     if not tone_str:
         return None, None
 
