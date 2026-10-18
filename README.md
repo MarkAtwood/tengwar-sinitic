@@ -15,16 +15,16 @@ This is the first published Tengwar mode family for Chinese languages. Each mode
 | Hakka | `tengwar-hakka.md` | Taiwan MOE | 6 | -p -t -k | A |
 | Gan | `tengwar-gan.md` | Project-defined* | 7 | -t -k | A |
 | Xiang | `tengwar-xiang.md` | Beta 5.0 | 6 | none | A |
+| Jin | `tengwar-jin.md` | Project-defined* | 5 | -ʔ | B |
 | Min | `tengwar-min.md` | Tai-lo/POJ | 7 | -p -t -k -h | B |
 | Wu | `tengwar-wu.md` | Wugniu | 5 | -ʔ | B |
 
-*Gan has no standardized romanization; the project defines its own based on Pinfa conventions and IPA.
+*Gan and Jin have no standardized romanization; the project defines its own based on IPA.
 
 ### Not Yet Covered
 
 The following Sinitic branches are not yet implemented:
 
-- **Jin** — spoken in Shanxi and neighboring areas; sometimes grouped with Mandarin but has distinct features (entering tone preservation, some unique consonant clusters). Largest gap — tens of millions of speakers.
 - **Huizhou** — spoken in southern Anhui; phonologically complex, sometimes grouped with Wu or treated as its own branch.
 - **Pinghua** — spoken in Guangxi; small speaker population but linguistically distinct.
 
@@ -34,7 +34,7 @@ Contributions welcome.
 
 **Group A** (Mandarin, Cantonese, Hakka, Gan, Xiang): Grade 2 = aspirated. These modes are mutually compatible.
 
-**Group B** (Min, Wu): Grade 2 = voiced, aspiration marked with diacritic. Uses classical Tengwar voicing semantics. Incompatible with Group A.
+**Group B** (Jin, Min, Wu): Grade 2 = voiced, aspiration marked with diacritic. Uses classical Tengwar voicing semantics. Incompatible with Group A.
 
 See `docs/sinitic-infrastructure.md` for shared patterns and design rationale.
 
@@ -64,11 +64,13 @@ tengwar-cantonese.md     # Cantonese mode spec
 tengwar-hakka.md         # Hakka mode spec
 tengwar-gan.md           # Gan mode spec (with romanization disclaimer)
 tengwar-xiang.md         # Xiang mode spec
+tengwar-jin.md           # Jin mode spec (with romanization disclaimer)
 tengwar-min.md           # Min mode spec
 tengwar-wu.md            # Wu mode spec
 
 docs/
   sinitic-infrastructure.md   # Shared patterns across all modes
+  sinitic-ipa.md              # IPA intermediate layer spec
 
 samples/
   mandarin/              # Mandarin samples (poetry, phrases)
@@ -76,6 +78,7 @@ samples/
   hakka/                 # Hakka samples
   gan/                   # Gan samples
   xiang/                 # Xiang samples
+  jin/                   # Jin samples
   min/                   # Min samples
   wu/                    # Wu samples
   pdf/                   # Vector PDFs (work without fonts)
