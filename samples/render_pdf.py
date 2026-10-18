@@ -102,7 +102,7 @@ def register_fonts():
     if LATIN_FONT.exists():
         try:
             pdfmetrics.registerFont(RLTTFont('Latin', str(LATIN_FONT), subfontIndex=0))
-        except:
+        except Exception:
             pass
     # CJK font
     for font_path in [CJK_FONT, CJK_FONT_ALT]:
@@ -111,7 +111,7 @@ def register_fonts():
                 pdfmetrics.registerFont(RLTTFont('CJK', str(font_path), subfontIndex=0))
                 _fonts_registered = True
                 return True
-            except:
+            except Exception:
                 continue
     return False
 
@@ -176,22 +176,32 @@ class GlyphOutlineRenderer:
             gy = y + g['y'] * self.scale
 
             path = c.beginPath()
+            cur = (0, 0)  # track current position for qCurveTo conversion
             for op, args in pen.value:
                 if op == 'moveTo':
-                    px, py = args[0]
-                    path.moveTo(gx + px * self.scale, gy + py * self.scale)
+                    cur = args[0]
+                    path.moveTo(gx + cur[0] * self.scale, gy + cur[1] * self.scale)
                 elif op == 'lineTo':
-                    px, py = args[0]
-                    path.lineTo(gx + px * self.scale, gy + py * self.scale)
+                    cur = args[0]
+                    path.lineTo(gx + cur[0] * self.scale, gy + cur[1] * self.scale)
                 elif op == 'curveTo':
                     pts = [(gx + p[0] * self.scale, gy + p[1] * self.scale) for p in args]
                     path.curveTo(*pts[0], *pts[1], *pts[2])
+                    cur = args[2]
                 elif op == 'qCurveTo':
-                    # Convert quadratic bezier to cubic approximation
-                    # For each quadratic segment, use the end point
-                    if args:
-                        px, py = args[-1]
-                        path.lineTo(gx + px * self.scale, gy + py * self.scale)
+                    # Convert quadratic bezier to cubic: Q0,Q1,Q2 -> C1=Q0+2/3*(Q1-Q0), C2=Q2+2/3*(Q1-Q2)
+                    if not args:
+                        continue
+                    q0 = cur
+                    q1, q2 = args[0], args[-1]
+                    c1 = (q0[0] + 2/3 * (q1[0] - q0[0]), q0[1] + 2/3 * (q1[1] - q0[1]))
+                    c2 = (q2[0] + 2/3 * (q1[0] - q2[0]), q2[1] + 2/3 * (q1[1] - q2[1]))
+                    path.curveTo(
+                        gx + c1[0] * self.scale, gy + c1[1] * self.scale,
+                        gx + c2[0] * self.scale, gy + c2[1] * self.scale,
+                        gx + q2[0] * self.scale, gy + q2[1] * self.scale
+                    )
+                    cur = q2
                 elif op == 'closePath':
                     path.close()
             c.drawPath(path, fill=1, stroke=0)

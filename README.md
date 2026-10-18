@@ -20,6 +20,16 @@ This is the first published Tengwar mode family for Chinese languages. Each mode
 
 *Gan has no standardized romanization; the project defines its own based on Pinfa conventions and IPA.
 
+### Not Yet Covered
+
+The following Sinitic branches are not yet implemented:
+
+- **Jin** — spoken in Shanxi and neighboring areas; sometimes grouped with Mandarin but has distinct features (entering tone preservation, some unique consonant clusters). Largest gap — tens of millions of speakers.
+- **Huizhou** — spoken in southern Anhui; phonologically complex, sometimes grouped with Wu or treated as its own branch.
+- **Pinghua** — spoken in Guangxi; small speaker population but linguistically distinct.
+
+Contributions welcome.
+
 ### Compatibility Groups
 
 **Group A** (Mandarin, Cantonese, Hakka, Gan, Xiang): Grade 2 = aspirated. These modes are mutually compatible.
