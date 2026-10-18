@@ -11,73 +11,80 @@ See docs/sinitic-ipa.md for the phoneme inventory and design rationale.
 import re
 
 # === TENGWAR CODEPOINTS (Alcarin Tengwar) ===
-# TODO: Fill in codepoints from existing converters (tengwar_mandarin.py, etc.)
-# ponytail: skeleton - codepoints left empty, fill from reference converter when integrating
+# Merged from Mandarin (Group A) and Wu (Group B) converters
 
 TENGWAR = {
     # Column I - Alveolar
-    'tinco': '',
-    'ando': '',
-    'thule': '',
-    'numen': '',
-    'lambe': '',
+    'tinco': '',      # Grade 1: /t/
+    'ando': '',       # Grade 2: /tʰ/ (A) or /d/ (B)
+    'thule': '',      # Grade 3: /s/
+    'anto': '',       # Grade 4: /z/ voiced (Group B)
+    'numen': '',      # Grade 5: /n/
+    'lambe': '',      # Grade 6: /l/
 
     # Column II - Labial
-    'parma': '',
-    'umbar': '',
-    'formen': '',
-    'malta': '',
+    'parma': '',      # Grade 1: /p/
+    'umbar': '',      # Grade 2: /pʰ/ (A) or /b/ (B)
+    'formen': '',     # Grade 3: /f/
+    'ampa': '',       # Grade 4: /v/ voiced (Group B)
+    'malta': '',      # Grade 5: /m/
 
-    # Column III - Velar (or Retroflex in Mandarin mode)
-    'calma': '',
-    'anga': '',
-    'hwesta': '',
-    'noldo': '',
-    'harma': '',
+    # Column III - Velar/Retroflex
+    'calma': '',      # Grade 1: /k/ or /tʂ/
+    'anga': '',       # Grade 2: /kʰ/ (A) or /g/ (B)
+    'hwesta': '',     # Grade 3: /x/ or /ʂ/
+    'unque': '',      # Grade 4: /ɣ/ voiced (Group B)
+    'noldo': '',      # Grade 5: /ŋ/
+    'ore': '',        # /ɻ/ retroflex approximant (alias)
+
+    # Column IV - Velar (alternate positions in some modes)
+    'quesse': '',     # alias for velar in some modes
+    'ungwe': '',      # /kʰ/
+    'harma': '',      # /x/ or /h/
 
     # Extended stem - Affricates
-    'tinco_ext': '',
-    'ando_ext': '',
+    'tinco_ext': '',  # /ts/ (Wu codepoint)
+    'ando_ext': '',   # /tsʰ/ (A) or /dz/ (B)
 
-    # Approximants
-    'anna': '',
-    'vala': '',
-    'ore': '',
+    # Approximants/glides
+    'anna': '',       # /j/
+    'vala': '',       # /w/
 
-    # Carriers
-    'telco': '',
+    # Carriers and special
+    'telco': '',      # zero initial / short carrier
+    'halla': '',      # glottal stop /ʔ/
 }
 
 TEHTAR = {
-    'a': '',
-    'e': '',
-    'i': '',
-    'o': '',
-    'u': '',
-    'syllabic': '',  # unutixe
-    'underdot': '',
+    'a': '',      # three dots
+    'e': '',      # acute stroke
+    'i': '',      # single dot
+    'o': '',      # left curl
+    'u': '',      # right curl
+    'syllabic': '',   # unutixe / underdot (apical vowel)
+    'underdot': '',   # alias
 }
 
-PALATAL_MARK = ''
-W_CURL = ''
+PALATAL_MARK = ''     # double dot below
+W_CURL = ''           # w-curl below (labialization)
 
 TONE_MARKS = {
-    'level': '',
-    'rising': '',
-    'falling': '',
-    'dipping': '',
+    'level': '',      # flat bar
+    'rising': '',     # acute stroke
+    'falling': '',    # grave stroke
+    'dipping': '',    # caron/chevron below
 }
 
 REGISTER_MODS = {
-    'high': '',
-    'mid': '',
-    'low': '',
+    'high': '',             # no modifier
+    'mid': '',        # single dot
+    'low': '',        # double dot
 }
 
 # === IPA TO TENGWAR MAPPINGS ===
 
 # Group A: aspiration semantics (Mandarin, Cantonese, Hakka, Gan, Xiang)
-# Group B: voicing semantics (Min, Wu)
+# Group B: voicing semantics (Jin, Min, Wu)
 
 CONSONANTS_A = {
     # Stops
@@ -89,7 +96,7 @@ CONSONANTS_A = {
     'kʰ': 'anga',
     'kʷ': ('calma', W_CURL),
     'kʷʰ': ('anga', W_CURL),
-    'ʔ': 'telco',
+    'ʔ': 'halla',
 
     # Affricates
     'ts': 'tinco_ext',
@@ -129,7 +136,7 @@ CONSONANTS_B = {
     'd': 'ando',
     'k': 'calma',
     'g': 'anga',
-    'ʔ': 'telco',
+    'ʔ': 'halla',
 
     # Voiced affricates
     'ts': 'tinco_ext',
@@ -139,13 +146,16 @@ CONSONANTS_B = {
 
     # Voiced fricatives
     'f': 'formen',
-    'v': 'vala',  # ponytail: reuse vala for /v/
+    'v': 'ampa',
     's': 'thule',
-    'z': 'thule',  # would need diacritic for true voicing contrast
+    'z': 'anto',
     'ɕ': ('hwesta', PALATAL_MARK),
     'ʑ': ('hwesta', PALATAL_MARK),
+    'x': 'harma',
+    'ɣ': 'unque',
     'h': 'harma',
-    'ɦ': 'harma',
+    'ɦ': 'unque',
+    'ʐ': 'hwesta',  # voiced retroflex
 
     # Nasals (same as A)
     'm': 'malta',
@@ -170,6 +180,7 @@ VOWELS = {
     'œ': ('o', 'i'),
     'ø': ('o', 'i'),
     'ɨ': 'syllabic',  # apical vowel
+    'ɿ': 'syllabic',  # apical vowel (alternate notation)
 }
 
 
@@ -178,13 +189,13 @@ def parse_tone(tone_str):
     Parse Chao tone letters or numeric tone to contour + register.
 
     Examples:
-        '˥˩' or '51' -> ('falling', 'high')
-        '˧˥' or '35' -> ('rising', 'mid')
-        '˨˩˦' or '214' -> ('dipping', 'low')
-        '˥' or '55' or '5' -> ('level', 'high')
+        '51' or '51' -> ('falling', 'high')
+        '35' or '35' -> ('rising', 'mid')
+        '214' -> ('dipping', 'low')
+        '55' or '5' -> ('level', 'high')
     """
     # Convert numeric to Chao letters
-    num_to_chao = {'5': '˥', '4': '˦', '3': '˧', '2': '˨', '1': '˩'}
+    num_to_chao = {'5': '5', '4': '4', '3': '3', '2': '2', '1': '1'}
     if tone_str and tone_str[0].isdigit():
         tone_str = ''.join(num_to_chao.get(c, c) for c in tone_str)
 
@@ -203,9 +214,9 @@ def parse_tone(tone_str):
 
     # Determine register from starting pitch
     start = tone_str[0]
-    if start in '˥˦5 4':
+    if start in '54':
         register = 'high'
-    elif start in '˧3':
+    elif start in '3':
         register = 'mid'
     else:
         register = 'low'
@@ -218,7 +229,7 @@ def ipa_to_tengwar(ipa, group='A'):
     Convert an IPA syllable to Tengwar.
 
     Args:
-        ipa: IPA string, e.g., 'ma˥˩' or 'tɕʰi˧˥'
+        ipa: IPA string, e.g., 'ma51' or 'tchi35'
         group: 'A' for aspiration semantics, 'B' for voicing semantics
 
     Returns:
@@ -227,8 +238,8 @@ def ipa_to_tengwar(ipa, group='A'):
     consonants = CONSONANTS_A if group.upper() == 'A' else CONSONANTS_B
     result = []
 
-    # Extract tone (Chao letters at end, or trailing digits)
-    tone_match = re.search(r'([˥˦˧˨˩]+|[1-5]+)$', ipa)
+    # Extract tone (trailing digits)
+    tone_match = re.search(r'([1-5]+)$', ipa)
     tone_str = tone_match.group(1) if tone_match else ''
     ipa_core = ipa[:tone_match.start()] if tone_match else ipa
 
@@ -259,10 +270,6 @@ def ipa_to_tengwar(ipa, group='A'):
     elif pos < len(ipa_core) and ipa_core[pos] == 'w':
         result.append(TENGWAR['vala'])
         pos += 1
-    elif pos < len(ipa_core) and ipa_core[pos] == 'ɥ':
-        result.append(TENGWAR['anna'])
-        result.append(PALATAL_MARK)
-        pos += 1
 
     # Parse vowel
     if pos < len(ipa_core):
@@ -277,7 +284,7 @@ def ipa_to_tengwar(ipa, group='A'):
             pos += 1
 
     # Skip glide offsets in diphthongs (ai, au, etc.)
-    while pos < len(ipa_core) and ipa_core[pos] in 'iuɪʊ':
+    while pos < len(ipa_core) and ipa_core[pos] in 'iueo':
         pos += 1
 
     # Parse coda
@@ -286,9 +293,9 @@ def ipa_to_tengwar(ipa, group='A'):
         if chunk == 'n':
             result.append(TENGWAR['numen'])
             pos += 1
-        elif chunk == 'ŋ':
+        elif chunk == 'N' or (pos + 1 < len(ipa_core) and ipa_core[pos:pos+2] == 'ng'):
             result.append(TENGWAR['noldo'])
-            pos += 1
+            pos += 2 if ipa_core[pos:pos+2] == 'ng' else 1
         elif chunk == 'm':
             result.append(TENGWAR['malta'])
             pos += 1
@@ -301,7 +308,8 @@ def ipa_to_tengwar(ipa, group='A'):
             else:
                 result.append(TENGWAR['calma'])
             pos += 1
-        elif chunk == '̚':  # unreleased marker, skip
+        elif chunk == '?':  # glottal stop
+            result.append(TENGWAR['halla'])
             pos += 1
         else:
             pos += 1  # skip unknown
@@ -328,18 +336,18 @@ if __name__ == '__main__':
 
     examples = [
         ("Mandarin 'ma' tones", [
-            ('ma˥', 'A'),    # T1
-            ('ma˧˥', 'A'),   # T2
-            ('ma˨˩˦', 'A'),  # T3
-            ('ma˥˩', 'A'),   # T4
+            ('ma55', 'A'),    # T1 high level
+            ('ma35', 'A'),    # T2 rising
+            ('ma214', 'A'),   # T3 dipping
+            ('ma51', 'A'),    # T4 falling
         ]),
-        ("Cantonese 'nei hou'", [
-            ('nei˩˧', 'A'),
-            ('hou˧˥', 'A'),
+        ("Jin entering tone (Group B)", [
+            ('pa?5', 'B'),    # checked syllable with glottal
+            ('i?5', 'B'),     # yi (one)
         ]),
         ("Wu voiced initial (Group B)", [
-            ('bu˨˧', 'B'),   # voiced /b/
-            ('da˩˩', 'B'),   # voiced /d/
+            ('bu23', 'B'),    # voiced /b/
+            ('da11', 'B'),    # voiced /d/
         ]),
     ]
 
