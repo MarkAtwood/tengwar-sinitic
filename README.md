@@ -21,6 +21,10 @@ This is the first published Tengwar mode family for Chinese languages. Each mode
 
 *Gan and Jin have no standardized romanization; the project defines its own based on IPA.
 
+### Sinitic IPA Layer
+
+Any Sinitic language can be converted to Tengwar using the IPA intermediate layer (`docs/sinitic-ipa.md`, `samples/sinitic_ipa.py`). Languages without standardized romanization — regional dialects, minority varieties, or reconstructed historical stages — can input IPA directly. The converter handles both Group A and Group B phonological conventions.
+
 ### Compatibility Groups
 
 **Group A** (Mandarin, Cantonese, Hakka, Gan, Xiang): Grade 2 = aspirated. These modes are mutually compatible.
