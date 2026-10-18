@@ -21,15 +21,6 @@ This is the first published Tengwar mode family for Chinese languages. Each mode
 
 *Gan and Jin have no standardized romanization; the project defines its own based on IPA.
 
-### Not Yet Covered
-
-The following Sinitic branches are not yet implemented:
-
-- **Huizhou** — spoken in southern Anhui; phonologically complex, sometimes grouped with Wu or treated as its own branch.
-- **Pinghua** — spoken in Guangxi; small speaker population but linguistically distinct.
-
-Contributions welcome.
-
 ### Compatibility Groups
 
 **Group A** (Mandarin, Cantonese, Hakka, Gan, Xiang): Grade 2 = aspirated. These modes are mutually compatible.
@@ -106,7 +97,7 @@ PRs [#19](https://github.com/Tosche/Alcarin-Tengwar/pull/19)–[#22](https://git
 
 ## Status
 
-**Complete.** All seven Sinitic modes are implemented with:
+**Complete.** All eight Sinitic modes are implemented with:
 - Full specifications documenting phonological mappings
 - Python converters (romanization → Tengwar)
 - Sample texts with SVG and PDF renderings
@@ -127,6 +118,23 @@ CC BY-SA 4.0 — Attribution required, share-alike required, commercial use perm
 ## Contributing
 
 Issues and pull requests welcome. For substantial changes, please open an issue first to discuss.
+
+### Wishlist
+
+The following would be nice contributions if anyone is interested:
+
+**Font extensions** — The project uses Alcarin Tengwar, but other popular Tengwar fonts lack the below-mark glyphs needed for tonal modes. Extending these fonts would let users choose their preferred style:
+- Tengwar Annatar (Johan Winge)
+- Tengwar Parmaite
+- Tengwar Eldamar
+- Tengwar Cursive
+
+**OFL redraws** — Some Tengwar fonts have unclear licensing. Clean-room OFL redraws matching their aesthetics would benefit the whole Tengwar community.
+
+**Minor improvements:**
+- Combination tehtar kerning for Cantonese (stacked vowel marks)
+- Labialization diacritic (w-curl) addition to Alcarin
+- Rendered sample texts for Min
 
 ## Acknowledgments
 
