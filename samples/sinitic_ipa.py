@@ -7,82 +7,98 @@ Languages without standardized romanization can use this directly.
 
 See docs/sinitic-ipa.md for the phoneme inventory and design rationale.
 
-Codepoints follow Wu/Gan convention (systematic column layout).
-Note: Mandarin converter uses different codepoints - a known inconsistency.
+Codepoints follow Alcarin Tengwar / Free Tengwar mapping (grade-based layout).
 """
 
 import re
 
 # === TENGWAR CODEPOINTS (Alcarin Tengwar) ===
-# Following Wu/Gan systematic layout:
-# Column I (Alveolar): U+E00x, Column II (Labial): U+E01x, Column III (Velar): U+E02x
+# Grade-based layout per Free Tengwar / Alcarin mapping:
+# Grade 1: U+E000-E003 (tinco, parma, calma, quesse)
+# Grade 2: U+E004-E007 (ando, umbar, anga, ungwe)
+# Grade 3: U+E008-E00B (thuule, formen, harma, hwesta)
+# Grade 4: U+E00C-E00F (anto, ampa, anca, unque)
+# Grade 5: U+E010-E013 (nuumen, malta, noldo, nwalme)
+# Grade 6: U+E014-E017 (oore, vala, anna, vilya)
 
 TENGWAR = {
-    # Column I - Alveolar
-    'tinco': '',      # Grade 1: /t/
-    'ando': '',       # Grade 2: /d/ (B) or /tʰ/ (A)
-    'thule': '',      # Grade 3: /s/
-    'anto': '',       # Grade 4: /z/ voiced (Group B)
-    'numen': '',      # Grade 5: /n/
-    'lambe': '',      # Grade 6: /l/
+    # Grade 1 - voiceless stops (unaspirated in Group A)
+    'tinco': '',      # /t/
+    'parma': '',      # /p/
+    'calma': '',      # /k/ or /tʂ/
+    'quesse': '',     # /k/ (velar)
 
-    # Column II - Labial
-    'parma': '',      # Grade 1: /p/
-    'umbar': '',      # Grade 2: /b/ (B) or /pʰ/ (A)
-    'formen': '',     # Grade 3: /f/
-    'ampa': '',       # Grade 4: /v/ voiced (Group B)
-    'malta': '',      # Grade 5: /m/
-    'vala': '',       # Glide /w/
+    # Grade 2 - voiced stops or aspirated (Group B: voiced, Group A: aspirated)
+    'ando': '',       # /d/ or /tʰ/
+    'umbar': '',      # /b/ or /pʰ/
+    'anga': '',       # /g/ or /kʰ/
+    'ungwe': '',      # /g/ or /kʰ/
 
-    # Column III - Velar
-    'calma': '',      # Grade 1: /k/ or /tʂ/
-    'anga': '',       # Grade 2: /g/ (B) or /kʰ/ (A)
-    'hwesta': '',     # Grade 3: /x/ or /ʂ/
-    'unque': '',      # Grade 4: /ɣ/ voiced (Group B)
-    'noldo': '',      # Grade 5: /ŋ/
+    # Grade 3 - voiceless fricatives
+    'thuule': '',     # /s/ (thule)
+    'formen': '',     # /f/
+    'harma': '',      # /x/ or /h/
+    'hwesta': '',     # /ʂ/ or /x/
 
-    # Aliases for modes using different column assignments
-    'quesse': '',     # alias calma
-    'ungwe': '',      # alias anga
-    'harma': '',      # alias hwesta
-    'ore': '',        # /ɻ/ retroflex approximant
+    # Grade 4 - voiced fricatives (Group B)
+    'anto': '',       # /z/
+    'ampa': '',       # /v/
+    'anca': '',       # (unused in Sinitic)
+    'unque': '',      # /ɣ/
 
-    # Extended stem - Affricates
-    'tinco_ext': '',  # /ts/
-    'ando_ext': '',   # /dz/ (B) or /tsʰ/ (A)
+    # Grade 5 - nasals
+    'nuumen': '',     # /n/ (numen)
+    'malta': '',      # /m/
+    'noldo': '',      # /ŋ/
+    'nwalme': '',     # (unused in Sinitic)
 
-    # Approximants/glides
-    'anna': '',       # /j/
+    # Grade 6 - approximants
+    'oore': '',       # /ɻ/ (ore)
+    'vala': '',       # /w/
+    'anna': '',       # /j/
+    'vilya': '',      # (unused in Sinitic)
 
-    # Carriers and special
-    'telco': '',      # zero initial / short carrier
-    'halla': '',      # glottal stop /ʔ/
+    # Extended stems - affricates
+    'tinco_ext': '',  # /ts/
+    'parma_ext': '',  # (unused)
+    'calma_ext': '',  # (unused)
+    'ando_ext': '',   # /dz/ or /tsʰ/
+
+    # Other letters
+    'lambe': '',      # /l/
+    'esse': '',       # /z/ (aare/esse)
+    'hyarmen': '',    # (unused, but exists)
+    'halla': '',      # glottal stop /ʔ/
+
+    # Carriers
+    'telco': '',      # zero initial / short carrier
+    'ara': '',        # long carrier
 }
 
 TEHTAR = {
-    'a': '',      # three dots
+    'a': '',      # three dots above
     'e': '',      # acute stroke
-    'i': '',      # single dot
-    'o': '',      # left curl
-    'u': '',      # right curl
-    'syllabic': '',   # unutixe / underdot (apical vowel)
+    'i': '',      # single dot above (amatixe)
+    'o': '',      # right curl
+    'u': '',      # left curl
+    'syllabic': '',   # unutixe (dot below) - apical vowel
     'underdot': '',   # alias
 }
 
-PALATAL_MARK = ''     # double dot below
-W_CURL = ''           # w-curl below (labialization)
+PALATAL_MARK = ''     # two dots below
+W_CURL = ''           # right curl below (labialization)
 
 TONE_MARKS = {
-    'level': '',      # flat bar
+    'level': '',      # nasalizer (flat bar/macron)
     'rising': '',     # acute stroke
     'falling': '',    # grave stroke
-    'dipping': '',    # caron/chevron below
+    'dipping': '',    # yanta above (used as caron/chevron)
 }
 
 REGISTER_MODS = {
     'high': '',             # no modifier
-    'mid': '',        # single dot
-    'low': '',        # double dot
+    'mid': '',        # single dot below
+    'low': '',        # double dot below
 }
 
 # === IPA TO TENGWAR MAPPINGS ===
@@ -112,7 +128,7 @@ CONSONANTS_A = {
 
     # Fricatives
     'f': 'formen',
-    's': 'thule',
+    's': 'thuule',
     'ʂ': 'hwesta',
     'ɕ': ('hwesta', PALATAL_MARK),
     'x': 'harma',
@@ -120,13 +136,13 @@ CONSONANTS_A = {
 
     # Nasals
     'm': 'malta',
-    'n': 'numen',
-    'ɲ': ('numen', PALATAL_MARK),
+    'n': 'nuumen',
+    'ɲ': ('nuumen', PALATAL_MARK),
     'ŋ': 'noldo',
 
     # Approximants
     'l': 'lambe',
-    'ɻ': 'ore',
+    'ɻ': 'oore',
     'j': 'anna',
     'w': 'vala',
     'ɥ': ('anna', PALATAL_MARK),
@@ -151,7 +167,7 @@ CONSONANTS_B = {
     # Voiced fricatives
     'f': 'formen',
     'v': 'ampa',
-    's': 'thule',
+    's': 'thuule',
     'z': 'anto',
     'ɕ': ('hwesta', PALATAL_MARK),
     'ʑ': ('hwesta', PALATAL_MARK),
@@ -163,8 +179,8 @@ CONSONANTS_B = {
 
     # Nasals (same as A)
     'm': 'malta',
-    'n': 'numen',
-    'ɲ': ('numen', PALATAL_MARK),
+    'n': 'nuumen',
+    'ɲ': ('nuumen', PALATAL_MARK),
     'ŋ': 'noldo',
 
     # Approximants (same as A)
@@ -290,7 +306,7 @@ def ipa_to_tengwar(ipa, group='A'):
     while pos < len(ipa_core):
         chunk = ipa_core[pos]
         if chunk == 'n':
-            result.append(TENGWAR['numen'])
+            result.append(TENGWAR['nuumen'])
             pos += 1
         elif chunk == 'N' or (pos + 1 < len(ipa_core) and ipa_core[pos:pos+2] == 'ng'):
             result.append(TENGWAR['noldo'])
@@ -354,5 +370,5 @@ if __name__ == '__main__':
         print(f"{title}:")
         for ipa, group in items:
             tengwar = ipa_to_tengwar(ipa, group)
-            print(f"  /{ipa}/ -> {tengwar}")
+            print(f"  /{ipa}/ -> {repr(tengwar)}")
         print()

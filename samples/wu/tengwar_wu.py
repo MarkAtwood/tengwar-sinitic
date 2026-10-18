@@ -36,40 +36,40 @@ Qian Nairong romanization:
 TENGWAR = {
     # Column I - Alveolar
     # Grade 1 = voiceless unaspirated, Grade 2 = VOICED (not aspirated!)
-    'tinco': '\ue001',      # Grade 1: d /t/ voiceless unaspirated
-    'ando': '\ue002',       # Grade 2: dd /d/ VOICED
-    'thule': '\ue003',      # Grade 3: s /s/ voiceless fricative
-    'anto': '\ue004',       # Grade 4: ss /z/ voiced fricative
-    'numen': '\ue005',      # Grade 5: n /n/ nasal
-    'lambe': '\ue006',      # Grade 6: l /l/ lateral (spec: U+E006)
+    'tinco': '\ue000',      # Grade 1: d /t/ voiceless unaspirated
+    'ando': '\ue004',       # Grade 2: dd /d/ VOICED
+    'thule': '\ue008',      # Grade 3: s /s/ voiceless fricative
+    'anto': '\ue00c',       # Grade 4: ss /z/ voiced fricative
+    'numen': '\ue010',      # Grade 5: n /n/ nasal
+    'lambe': '\ue022',      # Grade 6: l /l/ lateral (spec: U+E006)
 
     # Column II - Labial
-    'parma': '\ue011',      # Grade 1: b /p/ voiceless unaspirated
-    'umbar': '\ue012',      # Grade 2: bb /b/ VOICED
-    'formen': '\ue013',     # Grade 3: f /f/ voiceless fricative
-    'ampa': '\ue014',       # Grade 4: v /v/ voiced fricative
-    'malta': '\ue015',      # Grade 5: m /m/ nasal
-    'vala': '\ue016',       # Glide /w/ (spec: U+E016)
+    'parma': '\ue001',      # Grade 1: b /p/ voiceless unaspirated
+    'umbar': '\ue005',      # Grade 2: bb /b/ VOICED
+    'formen': '\ue009',     # Grade 3: f /f/ voiceless fricative
+    'ampa': '\ue00d',       # Grade 4: v /v/ voiced fricative
+    'malta': '\ue011',      # Grade 5: m /m/ nasal
+    'vala': '\ue015',       # Glide /w/ (spec: U+E016)
 
     # Column III - Velar/Glottal
-    'calma': '\ue021',      # Grade 1: g /k/ voiceless unaspirated
-    'anga': '\ue022',       # Grade 2: gg /g/ VOICED
-    'hwesta': '\ue023',     # Grade 3: h /h~x/ voiceless fricative
-    'unque': '\ue024',      # Grade 4: gh /H/ voiced glottal fricative
-    'noldo': '\ue025',      # Grade 5: ng /N/ velar nasal (initial in Wu!)
+    'calma': '\ue002',      # Grade 1: g /k/ voiceless unaspirated
+    'anga': '\ue006',       # Grade 2: gg /g/ VOICED
+    'hwesta': '\ue00b',     # Grade 3: h /h~x/ voiceless fricative
+    'unque': '\ue00f',      # Grade 4: gh /H/ voiced glottal fricative
+    'noldo': '\ue012',      # Grade 5: ng /N/ velar nasal (initial in Wu!)
 
     # Extended stem - Alveolar affricates (spec: U+E061/U+E062)
-    'tinco_ext': '\ue061',  # z /ts/ voiceless unaspirated affricate
-    'ando_ext': '\ue062',   # zz /dz/ voiced affricate
+    'tinco_ext': '\ue018',  # z /ts/ voiceless unaspirated affricate
+    'ando_ext': '\ue01c',   # zz /dz/ voiced affricate
 
     # Approximants/glides (spec: U+E036)
-    'anna': '\ue036',       # Glide /j/ (initial y, medial i-)
+    'anna': '\ue016',       # Glide /j/ (initial y, medial i-)
 
     # Carriers and special (spec: U+E030)
-    'telco': '\ue030',      # Zero initial carrier
+    'telco': '\ue02e',      # Zero initial carrier
 
     # Glottal stop coda (spec: U+E028)
-    'halla': '\ue028',      # -q /-P/ glottal stop (from historical *-p, *-t, *-k)
+    'halla': '\ue02d',      # -q /-P/ glottal stop (from historical *-p, *-t, *-k)
 }
 
 # Aspiration diacritic (new for Wu mode)

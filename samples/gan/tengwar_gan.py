@@ -21,31 +21,31 @@ front-rounded /y/ rather than a medial glide need special handling.
 
 TENGWAR = {
     # Column I - Alveolar
-    'tinco': '\ue001',      # Grade 1: d /t/
-    'ando': '\ue002',       # Grade 2: t /th/
-    'thule': '\ue003',      # Grade 3: s /s/
-    'numen': '\ue005',      # Grade 5: n /n/
-    'lambe': '\ue026',      # Grade 6: l /l/
+    'tinco': '\ue000',      # Grade 1: d /t/
+    'ando': '\ue004',       # Grade 2: t /th/
+    'thule': '\ue008',      # Grade 3: s /s/
+    'numen': '\ue010',      # Grade 5: n /n/
+    'lambe': '\ue022',      # Grade 6: l /l/
 
     # Column II - Labial
-    'parma': '\ue011',      # Grade 1: b /p/
-    'umbar': '\ue012',      # Grade 2: p /ph/
-    'formen': '\ue013',     # Grade 3: f /f/
-    'malta': '\ue015',      # Grade 5: m /m/
+    'parma': '\ue001',      # Grade 1: b /p/
+    'umbar': '\ue005',      # Grade 2: p /ph/
+    'formen': '\ue009',     # Grade 3: f /f/
+    'malta': '\ue011',      # Grade 5: m /m/
 
     # Column III - Velar
-    'calma': '\ue021',      # Grade 1: g /k/
-    'anga': '\ue022',       # Grade 2: k /kh/
-    'hwesta': '\ue023',     # Grade 3: h /h/
-    'noldo': '\ue025',      # Grade 5: ng /ng/
+    'calma': '\ue002',      # Grade 1: g /k/
+    'anga': '\ue006',       # Grade 2: k /kh/
+    'hwesta': '\ue00b',     # Grade 3: h /h/
+    'noldo': '\ue012',      # Grade 5: ng /ng/
 
     # Extended stem - Alveolar affricates
-    'tinco_ext': '\ue009',  # z /ts/
-    'ando_ext': '\ue00a',   # c /tsh/
+    'tinco_ext': '\ue018',  # z /ts/
+    'ando_ext': '\ue01c',   # c /tsh/
 
     # Approximants/glides
-    'anna': '\ue027',       # Glide /j/ (medial i-)
-    'vala': '\ue02d',       # Glide /w/ (medial u-)
+    'anna': '\ue016',       # Glide /j/ (medial i-)
+    'vala': '\ue015',       # Glide /w/ (medial u-)
 
     # Carriers
     'telco': '\ue02e',      # Zero initial carrier

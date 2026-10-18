@@ -28,25 +28,25 @@ sys.path.insert(0, str(__file__).rsplit('/', 2)[0])  # add samples/ to path
 
 TENGWAR = {
     # Column I - Alveolar
-    'tinco': '',
-    'ando': '',
-    'thule': '',
-    'numen': '',
-    'lambe': '',
-    'esse': '',  # for voiced /z/
+    'tinco': '',
+    'ando': '',
+    'thule': '',
+    'numen': '',
+    'lambe': '',
+    'esse': '',  # for voiced /z/
 
     # Column II - Labial
-    'parma': '',
-    'umbar': '',
-    'formen': '',
-    'malta': '',
-    'ampa': '',  # for voiced /v/
+    'parma': '',
+    'umbar': '',
+    'formen': '',
+    'malta': '',
+    'ampa': '',  # for voiced /v/
 
     # Column III - Retroflex/Velar
-    'calma': '',
-    'anga': '',
-    'hwesta': '',
-    'noldo': '',
+    'calma': '',
+    'anga': '',
+    'hwesta': '',
+    'noldo': '',
 
     # Column IV - Velar
     'quesse': '',
